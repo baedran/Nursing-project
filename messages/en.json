@@ -1,0 +1,508 @@
+{
+  "meta": {
+    "siteTagline": "Professional Home Nursing",
+    "siteDescription": "Licensed nurses for post-operative recovery, elderly daily care, wound care, injections, and IV therapy — delivered to your home in Beirut and Mount Lebanon."
+  },
+  "common": {
+    "serviceArea": "Beirut & Mount Lebanon",
+    "whatsapp": "WhatsApp",
+    "whatsappUs": "WhatsApp Us",
+    "messageOnWhatsapp": "Message us on WhatsApp",
+    "sendMessage": "Send a Message",
+    "orSendMessage": "or send a message",
+    "applyOnWhatsapp": "Apply on WhatsApp",
+    "applyForTrack": "Apply for this track",
+    "discussPackage": "Discuss this package on WhatsApp",
+    "bookFreeConsult": "Book a free consult",
+    "bestFor": "Best for",
+    "whatsIncluded": "What's included"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "packages": "Packages",
+    "howWeWork": "How We Work",
+    "faq": "FAQ",
+    "forNurses": "For Nurses",
+    "contact": "Contact",
+    "requestNurse": "Request a Nurse",
+    "toggleMenu": "Toggle menu"
+  },
+  "footer": {
+    "blurb": "Licensed home nursing care in {area}. Founded and clinically supervised by a Lebanese BSN.",
+    "quickLinks": "Quick Links",
+    "contactHeading": "Contact",
+    "available": "Available 7 days a week",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "pill": "Now serving {area}",
+      "headlineLead": "Professional nursing care,",
+      "headlineHighlight": "delivered to your home.",
+      "subtitle": "Licensed RNs for post-operative recovery, elderly daily care, wound care, injections, and IV therapy — in {area}.",
+      "ctaWhatsapp": "Message us on WhatsApp",
+      "ctaContact": "Send a Message",
+      "trustLicensed": "Licensed RNs",
+      "trustResponse": "Same-day response",
+      "trustArea": "{area}",
+      "trustWeek": "7 days a week"
+    },
+    "categories": {
+      "eyebrow": "What we offer",
+      "heading": "Hospital-grade care, at home",
+      "subtitle": "Clinical visits are performed by licensed RNs. Companion shifts are staffed by trained junior caregivers, supervised by our lead nurse. You get the right level of support — no more, no less.",
+      "viewAll": "See the full list of services",
+      "postOp": {
+        "title": "Post-Operative Care",
+        "description": "Recover safely at home after surgery with nurses who follow your discharge plan.",
+        "items": [
+          "Wound & dressing changes",
+          "Drain management",
+          "Suture / staple removal",
+          "Vital signs monitoring"
+        ]
+      },
+      "elderly": {
+        "title": "Elderly Daily Care",
+        "description": "Consistent, dignified support for elderly patients living at home.",
+        "items": [
+          "Medication administration",
+          "Vital signs & glucose checks",
+          "Hygiene & mobility support",
+          "Family progress updates"
+        ]
+      },
+      "ivWound": {
+        "title": "Injections, Wounds & IV",
+        "description": "Clinical procedures done at home — no hospital trip required.",
+        "items": [
+          "IM / SC injections",
+          "IV line insertion & infusions",
+          "Wound debridement",
+          "Catheter & NGT care"
+        ]
+      },
+      "junior": {
+        "title": "Companion & Junior Care",
+        "description": "Trained junior caregivers for non-clinical support, supervised by a lead RN.",
+        "items": [
+          "Hospital sitter shifts",
+          "Pediatric & family monitoring",
+          "Vital signs & comfort care",
+          "Supervised by lead RN"
+        ]
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "heading": "From a message to care, in three steps",
+      "subtitle": "No phone tag, no paperwork stack. Just a conversation, a match, and a nurse at your door.",
+      "step1Title": "Tell us what you need",
+      "step1Description": "Send us a WhatsApp or fill in the contact form. Patient's situation, what kind of help, when. We reply within 30 minutes between 7am and 11pm.",
+      "step2Title": "We match a licensed nurse",
+      "step2Description": "We match a vetted RN — or junior caregiver, if companion-level care fits — based on the patient's needs, location, and schedule.",
+      "step3Title": "Care arrives at your door",
+      "step3Description": "The nurse comes to you, performs the visit, and sends a written summary afterward — vitals, what was done, anything we noticed."
+    },
+    "whyChooseUs": {
+      "eyebrow": "Our promises",
+      "heading": "Four things we commit to",
+      "subtitle": "Founded and clinically supervised by a Lebanese BSN. Each commitment here is something we keep — not marketing language.",
+      "pillar1Title": "Verified with the Order of Nurses",
+      "pillar1Description": "Every RN's active license is verified with the Lebanon Order of Nurses before their first visit. Junior caregivers must be recent graduates from accredited Lebanese programs.",
+      "pillar2Title": "Reply within 30 minutes, 7am–11pm",
+      "pillar2Description": "Send a WhatsApp message and you'll hear back within 30 minutes, every day from 7am to 11pm. Messages sent overnight get a reply by 7am.",
+      "pillar3Title": "Same nurse every visit",
+      "pillar3Description": "On long-term care plans, you get a dedicated primary nurse who knows your patient — not a different person each visit. No re-explaining the situation.",
+      "pillar4Title": "Clinical notes after every visit",
+      "pillar4Description": "After each visit you receive a written summary: vitals, what was done, anything the nurse noticed. No surprises, no information gaps."
+    },
+    "serviceArea": {
+      "eyebrow": "Where we go",
+      "heading": "Covering {area}",
+      "subtitle": "Travel within these districts is included in every visit. Outside this list? Message us — we may still cover you, especially for long-term care.",
+      "beirut": "Beirut",
+      "mountLebanon": "Mount Lebanon"
+    },
+    "ctaBanner": {
+      "heading": "Ready to talk to a nurse?",
+      "subtitle": "Message us with the patient's situation. Free 15-minute phone consult — no obligation, no hard sell.",
+      "ctaWhatsapp": "Message us on WhatsApp",
+      "ctaContact": "Send a Message"
+    }
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "heading": "What we offer",
+    "subtitle": "Every visit covers travel within {area} and is performed by a licensed RN — except companion shifts, which are staffed by supervised junior caregivers. Need something not on this list? Message us — we likely do it.",
+    "ctaHeading": "Not sure what you need?",
+    "ctaSubtitle": "Tell us about the patient and we'll recommend the right service. Pricing is shared once we understand your situation.",
+    "categories": [
+      {
+        "title": "Post-Operative Care",
+        "description": "Safe recovery at home after surgery. Our nurses follow your discharge instructions and coordinate with your surgeon when needed.",
+        "items": [
+          "Wound and dressing changes",
+          "Drain management",
+          "Staple or suture removal",
+          "Post-op vital signs assessment",
+          "Foley catheter insertion and removal"
+        ]
+      },
+      {
+        "title": "Elderly Daily Care",
+        "description": "Consistent support for elderly patients who need regular monitoring or assistance with daily medical tasks.",
+        "items": [
+          "Vital signs check (BP, HR, O₂, temperature)",
+          "Medication administration and reminders",
+          "Blood glucose monitoring",
+          "Personal hygiene assistance",
+          "Mobility support and fall prevention"
+        ]
+      },
+      {
+        "title": "Injections, Wound Care & IV",
+        "description": "Clinical procedures that usually require a hospital visit — performed at home by a licensed RN.",
+        "items": [
+          "Intramuscular and subcutaneous injections",
+          "IV line insertion (cannulation)",
+          "IV infusion sessions",
+          "Wound debridement and dressing",
+          "Urinary catheter care and replacement",
+          "NGT insertion and care"
+        ]
+      },
+      {
+        "title": "Companion & Junior Care",
+        "description": "Trained junior caregivers — fresh graduates supervised by our lead RN — for support that doesn't require a full clinical visit. Lower cost, real attention.",
+        "items": [
+          "Hospital sitter shifts (4-12 hr, day or overnight)",
+          "Companion presence so family can rest",
+          "Basic vital signs & intake/output charting",
+          "Pediatric monitoring at home (sick child, post-op child, parent hospitalized)",
+          "Mobility, meal & comfort assistance",
+          "Escalation to lead RN if patient deteriorates"
+        ]
+      },
+      {
+        "title": "Long-Term Home Patients",
+        "description": "For patients who need ongoing care at home, we provide a dedicated nurse and keep clinical notes (vital trends, wound healing, medication tracking) so the family always has a clear picture.",
+        "items": [
+          "Dedicated primary nurse",
+          "Care plan coordinated with the treating physician",
+          "Wound healing tracked with progress photos",
+          "Medication and vital signs logs",
+          "Regular updates shared with the family"
+        ]
+      }
+    ]
+  },
+  "packages": {
+    "eyebrow": "How it's structured",
+    "heading": "Packages we offer",
+    "subtitle": "Pick the structure that fits the patient. Pricing is shared on a free 15-minute phone consult — once we understand the situation, we can quote accurately.",
+    "ctaHeading": "Not sure which package fits?",
+    "ctaSubtitle": "Tell us about the patient — current condition, what kind of help is needed, how often. We'll suggest the right package and share pricing in a free 15-minute phone consult.",
+    "featuredBadge": "Most clinical depth",
+    "single": {
+      "badge": "Single Visit",
+      "title": "One-off care, when you need it",
+      "description": "A single visit for a specific need — no commitment, no plan. Best for one-time procedures or short-term care.",
+      "bestFor": [
+        "Injections (IM / SC)",
+        "Wound dressing change",
+        "Post-op check",
+        "Suture or staple removal",
+        "Foley catheter insertion or removal"
+      ],
+      "includes": [
+        "Licensed RN visit (typically 30–60 min)",
+        "All travel within our service area",
+        "Required disposables and dressing supplies",
+        "Written visit summary sent to family"
+      ],
+      "ctaMessage": "Hi, I'd like to book a single visit."
+    },
+    "weekly": {
+      "badge": "Weekly Care Plan",
+      "title": "Recurring scheduled visits",
+      "description": "Predictable scheduled visits over weeks or months. Best for elderly daily care, ongoing wound care, or IV courses.",
+      "bestFor": [
+        "Daily elderly monitoring (vitals, glucose, meds)",
+        "Multi-week IV antibiotic course",
+        "Ongoing wound care during healing",
+        "Post-stroke rehab support at home"
+      ],
+      "includes": [
+        "Same nurse across visits where possible",
+        "Visit calendar shared with the family",
+        "Vital signs and medication log kept between visits",
+        "Direct line to a supervising RN between visits",
+        "Written summaries after every visit"
+      ],
+      "ctaMessage": "Hi, I'd like to set up a weekly care plan."
+    },
+    "longTerm": {
+      "badge": "Long-Term Primary Nurse",
+      "title": "Dedicated nurse, full clinical record",
+      "description": "For families managing a patient who needs ongoing daily care — your nurse becomes part of the family's care team.",
+      "bestFor": [
+        "Patients with chronic conditions (Parkinson's, dementia, post-stroke)",
+        "Long-term wound healing",
+        "Complex medication regimens",
+        "Families who want continuity and detailed records"
+      ],
+      "includes": [
+        "Dedicated primary nurse who knows your patient",
+        "Care plan coordinated with the treating physician",
+        "Wound healing tracked with progress photos (with consent)",
+        "Medication and vital signs log shared with the family",
+        "Regular family updates by WhatsApp",
+        "Family Portal access (coming soon)"
+      ],
+      "ctaMessage": "Hi, I'd like to discuss long-term primary nurse care."
+    },
+    "companion": {
+      "badge": "Companion / Sitter Shift",
+      "title": "Trained company, lower cost",
+      "description": "A junior caregiver — recent BSN/LPN graduate, supervised by our lead RN — for non-clinical support over longer hours. Lower cost than an RN visit.",
+      "bestFor": [
+        "Hospital sitter (overnight or daytime)",
+        "Sick child while a parent is hospitalized",
+        "Post-op child needing scheduled medication",
+        "Companionship for an isolated elderly patient"
+      ],
+      "includes": [
+        "Trained junior caregiver, scope-limited to non-clinical tasks",
+        "Basic vital signs and intake/output charting",
+        "Supervised by our lead RN — on call by phone during the shift",
+        "Mobility, meal, and comfort assistance",
+        "Escalation pathway if patient deteriorates"
+      ],
+      "ctaMessage": "Hi, I'd like to book a companion / sitter shift."
+    }
+  },
+  "howWeWork": {
+    "eyebrow": "Our process",
+    "heading": "How we work",
+    "subtitle": "Trust in healthcare comes from process, not promises. Here is exactly how we vet our nurses, handle your request, and keep you informed at every step.",
+    "ctaHeading": "Have a question about our process?",
+    "ctaSubtitle": "Message us on WhatsApp or send a note. We'll answer honestly — even questions we don't love.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "How we vet our RNs",
+        "body": [
+          "Active license verified directly with the Lebanon Order of Nurses before the nurse takes any case.",
+          "Minimum one year of clinical experience in a hospital, clinic, or established home-care setting.",
+          "Reference call with a previous supervisor or instructor.",
+          "In-person interview covering clinical scenarios — wound care, medication errors, escalation decisions."
+        ]
+      },
+      {
+        "n": "02",
+        "title": "How we vet junior caregivers",
+        "body": [
+          "Recent BSN or LPN graduate from an accredited Lebanese program (AUB, LAU, USJ, or equivalent).",
+          "Scope strictly limited to non-clinical work: companion shifts, monitoring, basic vitals, comfort care.",
+          "Every junior caregiver works under the supervision of our lead RN, who is on-call by phone during their shifts.",
+          "Same in-person interview process as RNs, focused on observation and escalation."
+        ]
+      },
+      {
+        "n": "03",
+        "title": "What happens when you contact us",
+        "body": [
+          "You message on WhatsApp — we reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am.",
+          "We offer a free 15-minute phone consult to understand the patient and what's needed.",
+          "Once we've agreed on the right service, we match a nurse and confirm the first visit time.",
+          "For most non-urgent requests, the first visit happens within 24 hours."
+        ]
+      },
+      {
+        "n": "04",
+        "title": "Quality and safety",
+        "body": [
+          "Every visit follows a documented clinical protocol — no improvising on procedures.",
+          "Each visit ends with a written summary sent to the family: vitals, what was done, anything we noticed.",
+          "If the nurse identifies a concern outside our scope, we escalate to the treating physician immediately.",
+          "Wound photos are taken with consent, stored privately, and never shared outside the care team."
+        ]
+      },
+      {
+        "n": "05",
+        "title": "Privacy and dignity",
+        "body": [
+          "Patient information is treated as confidential medical data. We do not log it in third-party tools.",
+          "Photos require written consent — and you can withdraw consent at any time.",
+          "Our nurses dress professionally, knock before entering rooms, and respect the home as the patient's private space.",
+          "We share clinical notes with you and the treating physician — no one else."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently asked",
+    "heading": "Questions families ask us",
+    "subtitle": "Direct answers to the questions families bring up most often. If your question isn't here, message us on WhatsApp — we'll add it.",
+    "ctaHeading": "Still have questions?",
+    "ctaSubtitle": "Message us — every answer goes straight to a nurse, not a call center.",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          {
+            "q": "What areas do you cover?",
+            "a": "{area}, including Achrafieh, Hamra, Verdun, Ras Beirut, Mar Mikhael, Gemmayzeh, Badaro, Jdeideh, Antelias, Dbayeh, Jounieh, Baabda, Hazmieh, Mansourieh, and surrounding districts. If you're outside this list, message us anyway — we sometimes cover farther for long-term care."
+          },
+          {
+            "q": "How quickly can a nurse come to me?",
+            "a": "For non-urgent requests, the first visit usually happens within 24 hours of confirmation. For urgent same-day visits we'll do everything we can; same-day is not always guaranteed but is often possible."
+          },
+          {
+            "q": "Are you available on weekends and at night?",
+            "a": "Yes — we operate 7 days a week. WhatsApp messages between 7am and 11pm get a reply within 30 minutes. Overnight messages are answered by 7am. Visits can be scheduled any day, including overnight shifts for hospital sitters."
+          },
+          {
+            "q": "Do you cover medical emergencies?",
+            "a": "No. For emergencies (chest pain, severe bleeding, loss of consciousness, suspected stroke), call 140 (Lebanese Red Cross) or go to the nearest emergency room. We're a planned home-care service, not an emergency response."
+          }
+        ]
+      },
+      {
+        "title": "Booking and pricing",
+        "items": [
+          {
+            "q": "How do I book a visit?",
+            "a": "Message us on WhatsApp or fill in the contact form. We'll offer a free 15-minute phone consult to understand the patient and what's needed, then suggest the right service and confirm a time."
+          },
+          {
+            "q": "Why don't you publish prices on the site?",
+            "a": "Pricing depends on the type of visit, duration, location within our service area, and whether it's a one-off or ongoing care. We share clear pricing during the free consult — no hidden fees, no surprise charges later."
+          },
+          {
+            "q": "What payment methods do you accept?",
+            "a": "We accept cash and bank transfer. We're working on adding card payments. We confirm payment terms during the consult so there are no surprises."
+          },
+          {
+            "q": "Can I cancel or reschedule a visit?",
+            "a": "Yes. Reschedules with at least 4 hours' notice are free. Last-minute cancellations may carry a small fee since we've already committed the nurse's time. Long-term care plans have their own cancellation terms shared at signup."
+          }
+        ]
+      },
+      {
+        "title": "Nurses and care",
+        "items": [
+          {
+            "q": "Are your nurses licensed?",
+            "a": "Every RN's active license is verified directly with the Lebanon Order of Nurses before their first case. Our junior caregivers are recent BSN or LPN graduates from accredited Lebanese programs, working under supervision and limited to non-clinical tasks."
+          },
+          {
+            "q": "Can the same nurse come every visit?",
+            "a": "On long-term care plans, yes — you get a dedicated primary nurse who knows your patient. For one-off visits we'll usually try to send the same person if you book again, but it's not guaranteed."
+          },
+          {
+            "q": "What's the difference between an RN visit and a junior caregiver shift?",
+            "a": "An RN handles clinical work — wound care, IV, injections, post-op assessment, catheter care, medication administration. A junior caregiver handles non-clinical support — sitting with a patient at the hospital or at home, taking basic vitals, helping with meals and comfort, and escalating concerns to our lead RN. Junior shifts cost less and cover longer hours."
+          },
+          {
+            "q": "Do you offer hospital sitters?",
+            "a": "Yes. A hospital sitter (junior caregiver) sits with your patient at the hospital — overnight or during the day — so the family can rest. They monitor the patient, help with meals and mobility, and call hospital staff or our lead RN if anything changes."
+          },
+          {
+            "q": "Will I get notes after each visit?",
+            "a": "Yes. After every visit you receive a written summary: vitals taken, what was done, anything the nurse noticed, and any recommendations. For long-term patients we keep a running clinical record you can request anytime."
+          }
+        ]
+      },
+      {
+        "title": "Privacy and safety",
+        "items": [
+          {
+            "q": "How do you protect patient information?",
+            "a": "Patient information is treated as confidential medical data. We don't log it in third-party tools. Only the assigned nurse, the supervising RN, and the family see the records. We never share data with marketers, insurers without consent, or anyone outside the care team."
+          },
+          {
+            "q": "Are wound photos shared anywhere?",
+            "a": "Wound photos are taken only with written consent and stored privately. They're used to track healing and shared only with the family and the treating physician. You can withdraw consent at any time and we'll delete the photos."
+          },
+          {
+            "q": "What if I'm not home — can the nurse still come?",
+            "a": "Only with explicit prior arrangement. We don't enter a patient's home without a responsible adult present unless you've authorized it in advance and the patient is competent to receive care alone. Safety of patient and nurse comes first."
+          }
+        ]
+      }
+    ]
+  },
+  "forNurses": {
+    "pill": "We're hiring",
+    "heading": "Join our nursing network",
+    "subtitle": "We're building a vetted nursing network in {area}. Whether you're an experienced RN or a fresh nursing graduate looking for supervised first-year work — we want to hear from you.",
+    "benefitsHeading": "Why join us",
+    "benefits": [
+      {
+        "title": "Flexible scheduling",
+        "description": "You choose when you work. Accept cases that fit your availability — no fixed shifts."
+      },
+      {
+        "title": "Fair, direct pay",
+        "description": "Competitive per-visit rates paid on time. No middleman taking a large cut."
+      },
+      {
+        "title": "Meaningful cases",
+        "description": "Build real relationships with patients. Continuity of care — not a revolving door."
+      }
+    ],
+    "tracksHeading": "Two ways to join",
+    "tracksSubtitle": "We hire at two levels — experienced RNs for clinical visits, and fresh graduates for supervised companion and monitoring shifts.",
+    "rnTrack": {
+      "badge": "RN Track",
+      "title": "Licensed Registered Nurse",
+      "description": "Clinical home visits — wound care, IV, post-op, injections, NGT, catheter care, and long-term primary nurse roles.",
+      "requirements": [
+        "Active nursing license (Lebanon Order of Nurses)",
+        "Minimum 1 year clinical experience",
+        "Reliable transportation",
+        "Smartphone with WhatsApp",
+        "Comfortable documenting and communicating findings to families"
+      ],
+      "applyMessage": "Hi, I'd like to apply as a licensed RN."
+    },
+    "juniorTrack": {
+      "badge": "Junior Track",
+      "title": "Junior Caregiver — Fresh Graduate",
+      "description": "Companion shifts and pediatric monitoring. Supervised by our lead RN, scope-limited to non-clinical tasks. A great way for recent grads to build experience.",
+      "requirements": [
+        "Recent BSN or LPN graduate from an accredited Lebanese program",
+        "Comfortable taking vital signs and observing patient status",
+        "Reliable transportation",
+        "Smartphone with WhatsApp",
+        "Eager to learn — work alongside an experienced RN"
+      ],
+      "applyMessage": "Hi, I'd like to apply as a junior caregiver."
+    },
+    "ctaHeading": "Not sure which track fits?",
+    "ctaSubtitle": "Send us a message with your name, years of experience, and area of specialty. We'll suggest the right track and follow up within 24 hours.",
+    "ctaMessage": "Hi, I'd like to apply to your nursing network."
+  },
+  "contact": {
+    "heading": "Contact us",
+    "subtitle": "The fastest way to reach us is WhatsApp. You can also fill in the form below and we'll reply shortly.",
+    "form": {
+      "name": "Your name",
+      "phone": "Phone number",
+      "email": "Email (optional)",
+      "message": "How can we help?",
+      "messagePlaceholder": "Tell us about the patient — current condition, what kind of help is needed, when.",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "successHeading": "Message sent",
+      "successBody": "We'll reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am.",
+      "errorHeading": "Couldn't send",
+      "errorBody": "Please try again or message us on WhatsApp.",
+      "fieldRequired": "Required",
+      "phoneInvalid": "Please enter a valid phone number"
+    }
+  }
+}
