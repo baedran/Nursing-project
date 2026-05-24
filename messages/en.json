@@ -149,11 +149,14 @@
       "pillar4Description": "After each visit you receive a written summary: vitals, what was done, anything the nurse noticed. No surprises, no information gaps."
     },
     "serviceArea": {
-      "eyebrow": "Where we go",
-      "heading": "Covering {area}",
-      "subtitle": "Travel within these districts is included in every visit. Outside this list? Message us — we may still cover you, especially for long-term care.",
-      "beirut": "Beirut",
-      "mountLebanon": "Mount Lebanon"
+      "eyebrow": "Where we visit",
+      "headline": "Beirut",
+      "headlineEm": "& Mt. Lebanon.",
+      "lede": "Districts where the coordinator currently has nurses available. If your district isn't listed, message us anyway — most off-map cases find a fit.",
+      "activeLabel": "Active",
+      "offMapHeadline": "Off-map district?",
+      "offMapBody": "Message the coordinator anyway — most off-map cases find a fit.",
+      "offMapCta": "Message coordinator"
     },
     "ctaBanner": {
       "heading": "Ready to talk to a nurse?",

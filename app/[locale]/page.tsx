@@ -24,7 +24,7 @@ export default async function HomePage({
       <ServiceCategories locale={locale} dict={dict.home.categories} />
       <HowItWorks dict={dict.home.howItWorks} />
       <WhyChooseUs dict={dict.home.whyChooseUs} />
-      <ServiceArea area={area} dict={dict.home.serviceArea} />
+      <ServiceArea dict={dict.home.serviceArea} />
       <CTABanner locale={locale} dict={dict.home.ctaBanner} />
     </>
   );
