@@ -148,6 +148,13 @@
       "hospitalsLabel": "Hospital-trained",
       "licenseLabel": "Lebanese Order of Nurses",
       "summaryLabel": "Written summary every visit"
+    },
+    "diaspora": {
+      "eyebrow": "For families abroad",
+      "headline": "Your parents are in Beirut.",
+      "headlineEm": "You're not.",
+      "lede": "Pay from Paris. Read the visit summary in Dubai. Approve the next visit from London. The portal works in three timezones at once.",
+      "railsLabel": "Payment from abroad"
     }
   },
   "services": {
