@@ -155,6 +155,51 @@
       "headlineEm": "You're not.",
       "lede": "Pay from Paris. Read the visit summary in Dubai. Approve the next visit from London. The portal works in three timezones at once.",
       "railsLabel": "Payment from abroad"
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "headline": "Care that comes",
+      "headlineEm": "to the door.",
+      "lede": "Five services, plus a sixth for cases that don't fit a category. Every visit is matched by clinical need, not by package. No prices on the public site — quote on WhatsApp.",
+      "moreLabel": "Discuss",
+      "discussLabel": "Discuss your case",
+      "items": [
+        {
+          "label": "01 · Clinical visits",
+          "headline": "Injections, IV insertion, hydration, wound care.",
+          "body": "IM/SubQ injection, IV start and medication administration, Foley insertion, complex dressing changes.",
+          "photoUrl": "https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Nurse · IV setup · bedside"
+        },
+        {
+          "label": "02 · Recovery at home",
+          "headline": "Post-surgical care after discharge.",
+          "body": "Wound, drain, mobility, hand-off coordination with the operating team.",
+          "photoUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Nurse · BP cuff"
+        },
+        {
+          "label": "03 · Daily care",
+          "headline": "Daily care for an elder parent.",
+          "body": "Bath, meds, vitals, companionship — 8 / 12 / 24-hour blocks.",
+          "photoUrl": "https://images.unsplash.com/photo-1658314755707-1fbdf7c40145?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Bath chair · morning light"
+        },
+        {
+          "label": "04 · Bloodwork at home",
+          "headline": "Routine, fasting, same-day samples.",
+          "body": "Collected at home and walked to the lab.",
+          "photoUrl": "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Blood draw · kitchen table"
+        }
+      ],
+      "catchAll": {
+        "label": "— Outside this list?",
+        "headline": "Not every case fits a category.",
+        "body": "Message the coordinator. Most off-list cases find a fit.",
+        "photoUrl": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?w=1200&q=80&auto=format&fit=crop",
+        "photoCaption": "Coordinator desk · phone"
+      }
     }
   },
   "services": {
