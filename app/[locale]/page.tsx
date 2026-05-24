@@ -25,7 +25,7 @@ export default async function HomePage({
       <HowItWorks dict={dict.home.howItWorks} />
       <WhyChooseUs dict={dict.home.whyChooseUs} />
       <ServiceArea dict={dict.home.serviceArea} />
-      <CTABanner locale={locale} dict={dict.home.ctaBanner} />
+      <CTABanner dict={dict.home.finalCta} />
     </>
   );
 }

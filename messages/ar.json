@@ -164,6 +164,13 @@
       "ctaWhatsapp": "راسلنا عبر واتساب",
       "ctaContact": "أرسل رسالة"
     },
+    "finalCta": {
+      "eyebrow": "عندما تكون مستعداً",
+      "headline": "الرسالة الأولى",
+      "headlineEm": "مجانية دائماً.",
+      "primaryCta": "تواصل مع المنسق عبر واتساب",
+      "callCta": "اتصل"
+    },
     "trustBar": {
       "serviceArea": "بيروت وجبل لبنان",
       "hospitalsLabel": "مدرّبون في المستشفيات",
