@@ -107,15 +107,33 @@
       }
     },
     "howItWorks": {
-      "eyebrow": "How it works",
-      "heading": "From a message to care, in three steps",
-      "subtitle": "No phone tag, no paperwork stack. Just a conversation, a match, and a nurse at your door.",
-      "step1Title": "Tell us what you need",
-      "step1Description": "Send us a WhatsApp or fill in the contact form. Patient's situation, what kind of help, when. We reply within 30 minutes between 7am and 11pm.",
-      "step2Title": "We match a licensed nurse",
-      "step2Description": "We match a vetted RN — or junior caregiver, if companion-level care fits — based on the patient's needs, location, and schedule.",
-      "step3Title": "Care arrives at your door",
-      "step3Description": "The nurse comes to you, performs the visit, and sends a written summary afterward — vitals, what was done, anything we noticed."
+      "eyebrow": "How a visit works",
+      "headline": "Three moments.",
+      "headlineEm": "Same hand.",
+      "lede": "A coordinator replies on WhatsApp, a nurse visits, a written summary lands in the family portal the same day. No phone tag.",
+      "steps": [
+        {
+          "num": "01",
+          "headline": "Message us — in your own words.",
+          "body": "WhatsApp is the front door. A few lines is enough. EN · AR · FR. A coordinator replies the same day with what the visit needs.",
+          "photoUrl": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "WhatsApp · coordinator typing"
+        },
+        {
+          "num": "02",
+          "headline": "A licensed nurse arrives — matched to the case.",
+          "body": "RN or PN, depending on the procedure. Same-nurse continuity when the case is ongoing.",
+          "photoUrl": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Nurse · arrival · doorway"
+        },
+        {
+          "num": "03",
+          "headline": "A written summary, the same day.",
+          "body": "Vitals, what was done, what to watch for, next visit. In the family portal — visible to whoever you share it with.",
+          "photoUrl": "https://images.unsplash.com/photo-1568633524775-08c4d7c63aff?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Visit notes · kitchen table"
+        }
+      ]
     },
     "whyChooseUs": {
       "eyebrow": "Our promises",
