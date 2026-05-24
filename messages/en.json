@@ -28,7 +28,8 @@
     "forNurses": "For Nurses",
     "contact": "Contact",
     "requestNurse": "Request a Nurse",
-    "toggleMenu": "Toggle menu"
+    "toggleMenu": "Toggle menu",
+    "whatsappLabel": "WhatsApp coordinator"
   },
   "footer": {
     "blurb": "Licensed home nursing care in {area}. Founded and clinically supervised by a Lebanese BSN.",

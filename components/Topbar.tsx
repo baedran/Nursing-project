@@ -11,12 +11,14 @@ type Props = {
     packages: string;
     diaspora: string;
     faq: string;
+    whatsappLabel: string;
   };
 };
 
 export default function Topbar({ locale, dict }: Props) {
   return (
     <nav
+      aria-label="Main navigation"
       className="fixed inset-x-0 top-0 z-50 border-b border-ink/[0.07] backdrop-saturate-150 backdrop-blur-[14px]"
       style={{ background: "rgba(247, 247, 243, 0.85)" }}
     >
@@ -39,7 +41,7 @@ export default function Topbar({ locale, dict }: Props) {
           </div>
         </Link>
 
-        {/* Nav — hidden on mobile */}
+        {/* Desktop nav. Mobile menu (hamburger drawer) is deferred — see follow-up tasks. */}
         <div className="hidden gap-[26px] text-sm font-medium text-ink-soft lg:flex">
           <Link href={`/${locale}/services`} className="hover:text-ink">{dict.services}</Link>
           <Link href={`/${locale}/how-we-work`} className="hover:text-ink">{dict.howItWorks}</Link>
@@ -49,7 +51,7 @@ export default function Topbar({ locale, dict }: Props) {
         </div>
 
         {/* WhatsApp CTA */}
-        <WhatsAppButton label="WhatsApp coordinator" />
+        <WhatsAppButton label={dict.whatsappLabel} />
       </div>
     </nav>
   );
