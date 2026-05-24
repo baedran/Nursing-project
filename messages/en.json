@@ -221,6 +221,50 @@
         "photoUrl": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?w=1200&q=80&auto=format&fit=crop",
         "photoCaption": "Coordinator desk · phone"
       }
+    },
+    "faq": {
+      "eyebrow": "Common questions",
+      "headline": "Questions, before we",
+      "headlineEm": "talk.",
+      "lede": "If your question isn't here, the coordinator will answer it on WhatsApp the same day.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Why don't you publish prices?",
+          "answer": "High-touch service. Every case has a different shape. We quote on WhatsApp after a short conversation."
+        },
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Can I read the visit summary in Arabic?",
+          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+        },
+        {
+          "question": "What if it's 3am where I am?",
+          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+        },
+        {
+          "question": "How are the nurses vetted?",
+          "answer": "Lebanese Order of Nurses licensed, currently employed at AUBMC, Hôtel-Dieu, or St Georges. Off-day shifts only. Background-checked."
+        },
+        {
+          "question": "Can I keep the same nurse week to week?",
+          "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        },
+        {
+          "question": "What's not offered yet?",
+          "answer": "Live-in care, NG tube, ICU/tracheostomy specialty, Holter monitoring, oxygen rental. Coming later."
+        }
+      ]
     }
   },
   "services": {
