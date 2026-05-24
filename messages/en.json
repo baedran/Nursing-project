@@ -43,16 +43,6 @@
   },
   "home": {
     "hero": {
-      "pill": "Now serving {area}",
-      "headlineLead": "Professional nursing care,",
-      "headlineHighlight": "delivered to your home.",
-      "subtitle": "Licensed RNs for post-operative recovery, elderly daily care, wound care, injections, and IV therapy — in {area}.",
-      "ctaWhatsapp": "Message us on WhatsApp",
-      "ctaContact": "Send a Message",
-      "trustLicensed": "Licensed RNs",
-      "trustResponse": "Same-day response",
-      "trustArea": "{area}",
-      "trustWeek": "7 days a week",
       "badge": "Live · Beirut & Mt. Lebanon",
       "headline": "Hospital-trained nurses, sent",
       "headlineEm": "to the house.",
@@ -134,19 +124,6 @@
           "photoCaption": "Visit notes · kitchen table"
         }
       ]
-    },
-    "whyChooseUs": {
-      "eyebrow": "Our promises",
-      "heading": "Four things we commit to",
-      "subtitle": "Founded and clinically supervised by a Lebanese BSN. Each commitment here is something we keep — not marketing language.",
-      "pillar1Title": "Verified with the Order of Nurses",
-      "pillar1Description": "Every RN's active license is verified with the Lebanon Order of Nurses before their first visit. Junior caregivers must be recent graduates from accredited Lebanese programs.",
-      "pillar2Title": "Reply within 30 minutes, 7am–11pm",
-      "pillar2Description": "Send a WhatsApp message and you'll hear back within 30 minutes, every day from 7am to 11pm. Messages sent overnight get a reply by 7am.",
-      "pillar3Title": "Same nurse every visit",
-      "pillar3Description": "On long-term care plans, you get a dedicated primary nurse who knows your patient — not a different person each visit. No re-explaining the situation.",
-      "pillar4Title": "Clinical notes after every visit",
-      "pillar4Description": "After each visit you receive a written summary: vitals, what was done, anything the nurse noticed. No surprises, no information gaps."
     },
     "serviceArea": {
       "eyebrow": "Where we visit",

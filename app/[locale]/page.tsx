@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import Hero from "@/components/home/HeroNew";
+import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
 import DiasporaSection from "@/components/home/DiasporaSection";
 import ServicesGrid from "@/components/home/ServicesGrid";
