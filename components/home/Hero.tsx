@@ -44,7 +44,7 @@ export default function Hero({ dict, photoUrl }: Props) {
         {/* Badge */}
         <div
           className="mb-6 inline-flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.18em] text-paper/85"
-          style={{ opacity: 0, animation: "rise 1s 0.3s forwards ease-out" }}
+          style={{ animation: "rise 1s 0.3s both ease-out" }}
         >
           <span
             aria-hidden="true"
@@ -62,8 +62,7 @@ export default function Hero({ dict, photoUrl }: Props) {
             lineHeight: 1.02,
             letterSpacing: "-0.035em",
             maxWidth: "18ch",
-            opacity: 0,
-            animation: "rise 1.1s 0.5s forwards ease-out",
+            animation: "rise 1.1s 0.5s both ease-out",
           }}
         >
           {dict.headline}{" "}
@@ -80,8 +79,7 @@ export default function Hero({ dict, photoUrl }: Props) {
             lineHeight: 1.55,
             maxWidth: "52ch",
             marginTop: "22px",
-            opacity: 0,
-            animation: "rise 1.1s 0.75s forwards ease-out",
+            animation: "rise 1.1s 0.75s both ease-out",
           }}
         >
           {dict.sub}
@@ -90,7 +88,7 @@ export default function Hero({ dict, photoUrl }: Props) {
         {/* CTAs */}
         <div
           className="flex flex-wrap gap-3.5"
-          style={{ marginTop: "36px", opacity: 0, animation: "rise 1.1s 0.95s forwards ease-out" }}
+          style={{ marginTop: "36px", animation: "rise 1.1s 0.95s both ease-out" }}
         >
           <a
             href={site.whatsappUrl}
