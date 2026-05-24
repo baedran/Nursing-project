@@ -27,7 +27,7 @@ export default function Hero({ dict, photoUrl }: Props) {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(31,42,53,0.25) 0%, rgba(31,42,53,0.05) 30%, rgba(31,42,53,0.35) 70%, rgba(31,42,53,0.85) 100%)",
+            "linear-gradient(180deg, rgba(19,32,44,0.25) 0%, rgba(19,32,44,0.05) 30%, rgba(19,32,44,0.35) 70%, rgba(19,32,44,0.85) 100%)",
         }}
       />
 
@@ -42,7 +42,10 @@ export default function Hero({ dict, photoUrl }: Props) {
         }}
       >
         {/* Badge */}
-        <div className="mb-6 inline-flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.18em] text-paper/85">
+        <div
+          className="mb-6 inline-flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.18em] text-paper/85"
+          style={{ opacity: 0, animation: "rise 1s 0.3s forwards ease-out" }}
+        >
           <span
             aria-hidden="true"
             className="size-2 rounded-full bg-peach"
@@ -59,6 +62,8 @@ export default function Hero({ dict, photoUrl }: Props) {
             lineHeight: 1.02,
             letterSpacing: "-0.035em",
             maxWidth: "18ch",
+            opacity: 0,
+            animation: "rise 1.1s 0.5s forwards ease-out",
           }}
         >
           {dict.headline}{" "}
@@ -75,13 +80,18 @@ export default function Hero({ dict, photoUrl }: Props) {
             lineHeight: 1.55,
             maxWidth: "52ch",
             marginTop: "22px",
+            opacity: 0,
+            animation: "rise 1.1s 0.75s forwards ease-out",
           }}
         >
           {dict.sub}
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-wrap gap-3.5" style={{ marginTop: "36px" }}>
+        <div
+          className="flex flex-wrap gap-3.5"
+          style={{ marginTop: "36px", opacity: 0, animation: "rise 1.1s 0.95s forwards ease-out" }}
+        >
           <a
             href={site.whatsappUrl}
             target="_blank"
