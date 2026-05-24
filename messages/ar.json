@@ -36,7 +36,10 @@
     "quickLinks": "روابط سريعة",
     "contactHeading": "تواصل معنا",
     "available": "متاحون 7 أيام في الأسبوع",
-    "rights": "جميع الحقوق محفوظة."
+    "rights": "جميع الحقوق محفوظة",
+    "careHeader": "الرعاية",
+    "familiesHeader": "العائلات",
+    "contactHeader": "التواصل"
   },
   "home": {
     "hero": {

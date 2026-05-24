@@ -36,7 +36,10 @@
     "quickLinks": "Quick Links",
     "contactHeading": "Contact",
     "available": "Available 7 days a week",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved",
+    "careHeader": "Care",
+    "familiesHeader": "Families",
+    "contactHeader": "Contact"
   },
   "home": {
     "hero": {
