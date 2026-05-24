@@ -1,18 +1,77 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #1e293b;
+@theme {
+  /* ─── Palette ─── */
+  --color-paper: oklch(0.985 0.006 165);          /* #f7f7f3 */
+  --color-paper-cool: oklch(0.975 0.010 200);     /* #f1f2f4 */
+  --color-cream: oklch(0.965 0.018 70);           /* #f3eee5 */
+  --color-ink: oklch(0.21 0.018 210);             /* #1f2a35 */
+  --color-ink-soft: oklch(0.34 0.014 210);        /* #454e58 */
+  --color-muted: oklch(0.54 0.010 210);           /* #7a7f87 */
+  --color-rule: oklch(0.90 0.012 200);            /* #dedfe1 */
+  --color-rule-warm: oklch(0.88 0.020 70);        /* #d9d2c5 */
+  --color-teal: oklch(0.50 0.08 175);             /* #2f7a76 */
+  --color-teal-deep: oklch(0.36 0.07 180);        /* #1a504f */
+  --color-teal-soft: oklch(0.94 0.030 170);       /* #dceee8 */
+  --color-signal: oklch(0.62 0.13 165);           /* #4ec19a */
+  --color-signal-deep: oklch(0.46 0.10 170);      /* #2c8c70 */
+  --color-peach: oklch(0.78 0.10 50);             /* #e8b58a */
+  --color-sand: oklch(0.84 0.05 80);              /* #dcc99f */
+  --color-night: oklch(0.16 0.014 220);           /* #13202c */
+  --color-night-deep: oklch(0.13 0.012 220);      /* #0d1822 */
+
+  /* ─── Fonts (loaded from Fontshare via app/layout.tsx in Task 3) ─── */
+  --font-sans: "Switzer", system-ui, -apple-system, sans-serif;
+  --font-display: "Cabinet Grotesk", "Switzer", sans-serif;
+  --font-mono: "Fragment Mono", ui-monospace, Menlo, monospace;
+
+  /* ─── Spacing ─── */
+  --shell-max: 1340px;
+  --pad-x: clamp(20px, 5vw, 96px);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-}
-
+/* ─── Base ─── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), Arial, sans-serif;
+  font-family: var(--font-sans);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.55;
+  font-size: 16px;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ─── Reveal helper (used by RevealOnScroll component) ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 720ms cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 720ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Ken Burns animation (hero photo) ─── */
+@keyframes kenburns {
+  0%   { transform: scale(1.0) translate(0, 0); }
+  100% { transform: scale(1.08) translate(-1%, -1%); }
+}
+
+/* ─── Pulse (WhatsApp live dot) ─── */
+@keyframes pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.25); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
