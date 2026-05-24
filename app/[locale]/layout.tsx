@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import Navbar from "@/components/Navbar";
+import Topbar from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/site";
 import { dirOf, getDictionary, htmlLang, isLocale, type Locale } from "@/lib/i18n";
@@ -112,7 +112,7 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <Navbar locale={locale} dict={dict.nav} />
+        <Topbar locale={locale} dict={dict.nav} />
         <main className="flex-1">{children}</main>
         <Footer
           locale={locale}
