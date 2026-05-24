@@ -52,7 +52,13 @@
       "trustLicensed": "Licensed RNs",
       "trustResponse": "Same-day response",
       "trustArea": "{area}",
-      "trustWeek": "7 days a week"
+      "trustWeek": "7 days a week",
+      "badge": "Live · Beirut & Mt. Lebanon",
+      "headline": "Hospital-trained nurses, sent",
+      "headlineEm": "to the house.",
+      "sub": "Lebanese RNs and PNs working their hospital off-days. Coordinated by WhatsApp. A written summary in the family portal after every visit.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
     },
     "categories": {
       "eyebrow": "What we offer",
