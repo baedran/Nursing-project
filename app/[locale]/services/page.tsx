@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Hero from "@/components/home/Hero";
+import CareFitWizard from "@/components/home/CareFitWizard";
 import TrustBar from "@/components/home/TrustBar";
 import ServicesGrid from "@/components/home/ServicesGrid";
 import HowItWorks from "@/components/home/HowItWorks";
@@ -37,6 +38,7 @@ export default async function ServicesPage({
   return (
     <>
       <Hero dict={dict.services.hero} photoUrl={HERO_PHOTO} compact />
+      <CareFitWizard dict={dict.services.wizard} />
       <TrustBar dict={dict.home.trustBar} />
       <ServicesGrid dict={dict.home.services} />
       <HowItWorks dict={dict.home.howItWorks} />

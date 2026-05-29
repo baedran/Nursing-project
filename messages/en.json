@@ -265,6 +265,64 @@
       "sub": "Five services for cases that need a licensed nurse, plus a sixth for cases that don't fit a category. Every visit is matched by clinical need, not by package.",
       "primaryCta": "Message the coordinator",
       "ghostCta": "How a visit works"
+    },
+    "wizard": {
+      "eyebrow": "Not sure which service fits?",
+      "headline": "Three questions, then",
+      "headlineEm": "the right ask.",
+      "lede": "Tell us a little about the situation, and the wizard composes the right WhatsApp message for the coordinator.",
+      "progressLabel": "Question {n} of {total}",
+      "backLabel": "Back",
+      "summaryLabel": "Your message",
+      "summaryHeading": "Send this to the coordinator?",
+      "summaryBodyTemplate": "Hi — I'd like to discuss {situation} for {recipient}, starting {timing}. Beirut/Mt. Lebanon.",
+      "primaryCta": "Send on WhatsApp",
+      "restartLabel": "Start over",
+      "skipLabel": "Or message coordinator without the wizard",
+
+      "q1Label": "What's the situation?",
+      "q1Options": [
+        { "key": "recovery", "label": "Just discharged from hospital" },
+        { "key": "daily", "label": "Daily care for an elder parent" },
+        { "key": "procedure", "label": "A specific procedure (IV, injection, wound care)" },
+        { "key": "bloodwork", "label": "Bloodwork at home" },
+        { "key": "companion", "label": "Overnight or companion shifts" }
+      ],
+      "q1Sentence": {
+        "recovery": "post-discharge recovery care",
+        "daily": "daily care for an elder parent",
+        "procedure": "a specific clinical procedure (IV / injection / wound care)",
+        "bloodwork": "bloodwork at home",
+        "companion": "overnight or companion shifts"
+      },
+
+      "q2Label": "Who is the care for?",
+      "q2Options": [
+        { "key": "parent", "label": "A parent" },
+        { "key": "spouse", "label": "Spouse or partner" },
+        { "key": "self", "label": "Myself" },
+        { "key": "other", "label": "Another family member" }
+      ],
+      "q2Sentence": {
+        "parent": "my parent",
+        "spouse": "my spouse",
+        "self": "myself",
+        "other": "another family member"
+      },
+
+      "q3Label": "When do you want to start?",
+      "q3Options": [
+        { "key": "urgent", "label": "Today or tomorrow" },
+        { "key": "thisWeek", "label": "This week" },
+        { "key": "withinMonth", "label": "Within the month" },
+        { "key": "planning", "label": "Planning ahead" }
+      ],
+      "q3Sentence": {
+        "urgent": "today or tomorrow",
+        "thisWeek": "this week",
+        "withinMonth": "within the month",
+        "planning": "in the next few months"
+      }
     }
   },
   "diaspora": {
