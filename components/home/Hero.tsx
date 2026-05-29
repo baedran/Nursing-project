@@ -17,7 +17,7 @@ type Props = {
 export default function Hero({ dict, photoUrl, compact = false }: Props) {
   return (
     <header
-      className={`relative overflow-hidden ${compact ? "min-h-[60vh]" : "min-h-screen"}`}
+      className={`relative overflow-hidden ${compact ? "min-h-[80vh]" : "min-h-screen"}`}
       style={{ paddingTop: "68px" }}
     >
       <KenBurnsPhoto src={photoUrl} alt="Hospital-trained nurse with a patient at home in Beirut" />
@@ -35,7 +35,7 @@ export default function Hero({ dict, photoUrl, compact = false }: Props) {
       <div
         className="relative flex flex-col justify-end"
         style={{
-          height: compact ? "calc(60vh - 68px)" : "calc(100vh - 68px)",
+          height: compact ? "calc(80vh - 68px)" : "calc(100vh - 68px)",
           paddingBottom: "clamp(48px, 9vh, 96px)",
           maxWidth: "var(--shell-max)",
           margin: "0 auto",
