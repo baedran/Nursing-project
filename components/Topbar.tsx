@@ -44,7 +44,7 @@ export default function Topbar({ locale, dict }: Props) {
               <div className="font-display text-[16px] font-bold tracking-[-0.01em] text-ink">
                 {site.name}
               </div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
+              <div className="hidden sm:block font-mono text-[10px] uppercase tracking-[0.12em] text-muted">
                 Home nursing · est. {site.established}
               </div>
             </div>
@@ -75,8 +75,10 @@ export default function Topbar({ locale, dict }: Props) {
               </svg>
             </button>
 
-            {/* WhatsApp CTA — always visible, primary action on all sizes */}
-            <WhatsAppButton label={dict.whatsappLabel} />
+            {/* WhatsApp CTA — hidden below sm because the mobile menu has its own at the bottom */}
+            <div className="hidden sm:flex">
+              <WhatsAppButton label={dict.whatsappLabel} />
+            </div>
           </div>
         </div>
       </nav>
