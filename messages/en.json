@@ -397,63 +397,50 @@
     }
   },
   "howWeWork": {
-    "eyebrow": "Our process",
-    "heading": "How we work",
-    "subtitle": "Trust in healthcare comes from process, not promises. Here is exactly how we vet our nurses, handle your request, and keep you informed at every step.",
-    "ctaHeading": "Have a question about our process?",
-    "ctaSubtitle": "Message us on WhatsApp or send a note. We'll answer honestly — even questions we don't love.",
-    "steps": [
-      {
-        "n": "01",
-        "title": "How we vet our RNs",
-        "body": [
-          "Active license verified directly with the Lebanon Order of Nurses before the nurse takes any case.",
-          "Minimum one year of clinical experience in a hospital, clinic, or established home-care setting.",
-          "Reference call with a previous supervisor or instructor.",
-          "In-person interview covering clinical scenarios — wound care, medication errors, escalation decisions."
-        ]
-      },
-      {
-        "n": "02",
-        "title": "How we vet junior caregivers",
-        "body": [
-          "Recent BSN or LPN graduate from an accredited Lebanese program (AUB, LAU, USJ, or equivalent).",
-          "Scope strictly limited to non-clinical work: companion shifts, monitoring, basic vitals, comfort care.",
-          "Every junior caregiver works under the supervision of our lead RN, who is on-call by phone during their shifts.",
-          "Same in-person interview process as RNs, focused on observation and escalation."
-        ]
-      },
-      {
-        "n": "03",
-        "title": "What happens when you contact us",
-        "body": [
-          "You message on WhatsApp — we reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am.",
-          "We offer a free 15-minute phone consult to understand the patient and what's needed.",
-          "Once we've agreed on the right service, we match a nurse and confirm the first visit time.",
-          "For most non-urgent requests, the first visit happens within 24 hours."
-        ]
-      },
-      {
-        "n": "04",
-        "title": "Quality and safety",
-        "body": [
-          "Every visit follows a documented clinical protocol — no improvising on procedures.",
-          "Each visit ends with a written summary sent to the family: vitals, what was done, anything we noticed.",
-          "If the nurse identifies a concern outside our scope, we escalate to the treating physician immediately.",
-          "Wound photos are taken with consent, stored privately, and never shared outside the care team."
-        ]
-      },
-      {
-        "n": "05",
-        "title": "Privacy and dignity",
-        "body": [
-          "Patient information is treated as confidential medical data. We do not log it in third-party tools.",
-          "Photos require written consent — and you can withdraw consent at any time.",
-          "Our nurses dress professionally, knock before entering rooms, and respect the home as the patient's private space.",
-          "We share clinical notes with you and the treating physician — no one else."
-        ]
-      }
-    ]
+    "meta": {
+      "title": "How a visit works — Caregivers Collective",
+      "description": "From WhatsApp message to written summary in the family portal — the three moments of a home nursing visit in Beirut & Mt. Lebanon."
+    },
+    "hero": {
+      "badge": "How a visit works",
+      "headline": "Three moments.",
+      "headlineEm": "Same hand.",
+      "sub": "A coordinator replies on WhatsApp, a nurse visits, a written summary lands in the family portal the same day. No phone tag, no guessing what happened.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "Discuss your case"
+    },
+    "faq": {
+      "eyebrow": "About the process",
+      "headline": "Questions about how",
+      "headlineEm": "this works.",
+      "lede": "If your question isn't here, the coordinator will answer it on WhatsApp the same day.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "How are the nurses vetted?",
+          "answer": "Lebanese Order of Nurses licensed, currently employed at AUBMC, Hôtel-Dieu, or St Georges. Off-day shifts only. Background-checked."
+        },
+        {
+          "question": "Can I keep the same nurse week to week?",
+          "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        },
+        {
+          "question": "How fast does the coordinator reply?",
+          "answer": "Most replies land within a few hours during Beirut daytime. Emergencies get same-day response."
+        },
+        {
+          "question": "What's not offered yet?",
+          "answer": "Live-in care, NG tube, ICU/tracheostomy specialty, Holter monitoring, oxygen rental. Coming later."
+        }
+      ]
+    }
   },
   "faq": {
     "eyebrow": "Frequently asked",
