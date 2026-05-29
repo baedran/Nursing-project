@@ -29,6 +29,8 @@
     "contact": "Contact",
     "requestNurse": "Request a Nurse",
     "toggleMenu": "Toggle menu",
+    "menuOpenLabel": "Open menu",
+    "menuCloseLabel": "Close menu",
     "whatsappLabel": "WhatsApp coordinator"
   },
   "footer": {

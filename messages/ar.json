@@ -29,6 +29,8 @@
     "contact": "اتصل بنا",
     "requestNurse": "اطلب ممرضاً",
     "toggleMenu": "فتح/إغلاق القائمة",
+    "menuOpenLabel": "افتح القائمة",
+    "menuCloseLabel": "أغلق القائمة",
     "whatsappLabel": "تواصل عبر واتساب"
   },
   "footer": {
