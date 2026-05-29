@@ -578,22 +578,46 @@
     "ctaMessage": "Hi, I'd like to apply to your nursing network."
   },
   "contact": {
-    "heading": "Contact us",
-    "subtitle": "The fastest way to reach us is WhatsApp. You can also fill in the form below and we'll reply shortly.",
+    "meta": {
+      "title": "Contact — Caregivers Collective",
+      "description": "Reach the coordinator on WhatsApp, by phone, or by message. Beirut & Mount Lebanon home nursing — EN / AR / FR."
+    },
+    "hero": {
+      "badge": "Contact · WhatsApp first",
+      "headline": "Talk to the",
+      "headlineEm": "coordinator.",
+      "sub": "WhatsApp is the fastest path. Phone for emergencies. The form below is for when neither works.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "Call coordinator"
+    },
+    "whatsapp": {
+      "eyebrow": "The front door",
+      "headline": "Open the chat —",
+      "headlineEm": "we reply same-day.",
+      "lede": "WhatsApp is the easiest way to start. Tell the coordinator what's happening in your own words. Most replies land within a few hours during Beirut daytime.",
+      "cta": "WhatsApp the coordinator",
+      "callCta": "Call"
+    },
+    "facts": {
+      "hoursLabel": "Coordinator hours",
+      "hoursValue": "Same-day · Beirut time",
+      "languagesLabel": "Languages",
+      "areaLabel": "Service area"
+    },
     "form": {
+      "eyebrow": "Or send a message",
+      "headline": "If WhatsApp isn't",
+      "headlineEm": "available.",
+      "lede": "The form lands in the coordinator's inbox. Replies happen on email or WhatsApp — whichever you prefer."
+    },
+    "formFields": {
       "name": "Your name",
       "phone": "Phone number",
-      "email": "Email (optional)",
       "message": "How can we help?",
       "messagePlaceholder": "Tell us about the patient — current condition, what kind of help is needed, when.",
       "submit": "Send message",
-      "submitting": "Sending...",
       "successHeading": "Message sent",
-      "successBody": "We'll reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am.",
-      "errorHeading": "Couldn't send",
-      "errorBody": "Please try again or message us on WhatsApp.",
-      "fieldRequired": "Required",
-      "phoneInvalid": "Please enter a valid phone number"
+      "successBody": "We'll reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am."
     }
   }
 }
