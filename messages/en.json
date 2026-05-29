@@ -527,55 +527,118 @@
     }
   },
   "forNurses": {
-    "pill": "We're hiring",
-    "heading": "Join our nursing network",
-    "subtitle": "We're building a vetted nursing network in {area}. Whether you're an experienced RN or a fresh nursing graduate looking for supervised first-year work — we want to hear from you.",
-    "benefitsHeading": "Why join us",
-    "benefits": [
-      {
-        "title": "Flexible scheduling",
-        "description": "You choose when you work. Accept cases that fit your availability — no fixed shifts."
-      },
-      {
-        "title": "Fair, direct pay",
-        "description": "Competitive per-visit rates paid on time. No middleman taking a large cut."
-      },
-      {
-        "title": "Meaningful cases",
-        "description": "Build real relationships with patients. Continuity of care — not a revolving door."
-      }
-    ],
-    "tracksHeading": "Two ways to join",
-    "tracksSubtitle": "We hire at two levels — experienced RNs for clinical visits, and fresh graduates for supervised companion and monitoring shifts.",
-    "rnTrack": {
-      "badge": "RN Track",
-      "title": "Licensed Registered Nurse",
-      "description": "Clinical home visits — wound care, IV, post-op, injections, NGT, catheter care, and long-term primary nurse roles.",
-      "requirements": [
-        "Active nursing license (Lebanon Order of Nurses)",
-        "Minimum 1 year clinical experience",
-        "Reliable transportation",
-        "Smartphone with WhatsApp",
-        "Comfortable documenting and communicating findings to families"
-      ],
-      "applyMessage": "Hi, I'd like to apply as a licensed RN."
+    "meta": {
+      "title": "For nurses — Caregivers Collective",
+      "description": "Lebanese RNs and PNs: take home-care shifts on your off-days. Independent service provider, no hospital conflict, fair rates, written reviews."
     },
-    "juniorTrack": {
-      "badge": "Junior Track",
-      "title": "Junior Caregiver — Fresh Graduate",
-      "description": "Companion shifts and pediatric monitoring. Supervised by our lead RN, scope-limited to non-clinical tasks. A great way for recent grads to build experience.",
-      "requirements": [
-        "Recent BSN or LPN graduate from an accredited Lebanese program",
-        "Comfortable taking vital signs and observing patient status",
-        "Reliable transportation",
-        "Smartphone with WhatsApp",
-        "Eager to learn — work alongside an experienced RN"
-      ],
-      "applyMessage": "Hi, I'd like to apply as a junior caregiver."
+    "hero": {
+      "badge": "For nurses · off-day shifts",
+      "headline": "Off-day shifts,",
+      "headlineEm": "on your terms.",
+      "sub": "If you're already a licensed RN or PN at AUBMC, Hôtel-Dieu, St Georges, or similar — we coordinate home-care shifts for your off-days. Independent service provider, no hospital conflict, fair rates.",
+      "primaryCta": "Apply on WhatsApp",
+      "ghostCta": "Read how it works"
     },
-    "ctaHeading": "Not sure which track fits?",
-    "ctaSubtitle": "Send us a message with your name, years of experience, and area of specialty. We'll suggest the right track and follow up within 24 hours.",
-    "ctaMessage": "Hi, I'd like to apply to your nursing network."
+    "steps": {
+      "eyebrow": "How it works for nurses",
+      "headline": "Three steps.",
+      "headlineEm": "No commitment.",
+      "lede": "Apply, get matched to cases that fit your schedule, get paid weekly. You decide which shifts to take. We never compete with your hospital schedule.",
+      "steps": [
+        {
+          "num": "01",
+          "headline": "Apply on WhatsApp.",
+          "body": "Send your license number, current hospital, and the off-days you're typically free. The coordinator runs a background check and confirms your availability.",
+          "photoUrl": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Application · WhatsApp"
+        },
+        {
+          "num": "02",
+          "headline": "Get matched to a case.",
+          "body": "When a case fits your skills and schedule, the coordinator sends you the details on WhatsApp — case shape, address, visit duration, expected supplies. You accept or decline.",
+          "photoUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Match · case offer"
+        },
+        {
+          "num": "03",
+          "headline": "Get paid weekly.",
+          "body": "Submit your visit summary in the portal at end of shift. Pay lands weekly via Whish, OMT, or direct bank. The family pays Caregivers Collective; Caregivers Collective pays you.",
+          "photoUrl": "https://images.unsplash.com/photo-1568633524775-08c4d7c63aff?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Payout · weekly"
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Why this works",
+      "headline": "Built for nurses",
+      "headlineEm": "who already have a job.",
+      "lede": "We respect that you have a primary hospital. Every part of this is designed to work around that — not against it.",
+      "items": [
+        {
+          "label": "Schedule",
+          "title": "Off-day only.",
+          "body": "You tell us your off-days each month. We never offer cases that conflict with your hospital schedule. The platform respects your primary employer."
+        },
+        {
+          "label": "Status",
+          "title": "Independent service provider.",
+          "body": "Not an employee. Each shift is a service contract. We handle the billing, the family relationship, the documentation — you do the clinical work."
+        },
+        {
+          "label": "Reviews",
+          "title": "Written, not anonymous.",
+          "body": "After each visit, the coordinator (not the family) writes a short review. Reviews are part of your record on the platform — visible to you, used for case matching."
+        },
+        {
+          "label": "Rates",
+          "title": "Fair, published to you.",
+          "body": "Rates are quoted to you upfront before you accept the case. RN rates differ from PN rates. Overnight and weekend cases carry a premium. No surprises."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Questions from nurses",
+      "headline": "Common questions",
+      "headlineEm": "before applying.",
+      "lede": "If yours isn't here, message the coordinator on WhatsApp.",
+      "helperHeadline": "Ready to apply?",
+      "helperBody": "Send your license number, current hospital, and off-days on WhatsApp. The coordinator replies within a day or two.",
+      "helperCta": "Apply on WhatsApp",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Do I need to be currently employed at a hospital?",
+          "answer": "Yes — the platform is designed for nurses with primary hospital employment. AUBMC, Hôtel-Dieu, St Georges are the most common; similar hospitals work too."
+        },
+        {
+          "question": "Will my hospital find out?",
+          "answer": "No. We coordinate around your hospital schedule, not with your hospital. Nothing about your primary employment is shared. You declare your off-days; we offer cases that fit them."
+        },
+        {
+          "question": "How am I paid?",
+          "answer": "Weekly. The family pays Caregivers Collective for the case; Caregivers Collective pays you the agreed rate via Whish, OMT, or direct bank. Rates are confirmed before you accept each case."
+        },
+        {
+          "question": "What if a case goes wrong?",
+          "answer": "Document what you saw in the portal. The coordinator handles the family conversation. We have professional liability coverage on platform-coordinated visits."
+        },
+        {
+          "question": "Can I decline cases?",
+          "answer": "Always. You see case details before you accept. No penalty for declining — your acceptance rate matters less than your reliability after accepting."
+        },
+        {
+          "question": "What's a typical shift like?",
+          "answer": "Visit shapes vary: a 90-minute injection visit, a 12-hour overnight recovery shift, a 24-hour daily-care block. The case offer tells you everything before you accept."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Ready to take shifts?",
+      "headline": "Apply in",
+      "headlineEm": "two messages.",
+      "primaryCta": "Apply on WhatsApp",
+      "callCta": "Call"
+    }
   },
   "contact": {
     "meta": {
