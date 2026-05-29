@@ -312,88 +312,98 @@
     }
   },
   "packages": {
-    "eyebrow": "How it's structured",
-    "heading": "Packages we offer",
-    "subtitle": "Pick the structure that fits the patient. Pricing is shared on a free 15-minute phone consult — once we understand the situation, we can quote accurately.",
-    "ctaHeading": "Not sure which package fits?",
-    "ctaSubtitle": "Tell us about the patient — current condition, what kind of help is needed, how often. We'll suggest the right package and share pricing in a free 15-minute phone consult.",
-    "featuredBadge": "Most clinical depth",
-    "single": {
-      "badge": "Single Visit",
-      "title": "One-off care, when you need it",
-      "description": "A single visit for a specific need — no commitment, no plan. Best for one-time procedures or short-term care.",
-      "bestFor": [
-        "Injections (IM / SC)",
-        "Wound dressing change",
-        "Post-op check",
-        "Suture or staple removal",
-        "Foley catheter insertion or removal"
-      ],
-      "includes": [
-        "Licensed RN visit (typically 30–60 min)",
-        "All travel within our service area",
-        "Required disposables and dressing supplies",
-        "Written visit summary sent to family"
-      ],
-      "ctaMessage": "Hi, I'd like to book a single visit."
+    "meta": {
+      "title": "Packages — Caregivers Collective",
+      "description": "Three ways to be billed for home nursing in Beirut & Mt. Lebanon — single visit, shift block, or monthly wellness subscription. Quote on WhatsApp."
     },
-    "weekly": {
-      "badge": "Weekly Care Plan",
-      "title": "Recurring scheduled visits",
-      "description": "Predictable scheduled visits over weeks or months. Best for elderly daily care, ongoing wound care, or IV courses.",
-      "bestFor": [
-        "Daily elderly monitoring (vitals, glucose, meds)",
-        "Multi-week IV antibiotic course",
-        "Ongoing wound care during healing",
-        "Post-stroke rehab support at home"
-      ],
-      "includes": [
-        "Same nurse across visits where possible",
-        "Visit calendar shared with the family",
-        "Vital signs and medication log kept between visits",
-        "Direct line to a supervising RN between visits",
-        "Written summaries after every visit"
-      ],
-      "ctaMessage": "Hi, I'd like to set up a weekly care plan."
+    "hero": {
+      "badge": "Packages · billing shapes",
+      "headline": "Three shapes",
+      "headlineEm": "of care.",
+      "sub": "Single visit, shift block, or monthly subscription. We pick the shape that fits the case — not the other way around. No prices on the public site; every quote is custom.",
+      "primaryCta": "Get a quote on WhatsApp",
+      "ghostCta": "How a visit works"
     },
-    "longTerm": {
-      "badge": "Long-Term Primary Nurse",
-      "title": "Dedicated nurse, full clinical record",
-      "description": "For families managing a patient who needs ongoing daily care — your nurse becomes part of the family's care team.",
-      "bestFor": [
-        "Patients with chronic conditions (Parkinson's, dementia, post-stroke)",
-        "Long-term wound healing",
-        "Complex medication regimens",
-        "Families who want continuity and detailed records"
-      ],
-      "includes": [
-        "Dedicated primary nurse who knows your patient",
-        "Care plan coordinated with the treating physician",
-        "Wound healing tracked with progress photos (with consent)",
-        "Medication and vital signs log shared with the family",
-        "Regular family updates by WhatsApp",
-        "Family Portal access (coming soon)"
-      ],
-      "ctaMessage": "Hi, I'd like to discuss long-term primary nurse care."
+    "modes": {
+      "eyebrow": "Three billing shapes",
+      "headline": "The visit, the shift,",
+      "headlineEm": "or the rhythm.",
+      "lede": "Each shape has a different cadence. Same nurses, same documentation, same coordinator — only the way it's billed changes. Quotes happen on WhatsApp.",
+      "items": [
+        {
+          "number": "Mode 01",
+          "label": "The visit",
+          "headline": "Per-visit, one thing at a time.",
+          "body": "Best when the case is procedural and bounded — a single injection, a wound dressing change, an IV start. We come, do the work, send the summary.",
+          "bullets": [
+            "IM/SubQ injection, IV insertion, Foley, complex dressings",
+            "Single nurse, one written summary per visit",
+            "Quote based on procedure, time, and supplies"
+          ],
+          "ctaLabel": "Discuss the visit shape",
+          "ctaMessage": "Hi — I'd like to discuss a per-visit care quote."
+        },
+        {
+          "number": "Mode 02",
+          "label": "The shift",
+          "headline": "8, 12, or 24-hour blocks.",
+          "body": "Most common shape. For recovery from surgery, ongoing daily care, or overnight presence. The same nurse covers a continuous shift — RN or PN matched to the case.",
+          "bullets": [
+            "8 / 12 / 24-hour shift blocks",
+            "Same-nurse continuity by default",
+            "RN or PN — matched to the clinical need",
+            "Written summary at end of each shift"
+          ],
+          "ctaLabel": "Discuss the shift shape",
+          "ctaMessage": "Hi — I'd like to discuss shift-based care for a family member."
+        },
+        {
+          "number": "Mode 03",
+          "label": "The wellness rhythm",
+          "headline": "Monthly check-ins for an elder parent.",
+          "body": "A subscription cadence — four check-in visits per month, family portal access, escalation path when something changes. For families abroad who want a steady presence in the home.",
+          "bullets": [
+            "Four visits per month, same coordinator",
+            "Family portal with monthly summary",
+            "Priority WhatsApp response from the coordinator",
+            "Designed for diaspora-managed long-term care"
+          ],
+          "ctaLabel": "Discuss the monthly shape",
+          "ctaMessage": "Hi — I'd like to discuss the monthly wellness subscription."
+        }
+      ]
     },
-    "companion": {
-      "badge": "Companion / Sitter Shift",
-      "title": "Trained company, lower cost",
-      "description": "A junior caregiver — recent BSN/LPN graduate, supervised by our lead RN — for non-clinical support over longer hours. Lower cost than an RN visit.",
-      "bestFor": [
-        "Hospital sitter (overnight or daytime)",
-        "Sick child while a parent is hospitalized",
-        "Post-op child needing scheduled medication",
-        "Companionship for an isolated elderly patient"
-      ],
-      "includes": [
-        "Trained junior caregiver, scope-limited to non-clinical tasks",
-        "Basic vital signs and intake/output charting",
-        "Supervised by our lead RN — on call by phone during the shift",
-        "Mobility, meal, and comfort assistance",
-        "Escalation pathway if patient deteriorates"
-      ],
-      "ctaMessage": "Hi, I'd like to book a companion / sitter shift."
+    "faq": {
+      "eyebrow": "About pricing",
+      "headline": "Pricing questions",
+      "headlineEm": "we get most.",
+      "lede": "Five honest answers before you ask the coordinator.",
+      "helperHeadline": "Ready to quote?",
+      "helperBody": "Message the coordinator with what you need — most quotes come back the same day.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Why don't you publish prices?",
+          "answer": "High-touch service. Every case has a different shape — procedure, duration, nurse level, supplies, distance. We quote on WhatsApp after a short conversation."
+        },
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Are supplies (drugs, IV bags, dressings) included?",
+          "answer": "Standard supplies for the visit are included in most quotes. Specialty drugs or large dressings are quoted separately — the coordinator will be explicit."
+        },
+        {
+          "question": "Do I commit to a shape upfront?",
+          "answer": "No. Many families start with a single visit, then move to shifts or a monthly cadence once the case stabilises. The coordinator helps you decide."
+        },
+        {
+          "question": "Can I switch between shapes mid-month?",
+          "answer": "Yes. Pricing adjusts the day the shape changes — no penalty. The coordinator confirms the new cadence in writing on WhatsApp."
+        }
+      ]
     }
   },
   "howWeWork": {
