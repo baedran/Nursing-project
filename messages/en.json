@@ -252,70 +252,18 @@
     }
   },
   "services": {
-    "eyebrow": "Our services",
-    "heading": "What we offer",
-    "subtitle": "Every visit covers travel within {area} and is performed by a licensed RN — except companion shifts, which are staffed by supervised junior caregivers. Need something not on this list? Message us — we likely do it.",
-    "ctaHeading": "Not sure what you need?",
-    "ctaSubtitle": "Tell us about the patient and we'll recommend the right service. Pricing is shared once we understand your situation.",
-    "categories": [
-      {
-        "title": "Post-Operative Care",
-        "description": "Safe recovery at home after surgery. Our nurses follow your discharge instructions and coordinate with your surgeon when needed.",
-        "items": [
-          "Wound and dressing changes",
-          "Drain management",
-          "Staple or suture removal",
-          "Post-op vital signs assessment",
-          "Foley catheter insertion and removal"
-        ]
-      },
-      {
-        "title": "Elderly Daily Care",
-        "description": "Consistent support for elderly patients who need regular monitoring or assistance with daily medical tasks.",
-        "items": [
-          "Vital signs check (BP, HR, O₂, temperature)",
-          "Medication administration and reminders",
-          "Blood glucose monitoring",
-          "Personal hygiene assistance",
-          "Mobility support and fall prevention"
-        ]
-      },
-      {
-        "title": "Injections, Wound Care & IV",
-        "description": "Clinical procedures that usually require a hospital visit — performed at home by a licensed RN.",
-        "items": [
-          "Intramuscular and subcutaneous injections",
-          "IV line insertion (cannulation)",
-          "IV infusion sessions",
-          "Wound debridement and dressing",
-          "Urinary catheter care and replacement",
-          "NGT insertion and care"
-        ]
-      },
-      {
-        "title": "Companion & Junior Care",
-        "description": "Trained junior caregivers — fresh graduates supervised by our lead RN — for support that doesn't require a full clinical visit. Lower cost, real attention.",
-        "items": [
-          "Hospital sitter shifts (4-12 hr, day or overnight)",
-          "Companion presence so family can rest",
-          "Basic vital signs & intake/output charting",
-          "Pediatric monitoring at home (sick child, post-op child, parent hospitalized)",
-          "Mobility, meal & comfort assistance",
-          "Escalation to lead RN if patient deteriorates"
-        ]
-      },
-      {
-        "title": "Long-Term Home Patients",
-        "description": "For patients who need ongoing care at home, we provide a dedicated nurse and keep clinical notes (vital trends, wound healing, medication tracking) so the family always has a clear picture.",
-        "items": [
-          "Dedicated primary nurse",
-          "Care plan coordinated with the treating physician",
-          "Wound healing tracked with progress photos",
-          "Medication and vital signs logs",
-          "Regular updates shared with the family"
-        ]
-      }
-    ]
+    "meta": {
+      "title": "Services — Caregivers Collective",
+      "description": "Hospital-trained Lebanese nurses for IV, injections, wound care, recovery, and daily care — at home in Beirut and Mount Lebanon. Quote on WhatsApp."
+    },
+    "hero": {
+      "badge": "Services · Beirut & Mt. Lebanon",
+      "headline": "Care that comes",
+      "headlineEm": "to the door.",
+      "sub": "Five services for cases that need a licensed nurse, plus a sixth for cases that don't fit a category. Every visit is matched by clinical need, not by package.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
+    }
   },
   "packages": {
     "eyebrow": "How it's structured",
