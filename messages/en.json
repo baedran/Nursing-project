@@ -443,97 +443,78 @@
     }
   },
   "faq": {
-    "eyebrow": "Frequently asked",
-    "heading": "Questions families ask us",
-    "subtitle": "Direct answers to the questions families bring up most often. If your question isn't here, message us on WhatsApp — we'll add it.",
-    "ctaHeading": "Still have questions?",
-    "ctaSubtitle": "Message us — every answer goes straight to a nurse, not a call center.",
-    "sections": [
-      {
-        "title": "General",
-        "items": [
-          {
-            "q": "What areas do you cover?",
-            "a": "{area}, including Achrafieh, Hamra, Verdun, Ras Beirut, Mar Mikhael, Gemmayzeh, Badaro, Jdeideh, Antelias, Dbayeh, Jounieh, Baabda, Hazmieh, Mansourieh, and surrounding districts. If you're outside this list, message us anyway — we sometimes cover farther for long-term care."
-          },
-          {
-            "q": "How quickly can a nurse come to me?",
-            "a": "For non-urgent requests, the first visit usually happens within 24 hours of confirmation. For urgent same-day visits we'll do everything we can; same-day is not always guaranteed but is often possible."
-          },
-          {
-            "q": "Are you available on weekends and at night?",
-            "a": "Yes — we operate 7 days a week. WhatsApp messages between 7am and 11pm get a reply within 30 minutes. Overnight messages are answered by 7am. Visits can be scheduled any day, including overnight shifts for hospital sitters."
-          },
-          {
-            "q": "Do you cover medical emergencies?",
-            "a": "No. For emergencies (chest pain, severe bleeding, loss of consciousness, suspected stroke), call 140 (Lebanese Red Cross) or go to the nearest emergency room. We're a planned home-care service, not an emergency response."
-          }
-        ]
-      },
-      {
-        "title": "Booking and pricing",
-        "items": [
-          {
-            "q": "How do I book a visit?",
-            "a": "Message us on WhatsApp or fill in the contact form. We'll offer a free 15-minute phone consult to understand the patient and what's needed, then suggest the right service and confirm a time."
-          },
-          {
-            "q": "Why don't you publish prices on the site?",
-            "a": "Pricing depends on the type of visit, duration, location within our service area, and whether it's a one-off or ongoing care. We share clear pricing during the free consult — no hidden fees, no surprise charges later."
-          },
-          {
-            "q": "What payment methods do you accept?",
-            "a": "We accept cash and bank transfer. We're working on adding card payments. We confirm payment terms during the consult so there are no surprises."
-          },
-          {
-            "q": "Can I cancel or reschedule a visit?",
-            "a": "Yes. Reschedules with at least 4 hours' notice are free. Last-minute cancellations may carry a small fee since we've already committed the nurse's time. Long-term care plans have their own cancellation terms shared at signup."
-          }
-        ]
-      },
-      {
-        "title": "Nurses and care",
-        "items": [
-          {
-            "q": "Are your nurses licensed?",
-            "a": "Every RN's active license is verified directly with the Lebanon Order of Nurses before their first case. Our junior caregivers are recent BSN or LPN graduates from accredited Lebanese programs, working under supervision and limited to non-clinical tasks."
-          },
-          {
-            "q": "Can the same nurse come every visit?",
-            "a": "On long-term care plans, yes — you get a dedicated primary nurse who knows your patient. For one-off visits we'll usually try to send the same person if you book again, but it's not guaranteed."
-          },
-          {
-            "q": "What's the difference between an RN visit and a junior caregiver shift?",
-            "a": "An RN handles clinical work — wound care, IV, injections, post-op assessment, catheter care, medication administration. A junior caregiver handles non-clinical support — sitting with a patient at the hospital or at home, taking basic vitals, helping with meals and comfort, and escalating concerns to our lead RN. Junior shifts cost less and cover longer hours."
-          },
-          {
-            "q": "Do you offer hospital sitters?",
-            "a": "Yes. A hospital sitter (junior caregiver) sits with your patient at the hospital — overnight or during the day — so the family can rest. They monitor the patient, help with meals and mobility, and call hospital staff or our lead RN if anything changes."
-          },
-          {
-            "q": "Will I get notes after each visit?",
-            "a": "Yes. After every visit you receive a written summary: vitals taken, what was done, anything the nurse noticed, and any recommendations. For long-term patients we keep a running clinical record you can request anytime."
-          }
-        ]
-      },
-      {
-        "title": "Privacy and safety",
-        "items": [
-          {
-            "q": "How do you protect patient information?",
-            "a": "Patient information is treated as confidential medical data. We don't log it in third-party tools. Only the assigned nurse, the supervising RN, and the family see the records. We never share data with marketers, insurers without consent, or anyone outside the care team."
-          },
-          {
-            "q": "Are wound photos shared anywhere?",
-            "a": "Wound photos are taken only with written consent and stored privately. They're used to track healing and shared only with the family and the treating physician. You can withdraw consent at any time and we'll delete the photos."
-          },
-          {
-            "q": "What if I'm not home — can the nurse still come?",
-            "a": "Only with explicit prior arrangement. We don't enter a patient's home without a responsible adult present unless you've authorized it in advance and the patient is competent to receive care alone. Safety of patient and nurse comes first."
-          }
-        ]
-      }
-    ]
+    "meta": {
+      "title": "Common questions — Caregivers Collective",
+      "description": "Answers to the most common questions about home nursing care in Beirut & Mt. Lebanon — pricing, payment from abroad, nurse vetting, family portal, and more."
+    },
+    "hero": {
+      "badge": "Common questions",
+      "headline": "Questions, before we",
+      "headlineEm": "talk.",
+      "sub": "What people ask first. If your question isn't here, the coordinator will answer it on WhatsApp the same day.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
+    },
+    "list": {
+      "eyebrow": "Frequently asked",
+      "headline": "Everything we get",
+      "headlineEm": "asked.",
+      "lede": "Twelve answers covering pricing, process, payment from abroad, nurse vetting, and what's not offered yet.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Why don't you publish prices?",
+          "answer": "High-touch service. Every case has a different shape. We quote on WhatsApp after a short conversation."
+        },
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Can I read the visit summary in Arabic?",
+          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+        },
+        {
+          "question": "What if it's 3am where I am?",
+          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+        },
+        {
+          "question": "How are the nurses vetted?",
+          "answer": "Lebanese Order of Nurses licensed, currently employed at AUBMC, Hôtel-Dieu, or St Georges. Off-day shifts only. Background-checked."
+        },
+        {
+          "question": "Can I keep the same nurse week to week?",
+          "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        },
+        {
+          "question": "Can my sibling abroad also access the portal?",
+          "answer": "Yes. You can share the portal link with anyone in the family — same login, same summary visibility. No additional fee."
+        },
+        {
+          "question": "What if my district isn't in your list?",
+          "answer": "Message the coordinator anyway. Most off-map cases find a fit — we can usually match a nurse who lives or works nearby."
+        },
+        {
+          "question": "Do you offer emergency visits at 3am Beirut time?",
+          "answer": "Same-day response is our standard. Overnight emergency response depends on nurse availability for that night — message the coordinator and we'll tell you immediately."
+        },
+        {
+          "question": "What's not offered yet?",
+          "answer": "Live-in care, NG tube, ICU/tracheostomy specialty, Holter monitoring, oxygen rental. Coming later."
+        },
+        {
+          "question": "Can the coordinator speak with my parent's doctor?",
+          "answer": "Yes, when authorised. With consent, the coordinator can hand off vitals or visit summaries to the treating physician's office."
+        }
+      ]
+    }
   },
   "forNurses": {
     "pill": "We're hiring",
