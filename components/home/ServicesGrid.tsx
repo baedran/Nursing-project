@@ -67,10 +67,7 @@ export default function ServicesGrid({ dict }: Props) {
         </div>
 
         {/* Grid */}
-        <div
-          className="grid gap-4"
-          style={{ gridTemplateColumns: "1.4fr 1fr 1fr", gridTemplateRows: "auto auto" }}
-        >
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:[grid-template-columns:1.4fr_1fr_1fr] lg:[grid-template-rows:auto_auto]">
           <ServiceCard {...featured} more={dict.discussLabel} variant="featured" />
           {rest.map((item) => (
             <ServiceCard key={item.label} {...item} more={dict.moreLabel} />

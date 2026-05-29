@@ -26,10 +26,10 @@ export default function ServiceCard({
         isDark
           ? "border-ink bg-ink text-paper hover:shadow-2xl"
           : "border-rule-warm bg-white text-ink hover:border-ink hover:shadow-2xl"
-      } ${isFeatured ? "row-span-2" : ""}`}
+      } ${isFeatured ? "lg:row-span-2" : ""}`}
     >
       <div
-        className={`relative ${isFeatured ? "aspect-[4/5]" : "aspect-[4/3]"} overflow-hidden`}
+        className={`relative ${isFeatured ? "aspect-[4/3] lg:aspect-[4/5]" : "aspect-[4/3]"} overflow-hidden`}
         style={{
           backgroundImage: `url(${photoUrl})`,
           backgroundSize: "cover",
