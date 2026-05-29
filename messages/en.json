@@ -265,6 +265,52 @@
       "ghostCta": "How a visit works"
     }
   },
+  "diaspora": {
+    "meta": {
+      "title": "For families abroad — Caregivers Collective",
+      "description": "Care for your parents in Beirut, coordinated from anywhere. Payment from abroad, written visit summaries in three timezones, bilingual coordinator."
+    },
+    "hero": {
+      "badge": "For families abroad",
+      "headline": "Your parents are in Beirut.",
+      "headlineEm": "You're not.",
+      "sub": "Pay from Paris. Read the visit summary in Dubai. Approve the next visit from London. We built this for the family that lives somewhere else.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
+    },
+    "faq": {
+      "eyebrow": "Common diaspora questions",
+      "headline": "Questions families abroad",
+      "headlineEm": "ask first.",
+      "lede": "If your question isn't here, the coordinator will answer it on WhatsApp the same day — in your timezone.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Can I read the visit summary in Arabic?",
+          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+        },
+        {
+          "question": "What if it's 3am where I am?",
+          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+        },
+        {
+          "question": "Can my sibling abroad also access the portal?",
+          "answer": "Yes. You can share the portal link with anyone in the family — same login, same summary visibility. No additional fee."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        }
+      ]
+    }
+  },
   "packages": {
     "eyebrow": "How it's structured",
     "heading": "Packages we offer",
