@@ -12,7 +12,7 @@ export const site = {
 
   // Public website URL — used for SEO metadata, sitemap, Open Graph, structured data.
   // Update this once the real domain is registered.
-  url: "https://example.com",
+  url: "https://nursing-project-olive.vercel.app",
 
   // Languages
   defaultLocale: "en" as const,
