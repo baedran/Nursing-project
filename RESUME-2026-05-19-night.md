@@ -43,7 +43,7 @@ Pick one when I'm ready:
 - **Show me everything in the browser** — when there's a decision, build a visual page, push it to my browser, ask me to pick. Use `Invoke-Item` on local HTML files. Don't make me read walls of text.
 - **Auto-approve routine commands** — `Invoke-Item`, file reads, status checks. Don't keep asking permission for things I've already cleared.
 - **Tight responses** — short attention span. 2-3 sentences per update is usually right. Long content goes to browser pages.
-- **For visual / authenticated pages I need verified**: at the start of the session, install a Chrome MCP (`playwright-mcp` or `chrome-devtools-mcp`) so you can actually see what I see instead of asking me to describe it. Last session you didn't have one and we lost time on that.
+- **For visual / authenticated pages I need verified**: Playwright MCP is already enabled in `.claude/settings.json` (`playwright@claude-plugins-official`). Use the `browser_navigate` / `browser_snapshot` / `browser_take_screenshot` / `browser_click` tools to actually see what I see instead of asking me to describe screens.
 - **Don't reset the design** — every visual decision is locked. Don't regenerate alternatives unless I ask.
 
 ## Brand recap (in case you skip the spec)
