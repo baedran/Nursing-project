@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 export async function GET(request: NextRequest) {
   const { searchParams, pathname } = new URL(request.url);
   const token_hash = searchParams.get("token_hash");
+  const code = searchParams.get("code");
   const type = searchParams.get("type") as
     | "signup"
     | "magiclink"
@@ -19,12 +20,23 @@ export async function GET(request: NextRequest) {
   const localeMatch = pathname.match(/^\/(en|ar)\//);
   const locale = localeMatch ? localeMatch[1] : "en";
 
+  const supabase = await createClient();
+
+  // PKCE flow: ?code=...
+  if (code) {
+    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    if (!error) {
+      redirect(`/${locale}${next}`);
+    }
+    redirect(
+      `/${locale}/login?error=${encodeURIComponent(error.message)}`
+    );
+  }
+
+  // OTP flow: ?token_hash=...&type=...
   if (token_hash && type) {
-    const supabase = await createClient();
     const { error } = await supabase.auth.verifyOtp({ type, token_hash });
     if (!error) {
-      // Use redirect() from next/navigation so cookies set by verifyOtp
-      // propagate properly. NextResponse.redirect() loses them.
       redirect(`/${locale}${next}`);
     }
     redirect(
