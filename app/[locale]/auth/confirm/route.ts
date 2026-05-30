@@ -1,8 +1,9 @@
-import { type NextRequest, NextResponse } from "next/server";
+import { type NextRequest } from "next/server";
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
 export async function GET(request: NextRequest) {
-  const { searchParams, origin, pathname } = new URL(request.url);
+  const { searchParams, pathname } = new URL(request.url);
   const token_hash = searchParams.get("token_hash");
   const type = searchParams.get("type") as
     | "signup"
@@ -22,14 +23,16 @@ export async function GET(request: NextRequest) {
     const supabase = await createClient();
     const { error } = await supabase.auth.verifyOtp({ type, token_hash });
     if (!error) {
-      return NextResponse.redirect(`${origin}/${locale}${next}`);
+      // Use redirect() from next/navigation so cookies set by verifyOtp
+      // propagate properly. NextResponse.redirect() loses them.
+      redirect(`/${locale}${next}`);
     }
-    return NextResponse.redirect(
-      `${origin}/${locale}/login?error=${encodeURIComponent(error.message)}`
+    redirect(
+      `/${locale}/login?error=${encodeURIComponent(error.message)}`
     );
   }
 
-  return NextResponse.redirect(
-    `${origin}/${locale}/login?error=${encodeURIComponent("Invalid or expired link.")}`
+  redirect(
+    `/${locale}/login?error=${encodeURIComponent("Invalid or expired link.")}`
   );
 }
