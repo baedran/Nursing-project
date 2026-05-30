@@ -22,31 +22,35 @@
     "services": "Services",
     "packages": "Packages",
     "howWeWork": "How We Work",
+    "howItWorks": "How it works",
+    "diaspora": "For families abroad",
     "faq": "FAQ",
     "forNurses": "For Nurses",
     "contact": "Contact",
     "requestNurse": "Request a Nurse",
-    "toggleMenu": "Toggle menu"
+    "toggleMenu": "Toggle menu",
+    "menuOpenLabel": "Open menu",
+    "menuCloseLabel": "Close menu",
+    "whatsappLabel": "WhatsApp coordinator"
   },
   "footer": {
     "blurb": "Licensed home nursing care in {area}. Founded and clinically supervised by a Lebanese BSN.",
     "quickLinks": "Quick Links",
     "contactHeading": "Contact",
     "available": "Available 7 days a week",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved",
+    "careHeader": "Care",
+    "familiesHeader": "Families",
+    "contactHeader": "Contact"
   },
   "home": {
     "hero": {
-      "pill": "Now serving {area}",
-      "headlineLead": "Professional nursing care,",
-      "headlineHighlight": "delivered to your home.",
-      "subtitle": "Licensed RNs for post-operative recovery, elderly daily care, wound care, injections, and IV therapy — in {area}.",
-      "ctaWhatsapp": "Message us on WhatsApp",
-      "ctaContact": "Send a Message",
-      "trustLicensed": "Licensed RNs",
-      "trustResponse": "Same-day response",
-      "trustArea": "{area}",
-      "trustWeek": "7 days a week"
+      "badge": "Live · Beirut & Mt. Lebanon",
+      "headline": "Hospital-trained nurses, sent",
+      "headlineEm": "to the house.",
+      "sub": "Lebanese RNs and PNs working their hospital off-days. Coordinated by WhatsApp. A written summary in the family portal after every visit.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
     },
     "categories": {
       "eyebrow": "What we offer",
@@ -95,414 +99,648 @@
       }
     },
     "howItWorks": {
-      "eyebrow": "How it works",
-      "heading": "From a message to care, in three steps",
-      "subtitle": "No phone tag, no paperwork stack. Just a conversation, a match, and a nurse at your door.",
-      "step1Title": "Tell us what you need",
-      "step1Description": "Send us a WhatsApp or fill in the contact form. Patient's situation, what kind of help, when. We reply within 30 minutes between 7am and 11pm.",
-      "step2Title": "We match a licensed nurse",
-      "step2Description": "We match a vetted RN — or junior caregiver, if companion-level care fits — based on the patient's needs, location, and schedule.",
-      "step3Title": "Care arrives at your door",
-      "step3Description": "The nurse comes to you, performs the visit, and sends a written summary afterward — vitals, what was done, anything we noticed."
-    },
-    "whyChooseUs": {
-      "eyebrow": "Our promises",
-      "heading": "Four things we commit to",
-      "subtitle": "Founded and clinically supervised by a Lebanese BSN. Each commitment here is something we keep — not marketing language.",
-      "pillar1Title": "Verified with the Order of Nurses",
-      "pillar1Description": "Every RN's active license is verified with the Lebanon Order of Nurses before their first visit. Junior caregivers must be recent graduates from accredited Lebanese programs.",
-      "pillar2Title": "Reply within 30 minutes, 7am–11pm",
-      "pillar2Description": "Send a WhatsApp message and you'll hear back within 30 minutes, every day from 7am to 11pm. Messages sent overnight get a reply by 7am.",
-      "pillar3Title": "Same nurse every visit",
-      "pillar3Description": "On long-term care plans, you get a dedicated primary nurse who knows your patient — not a different person each visit. No re-explaining the situation.",
-      "pillar4Title": "Clinical notes after every visit",
-      "pillar4Description": "After each visit you receive a written summary: vitals, what was done, anything the nurse noticed. No surprises, no information gaps."
+      "eyebrow": "How a visit works",
+      "headline": "Three moments.",
+      "headlineEm": "Same hand.",
+      "lede": "A coordinator replies on WhatsApp, a nurse visits, a written summary lands in the family portal the same day. No phone tag.",
+      "steps": [
+        {
+          "num": "01",
+          "headline": "Message us — in your own words.",
+          "body": "WhatsApp is the front door. A few lines is enough. EN · AR · FR. A coordinator replies the same day with what the visit needs.",
+          "photoUrl": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "WhatsApp · coordinator typing"
+        },
+        {
+          "num": "02",
+          "headline": "A licensed nurse arrives — matched to the case.",
+          "body": "RN or PN, depending on the procedure. Same-nurse continuity when the case is ongoing.",
+          "photoUrl": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Nurse · arrival · doorway"
+        },
+        {
+          "num": "03",
+          "headline": "A written summary, the same day.",
+          "body": "Vitals, what was done, what to watch for, next visit. In the family portal — visible to whoever you share it with.",
+          "photoUrl": "https://images.unsplash.com/photo-1568633524775-08c4d7c63aff?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Visit notes · kitchen table"
+        }
+      ]
     },
     "serviceArea": {
-      "eyebrow": "Where we go",
-      "heading": "Covering {area}",
-      "subtitle": "Travel within these districts is included in every visit. Outside this list? Message us — we may still cover you, especially for long-term care.",
-      "beirut": "Beirut",
-      "mountLebanon": "Mount Lebanon"
+      "eyebrow": "Where we visit",
+      "headline": "Beirut",
+      "headlineEm": "& Mt. Lebanon.",
+      "lede": "Districts where the coordinator currently has nurses available. If your district isn't listed, message us anyway — most off-map cases find a fit.",
+      "activeLabel": "Active",
+      "offMapHeadline": "Off-map district?",
+      "offMapBody": "Message the coordinator anyway — most off-map cases find a fit.",
+      "offMapCta": "Message coordinator"
     },
     "ctaBanner": {
       "heading": "Ready to talk to a nurse?",
       "subtitle": "Message us with the patient's situation. Free 15-minute phone consult — no obligation, no hard sell.",
       "ctaWhatsapp": "Message us on WhatsApp",
       "ctaContact": "Send a Message"
+    },
+    "finalCta": {
+      "eyebrow": "When you're ready",
+      "headline": "The first message is",
+      "headlineEm": "always free.",
+      "primaryCta": "WhatsApp the coordinator",
+      "callCta": "Call"
+    },
+    "trustBar": {
+      "serviceArea": "Beirut & Mount Lebanon",
+      "hospitalsLabel": "Hospital-trained",
+      "licenseLabel": "Lebanese Order of Nurses",
+      "summaryLabel": "Written summary every visit"
+    },
+    "diaspora": {
+      "eyebrow": "For families abroad",
+      "headline": "Your parents are in Beirut.",
+      "headlineEm": "You're not.",
+      "lede": "Pay from Paris. Read the visit summary in Dubai. Approve the next visit from London. The portal works in three timezones at once.",
+      "railsLabel": "Payment from abroad"
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "headline": "Care that comes",
+      "headlineEm": "to the door.",
+      "lede": "Five services, plus a sixth for cases that don't fit a category. Every visit is matched by clinical need, not by package. No prices on the public site — quote on WhatsApp.",
+      "moreLabel": "Discuss",
+      "discussLabel": "Discuss your case",
+      "items": [
+        {
+          "label": "01 · Clinical visits",
+          "headline": "Injections, IV insertion, hydration, wound care.",
+          "body": "IM/SubQ injection, IV start and medication administration, Foley insertion, complex dressing changes.",
+          "photoUrl": "https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Nurse · IV setup · bedside"
+        },
+        {
+          "label": "02 · Recovery at home",
+          "headline": "Post-surgical care after discharge.",
+          "body": "Wound, drain, mobility, hand-off coordination with the operating team.",
+          "photoUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Nurse · BP cuff"
+        },
+        {
+          "label": "03 · Daily care",
+          "headline": "Daily care for an elder parent.",
+          "body": "Bath, meds, vitals, companionship — 8 / 12 / 24-hour blocks.",
+          "photoUrl": "https://images.unsplash.com/photo-1658314755707-1fbdf7c40145?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Bath chair · morning light"
+        },
+        {
+          "label": "04 · Bloodwork at home",
+          "headline": "Routine, fasting, same-day samples.",
+          "body": "Collected at home and walked to the lab.",
+          "photoUrl": "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Blood draw · kitchen table"
+        }
+      ],
+      "catchAll": {
+        "label": "— Outside this list?",
+        "headline": "Not every case fits a category.",
+        "body": "Message the coordinator. Most off-list cases find a fit.",
+        "photoUrl": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?w=1200&q=80&auto=format&fit=crop",
+        "photoCaption": "Coordinator desk · phone"
+      }
+    },
+    "faq": {
+      "eyebrow": "Common questions",
+      "headline": "Questions, before we",
+      "headlineEm": "talk.",
+      "lede": "If your question isn't here, the coordinator will answer it on WhatsApp the same day.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Why don't you publish prices?",
+          "answer": "High-touch service. Every case has a different shape. We quote on WhatsApp after a short conversation."
+        },
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Can I read the visit summary in Arabic?",
+          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+        },
+        {
+          "question": "What if it's 3am where I am?",
+          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+        },
+        {
+          "question": "How are the nurses vetted?",
+          "answer": "Lebanese Order of Nurses licensed, currently employed at AUBMC, Hôtel-Dieu, or St Georges. Off-day shifts only. Background-checked."
+        },
+        {
+          "question": "Can I keep the same nurse week to week?",
+          "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        },
+        {
+          "question": "What's not offered yet?",
+          "answer": "Live-in care, NG tube, ICU/tracheostomy specialty, Holter monitoring, oxygen rental. Coming later."
+        }
+      ]
     }
   },
   "services": {
-    "eyebrow": "Our services",
-    "heading": "What we offer",
-    "subtitle": "Every visit covers travel within {area} and is performed by a licensed RN — except companion shifts, which are staffed by supervised junior caregivers. Need something not on this list? Message us — we likely do it.",
-    "ctaHeading": "Not sure what you need?",
-    "ctaSubtitle": "Tell us about the patient and we'll recommend the right service. Pricing is shared once we understand your situation.",
-    "categories": [
-      {
-        "title": "Post-Operative Care",
-        "description": "Safe recovery at home after surgery. Our nurses follow your discharge instructions and coordinate with your surgeon when needed.",
-        "items": [
-          "Wound and dressing changes",
-          "Drain management",
-          "Staple or suture removal",
-          "Post-op vital signs assessment",
-          "Foley catheter insertion and removal"
-        ]
+    "meta": {
+      "title": "Services — Caregivers Collective",
+      "description": "Hospital-trained Lebanese nurses for IV, injections, wound care, recovery, and daily care — at home in Beirut and Mount Lebanon. Quote on WhatsApp."
+    },
+    "hero": {
+      "badge": "Services · Beirut & Mt. Lebanon",
+      "headline": "Care that comes",
+      "headlineEm": "to the door.",
+      "sub": "Five services for cases that need a licensed nurse, plus a sixth for cases that don't fit a category. Every visit is matched by clinical need, not by package.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
+    },
+    "wizard": {
+      "eyebrow": "Not sure which service fits?",
+      "headline": "Three questions, then",
+      "headlineEm": "the right ask.",
+      "lede": "Tell us a little about the situation, and the wizard composes the right WhatsApp message for the coordinator.",
+      "progressLabel": "Question {n} of {total}",
+      "backLabel": "Back",
+      "summaryLabel": "Your message",
+      "summaryHeading": "Send this to the coordinator?",
+      "summaryBodyTemplate": "Hi — I'd like to discuss {situation} for {recipient}, starting {timing}. Beirut/Mt. Lebanon.",
+      "primaryCta": "Send on WhatsApp",
+      "restartLabel": "Start over",
+      "skipLabel": "Or message coordinator without the wizard",
+
+      "q1Label": "What's the situation?",
+      "q1Options": [
+        { "key": "recovery", "label": "Just discharged from hospital" },
+        { "key": "daily", "label": "Daily care for an elder parent" },
+        { "key": "procedure", "label": "A specific procedure (IV, injection, wound care)" },
+        { "key": "bloodwork", "label": "Bloodwork at home" },
+        { "key": "companion", "label": "Overnight or companion shifts" }
+      ],
+      "q1Sentence": {
+        "recovery": "post-discharge recovery care",
+        "daily": "daily care for an elder parent",
+        "procedure": "a specific clinical procedure (IV / injection / wound care)",
+        "bloodwork": "bloodwork at home",
+        "companion": "overnight or companion shifts"
       },
-      {
-        "title": "Elderly Daily Care",
-        "description": "Consistent support for elderly patients who need regular monitoring or assistance with daily medical tasks.",
-        "items": [
-          "Vital signs check (BP, HR, O₂, temperature)",
-          "Medication administration and reminders",
-          "Blood glucose monitoring",
-          "Personal hygiene assistance",
-          "Mobility support and fall prevention"
-        ]
+
+      "q2Label": "Who is the care for?",
+      "q2Options": [
+        { "key": "parent", "label": "A parent" },
+        { "key": "spouse", "label": "Spouse or partner" },
+        { "key": "self", "label": "Myself" },
+        { "key": "other", "label": "Another family member" }
+      ],
+      "q2Sentence": {
+        "parent": "my parent",
+        "spouse": "my spouse",
+        "self": "myself",
+        "other": "another family member"
       },
-      {
-        "title": "Injections, Wound Care & IV",
-        "description": "Clinical procedures that usually require a hospital visit — performed at home by a licensed RN.",
-        "items": [
-          "Intramuscular and subcutaneous injections",
-          "IV line insertion (cannulation)",
-          "IV infusion sessions",
-          "Wound debridement and dressing",
-          "Urinary catheter care and replacement",
-          "NGT insertion and care"
-        ]
-      },
-      {
-        "title": "Companion & Junior Care",
-        "description": "Trained junior caregivers — fresh graduates supervised by our lead RN — for support that doesn't require a full clinical visit. Lower cost, real attention.",
-        "items": [
-          "Hospital sitter shifts (4-12 hr, day or overnight)",
-          "Companion presence so family can rest",
-          "Basic vital signs & intake/output charting",
-          "Pediatric monitoring at home (sick child, post-op child, parent hospitalized)",
-          "Mobility, meal & comfort assistance",
-          "Escalation to lead RN if patient deteriorates"
-        ]
-      },
-      {
-        "title": "Long-Term Home Patients",
-        "description": "For patients who need ongoing care at home, we provide a dedicated nurse and keep clinical notes (vital trends, wound healing, medication tracking) so the family always has a clear picture.",
-        "items": [
-          "Dedicated primary nurse",
-          "Care plan coordinated with the treating physician",
-          "Wound healing tracked with progress photos",
-          "Medication and vital signs logs",
-          "Regular updates shared with the family"
-        ]
+
+      "q3Label": "When do you want to start?",
+      "q3Options": [
+        { "key": "urgent", "label": "Today or tomorrow" },
+        { "key": "thisWeek", "label": "This week" },
+        { "key": "withinMonth", "label": "Within the month" },
+        { "key": "planning", "label": "Planning ahead" }
+      ],
+      "q3Sentence": {
+        "urgent": "today or tomorrow",
+        "thisWeek": "this week",
+        "withinMonth": "within the month",
+        "planning": "in the next few months"
       }
-    ]
+    }
+  },
+  "diaspora": {
+    "meta": {
+      "title": "For families abroad — Caregivers Collective",
+      "description": "Care for your parents in Beirut, coordinated from anywhere. Payment from abroad, written visit summaries in three timezones, bilingual coordinator."
+    },
+    "hero": {
+      "badge": "For families abroad",
+      "headline": "Your parents are in Beirut.",
+      "headlineEm": "You're not.",
+      "sub": "Pay from Paris. Read the visit summary in Dubai. Approve the next visit from London. We built this for the family that lives somewhere else.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
+    },
+    "faq": {
+      "eyebrow": "Common diaspora questions",
+      "headline": "Questions families abroad",
+      "headlineEm": "ask first.",
+      "lede": "If your question isn't here, the coordinator will answer it on WhatsApp the same day — in your timezone.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Can I read the visit summary in Arabic?",
+          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+        },
+        {
+          "question": "What if it's 3am where I am?",
+          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+        },
+        {
+          "question": "Can my sibling abroad also access the portal?",
+          "answer": "Yes. You can share the portal link with anyone in the family — same login, same summary visibility. No additional fee."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        }
+      ]
+    }
   },
   "packages": {
-    "eyebrow": "How it's structured",
-    "heading": "Packages we offer",
-    "subtitle": "Pick the structure that fits the patient. Pricing is shared on a free 15-minute phone consult — once we understand the situation, we can quote accurately.",
-    "ctaHeading": "Not sure which package fits?",
-    "ctaSubtitle": "Tell us about the patient — current condition, what kind of help is needed, how often. We'll suggest the right package and share pricing in a free 15-minute phone consult.",
-    "featuredBadge": "Most clinical depth",
-    "single": {
-      "badge": "Single Visit",
-      "title": "One-off care, when you need it",
-      "description": "A single visit for a specific need — no commitment, no plan. Best for one-time procedures or short-term care.",
-      "bestFor": [
-        "Injections (IM / SC)",
-        "Wound dressing change",
-        "Post-op check",
-        "Suture or staple removal",
-        "Foley catheter insertion or removal"
-      ],
-      "includes": [
-        "Licensed RN visit (typically 30–60 min)",
-        "All travel within our service area",
-        "Required disposables and dressing supplies",
-        "Written visit summary sent to family"
-      ],
-      "ctaMessage": "Hi, I'd like to book a single visit."
+    "meta": {
+      "title": "Packages — Caregivers Collective",
+      "description": "Three ways to be billed for home nursing in Beirut & Mt. Lebanon — single visit, shift block, or monthly wellness subscription. Quote on WhatsApp."
     },
-    "weekly": {
-      "badge": "Weekly Care Plan",
-      "title": "Recurring scheduled visits",
-      "description": "Predictable scheduled visits over weeks or months. Best for elderly daily care, ongoing wound care, or IV courses.",
-      "bestFor": [
-        "Daily elderly monitoring (vitals, glucose, meds)",
-        "Multi-week IV antibiotic course",
-        "Ongoing wound care during healing",
-        "Post-stroke rehab support at home"
-      ],
-      "includes": [
-        "Same nurse across visits where possible",
-        "Visit calendar shared with the family",
-        "Vital signs and medication log kept between visits",
-        "Direct line to a supervising RN between visits",
-        "Written summaries after every visit"
-      ],
-      "ctaMessage": "Hi, I'd like to set up a weekly care plan."
+    "hero": {
+      "badge": "Packages · billing shapes",
+      "headline": "Three shapes",
+      "headlineEm": "of care.",
+      "sub": "Single visit, shift block, or monthly subscription. We pick the shape that fits the case — not the other way around. No prices on the public site; every quote is custom.",
+      "primaryCta": "Get a quote on WhatsApp",
+      "ghostCta": "How a visit works"
     },
-    "longTerm": {
-      "badge": "Long-Term Primary Nurse",
-      "title": "Dedicated nurse, full clinical record",
-      "description": "For families managing a patient who needs ongoing daily care — your nurse becomes part of the family's care team.",
-      "bestFor": [
-        "Patients with chronic conditions (Parkinson's, dementia, post-stroke)",
-        "Long-term wound healing",
-        "Complex medication regimens",
-        "Families who want continuity and detailed records"
-      ],
-      "includes": [
-        "Dedicated primary nurse who knows your patient",
-        "Care plan coordinated with the treating physician",
-        "Wound healing tracked with progress photos (with consent)",
-        "Medication and vital signs log shared with the family",
-        "Regular family updates by WhatsApp",
-        "Family Portal access (coming soon)"
-      ],
-      "ctaMessage": "Hi, I'd like to discuss long-term primary nurse care."
+    "modes": {
+      "eyebrow": "Three billing shapes",
+      "headline": "The visit, the shift,",
+      "headlineEm": "or the rhythm.",
+      "lede": "Each shape has a different cadence. Same nurses, same documentation, same coordinator — only the way it's billed changes. Quotes happen on WhatsApp.",
+      "items": [
+        {
+          "number": "Mode 01",
+          "label": "The visit",
+          "headline": "Per-visit, one thing at a time.",
+          "body": "Best when the case is procedural and bounded — a single injection, a wound dressing change, an IV start. We come, do the work, send the summary.",
+          "bullets": [
+            "IM/SubQ injection, IV insertion, Foley, complex dressings",
+            "Single nurse, one written summary per visit",
+            "Quote based on procedure, time, and supplies"
+          ],
+          "ctaLabel": "Discuss the visit shape",
+          "ctaMessage": "Hi — I'd like to discuss a per-visit care quote."
+        },
+        {
+          "number": "Mode 02",
+          "label": "The shift",
+          "headline": "8, 12, or 24-hour blocks.",
+          "body": "Most common shape. For recovery from surgery, ongoing daily care, or overnight presence. The same nurse covers a continuous shift — RN or PN matched to the case.",
+          "bullets": [
+            "8 / 12 / 24-hour shift blocks",
+            "Same-nurse continuity by default",
+            "RN or PN — matched to the clinical need",
+            "Written summary at end of each shift"
+          ],
+          "ctaLabel": "Discuss the shift shape",
+          "ctaMessage": "Hi — I'd like to discuss shift-based care for a family member."
+        },
+        {
+          "number": "Mode 03",
+          "label": "The wellness rhythm",
+          "headline": "Monthly check-ins for an elder parent.",
+          "body": "A subscription cadence — four check-in visits per month, family portal access, escalation path when something changes. For families abroad who want a steady presence in the home.",
+          "bullets": [
+            "Four visits per month, same coordinator",
+            "Family portal with monthly summary",
+            "Priority WhatsApp response from the coordinator",
+            "Designed for diaspora-managed long-term care"
+          ],
+          "ctaLabel": "Discuss the monthly shape",
+          "ctaMessage": "Hi — I'd like to discuss the monthly wellness subscription."
+        }
+      ]
     },
-    "companion": {
-      "badge": "Companion / Sitter Shift",
-      "title": "Trained company, lower cost",
-      "description": "A junior caregiver — recent BSN/LPN graduate, supervised by our lead RN — for non-clinical support over longer hours. Lower cost than an RN visit.",
-      "bestFor": [
-        "Hospital sitter (overnight or daytime)",
-        "Sick child while a parent is hospitalized",
-        "Post-op child needing scheduled medication",
-        "Companionship for an isolated elderly patient"
-      ],
-      "includes": [
-        "Trained junior caregiver, scope-limited to non-clinical tasks",
-        "Basic vital signs and intake/output charting",
-        "Supervised by our lead RN — on call by phone during the shift",
-        "Mobility, meal, and comfort assistance",
-        "Escalation pathway if patient deteriorates"
-      ],
-      "ctaMessage": "Hi, I'd like to book a companion / sitter shift."
+    "faq": {
+      "eyebrow": "About pricing",
+      "headline": "Pricing questions",
+      "headlineEm": "we get most.",
+      "lede": "Five honest answers before you ask the coordinator.",
+      "helperHeadline": "Ready to quote?",
+      "helperBody": "Message the coordinator with what you need — most quotes come back the same day.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Why don't you publish prices?",
+          "answer": "High-touch service. Every case has a different shape — procedure, duration, nurse level, supplies, distance. We quote on WhatsApp after a short conversation."
+        },
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Are supplies (drugs, IV bags, dressings) included?",
+          "answer": "Standard supplies for the visit are included in most quotes. Specialty drugs or large dressings are quoted separately — the coordinator will be explicit."
+        },
+        {
+          "question": "Do I commit to a shape upfront?",
+          "answer": "No. Many families start with a single visit, then move to shifts or a monthly cadence once the case stabilises. The coordinator helps you decide."
+        },
+        {
+          "question": "Can I switch between shapes mid-month?",
+          "answer": "Yes. Pricing adjusts the day the shape changes — no penalty. The coordinator confirms the new cadence in writing on WhatsApp."
+        }
+      ]
     }
   },
   "howWeWork": {
-    "eyebrow": "Our process",
-    "heading": "How we work",
-    "subtitle": "Trust in healthcare comes from process, not promises. Here is exactly how we vet our nurses, handle your request, and keep you informed at every step.",
-    "ctaHeading": "Have a question about our process?",
-    "ctaSubtitle": "Message us on WhatsApp or send a note. We'll answer honestly — even questions we don't love.",
-    "steps": [
-      {
-        "n": "01",
-        "title": "How we vet our RNs",
-        "body": [
-          "Active license verified directly with the Lebanon Order of Nurses before the nurse takes any case.",
-          "Minimum one year of clinical experience in a hospital, clinic, or established home-care setting.",
-          "Reference call with a previous supervisor or instructor.",
-          "In-person interview covering clinical scenarios — wound care, medication errors, escalation decisions."
-        ]
-      },
-      {
-        "n": "02",
-        "title": "How we vet junior caregivers",
-        "body": [
-          "Recent BSN or LPN graduate from an accredited Lebanese program (AUB, LAU, USJ, or equivalent).",
-          "Scope strictly limited to non-clinical work: companion shifts, monitoring, basic vitals, comfort care.",
-          "Every junior caregiver works under the supervision of our lead RN, who is on-call by phone during their shifts.",
-          "Same in-person interview process as RNs, focused on observation and escalation."
-        ]
-      },
-      {
-        "n": "03",
-        "title": "What happens when you contact us",
-        "body": [
-          "You message on WhatsApp — we reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am.",
-          "We offer a free 15-minute phone consult to understand the patient and what's needed.",
-          "Once we've agreed on the right service, we match a nurse and confirm the first visit time.",
-          "For most non-urgent requests, the first visit happens within 24 hours."
-        ]
-      },
-      {
-        "n": "04",
-        "title": "Quality and safety",
-        "body": [
-          "Every visit follows a documented clinical protocol — no improvising on procedures.",
-          "Each visit ends with a written summary sent to the family: vitals, what was done, anything we noticed.",
-          "If the nurse identifies a concern outside our scope, we escalate to the treating physician immediately.",
-          "Wound photos are taken with consent, stored privately, and never shared outside the care team."
-        ]
-      },
-      {
-        "n": "05",
-        "title": "Privacy and dignity",
-        "body": [
-          "Patient information is treated as confidential medical data. We do not log it in third-party tools.",
-          "Photos require written consent — and you can withdraw consent at any time.",
-          "Our nurses dress professionally, knock before entering rooms, and respect the home as the patient's private space.",
-          "We share clinical notes with you and the treating physician — no one else."
-        ]
-      }
-    ]
+    "meta": {
+      "title": "How a visit works — Caregivers Collective",
+      "description": "From WhatsApp message to written summary in the family portal — the three moments of a home nursing visit in Beirut & Mt. Lebanon."
+    },
+    "hero": {
+      "badge": "How a visit works",
+      "headline": "Three moments.",
+      "headlineEm": "Same hand.",
+      "sub": "A coordinator replies on WhatsApp, a nurse visits, a written summary lands in the family portal the same day. No phone tag, no guessing what happened.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "Discuss your case"
+    },
+    "faq": {
+      "eyebrow": "About the process",
+      "headline": "Questions about how",
+      "headlineEm": "this works.",
+      "lede": "If your question isn't here, the coordinator will answer it on WhatsApp the same day.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "How are the nurses vetted?",
+          "answer": "Lebanese Order of Nurses licensed, currently employed at AUBMC, Hôtel-Dieu, or St Georges. Off-day shifts only. Background-checked."
+        },
+        {
+          "question": "Can I keep the same nurse week to week?",
+          "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        },
+        {
+          "question": "How fast does the coordinator reply?",
+          "answer": "Most replies land within a few hours during Beirut daytime. Emergencies get same-day response."
+        },
+        {
+          "question": "What's not offered yet?",
+          "answer": "Live-in care, NG tube, ICU/tracheostomy specialty, Holter monitoring, oxygen rental. Coming later."
+        }
+      ]
+    }
   },
   "faq": {
-    "eyebrow": "Frequently asked",
-    "heading": "Questions families ask us",
-    "subtitle": "Direct answers to the questions families bring up most often. If your question isn't here, message us on WhatsApp — we'll add it.",
-    "ctaHeading": "Still have questions?",
-    "ctaSubtitle": "Message us — every answer goes straight to a nurse, not a call center.",
-    "sections": [
-      {
-        "title": "General",
-        "items": [
-          {
-            "q": "What areas do you cover?",
-            "a": "{area}, including Achrafieh, Hamra, Verdun, Ras Beirut, Mar Mikhael, Gemmayzeh, Badaro, Jdeideh, Antelias, Dbayeh, Jounieh, Baabda, Hazmieh, Mansourieh, and surrounding districts. If you're outside this list, message us anyway — we sometimes cover farther for long-term care."
-          },
-          {
-            "q": "How quickly can a nurse come to me?",
-            "a": "For non-urgent requests, the first visit usually happens within 24 hours of confirmation. For urgent same-day visits we'll do everything we can; same-day is not always guaranteed but is often possible."
-          },
-          {
-            "q": "Are you available on weekends and at night?",
-            "a": "Yes — we operate 7 days a week. WhatsApp messages between 7am and 11pm get a reply within 30 minutes. Overnight messages are answered by 7am. Visits can be scheduled any day, including overnight shifts for hospital sitters."
-          },
-          {
-            "q": "Do you cover medical emergencies?",
-            "a": "No. For emergencies (chest pain, severe bleeding, loss of consciousness, suspected stroke), call 140 (Lebanese Red Cross) or go to the nearest emergency room. We're a planned home-care service, not an emergency response."
-          }
-        ]
-      },
-      {
-        "title": "Booking and pricing",
-        "items": [
-          {
-            "q": "How do I book a visit?",
-            "a": "Message us on WhatsApp or fill in the contact form. We'll offer a free 15-minute phone consult to understand the patient and what's needed, then suggest the right service and confirm a time."
-          },
-          {
-            "q": "Why don't you publish prices on the site?",
-            "a": "Pricing depends on the type of visit, duration, location within our service area, and whether it's a one-off or ongoing care. We share clear pricing during the free consult — no hidden fees, no surprise charges later."
-          },
-          {
-            "q": "What payment methods do you accept?",
-            "a": "We accept cash and bank transfer. We're working on adding card payments. We confirm payment terms during the consult so there are no surprises."
-          },
-          {
-            "q": "Can I cancel or reschedule a visit?",
-            "a": "Yes. Reschedules with at least 4 hours' notice are free. Last-minute cancellations may carry a small fee since we've already committed the nurse's time. Long-term care plans have their own cancellation terms shared at signup."
-          }
-        ]
-      },
-      {
-        "title": "Nurses and care",
-        "items": [
-          {
-            "q": "Are your nurses licensed?",
-            "a": "Every RN's active license is verified directly with the Lebanon Order of Nurses before their first case. Our junior caregivers are recent BSN or LPN graduates from accredited Lebanese programs, working under supervision and limited to non-clinical tasks."
-          },
-          {
-            "q": "Can the same nurse come every visit?",
-            "a": "On long-term care plans, yes — you get a dedicated primary nurse who knows your patient. For one-off visits we'll usually try to send the same person if you book again, but it's not guaranteed."
-          },
-          {
-            "q": "What's the difference between an RN visit and a junior caregiver shift?",
-            "a": "An RN handles clinical work — wound care, IV, injections, post-op assessment, catheter care, medication administration. A junior caregiver handles non-clinical support — sitting with a patient at the hospital or at home, taking basic vitals, helping with meals and comfort, and escalating concerns to our lead RN. Junior shifts cost less and cover longer hours."
-          },
-          {
-            "q": "Do you offer hospital sitters?",
-            "a": "Yes. A hospital sitter (junior caregiver) sits with your patient at the hospital — overnight or during the day — so the family can rest. They monitor the patient, help with meals and mobility, and call hospital staff or our lead RN if anything changes."
-          },
-          {
-            "q": "Will I get notes after each visit?",
-            "a": "Yes. After every visit you receive a written summary: vitals taken, what was done, anything the nurse noticed, and any recommendations. For long-term patients we keep a running clinical record you can request anytime."
-          }
-        ]
-      },
-      {
-        "title": "Privacy and safety",
-        "items": [
-          {
-            "q": "How do you protect patient information?",
-            "a": "Patient information is treated as confidential medical data. We don't log it in third-party tools. Only the assigned nurse, the supervising RN, and the family see the records. We never share data with marketers, insurers without consent, or anyone outside the care team."
-          },
-          {
-            "q": "Are wound photos shared anywhere?",
-            "a": "Wound photos are taken only with written consent and stored privately. They're used to track healing and shared only with the family and the treating physician. You can withdraw consent at any time and we'll delete the photos."
-          },
-          {
-            "q": "What if I'm not home — can the nurse still come?",
-            "a": "Only with explicit prior arrangement. We don't enter a patient's home without a responsible adult present unless you've authorized it in advance and the patient is competent to receive care alone. Safety of patient and nurse comes first."
-          }
-        ]
-      }
-    ]
+    "meta": {
+      "title": "Common questions — Caregivers Collective",
+      "description": "Answers to the most common questions about home nursing care in Beirut & Mt. Lebanon — pricing, payment from abroad, nurse vetting, family portal, and more."
+    },
+    "hero": {
+      "badge": "Common questions",
+      "headline": "Questions, before we",
+      "headlineEm": "talk.",
+      "sub": "What people ask first. If your question isn't here, the coordinator will answer it on WhatsApp the same day.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
+    },
+    "list": {
+      "eyebrow": "Frequently asked",
+      "headline": "Everything we get",
+      "headlineEm": "asked.",
+      "lede": "Twelve answers covering pricing, process, payment from abroad, nurse vetting, and what's not offered yet.",
+      "helperHeadline": "Still have a question?",
+      "helperBody": "Message the coordinator — most replies land within a few hours during Beirut daytime.",
+      "helperCta": "Message coordinator",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Why don't you publish prices?",
+          "answer": "High-touch service. Every case has a different shape. We quote on WhatsApp after a short conversation."
+        },
+        {
+          "question": "How does payment from abroad work?",
+          "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
+        },
+        {
+          "question": "Can I read the visit summary in Arabic?",
+          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+        },
+        {
+          "question": "What if it's 3am where I am?",
+          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+        },
+        {
+          "question": "How are the nurses vetted?",
+          "answer": "Lebanese Order of Nurses licensed, currently employed at AUBMC, Hôtel-Dieu, or St Georges. Off-day shifts only. Background-checked."
+        },
+        {
+          "question": "Can I keep the same nurse week to week?",
+          "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
+        },
+        {
+          "question": "What ends up in the family portal?",
+          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+        },
+        {
+          "question": "Can my sibling abroad also access the portal?",
+          "answer": "Yes. You can share the portal link with anyone in the family — same login, same summary visibility. No additional fee."
+        },
+        {
+          "question": "What if my district isn't in your list?",
+          "answer": "Message the coordinator anyway. Most off-map cases find a fit — we can usually match a nurse who lives or works nearby."
+        },
+        {
+          "question": "Do you offer emergency visits at 3am Beirut time?",
+          "answer": "Same-day response is our standard. Overnight emergency response depends on nurse availability for that night — message the coordinator and we'll tell you immediately."
+        },
+        {
+          "question": "What's not offered yet?",
+          "answer": "Live-in care, NG tube, ICU/tracheostomy specialty, Holter monitoring, oxygen rental. Coming later."
+        },
+        {
+          "question": "Can the coordinator speak with my parent's doctor?",
+          "answer": "Yes, when authorised. With consent, the coordinator can hand off vitals or visit summaries to the treating physician's office."
+        }
+      ]
+    }
   },
   "forNurses": {
-    "pill": "We're hiring",
-    "heading": "Join our nursing network",
-    "subtitle": "We're building a vetted nursing network in {area}. Whether you're an experienced RN or a fresh nursing graduate looking for supervised first-year work — we want to hear from you.",
-    "benefitsHeading": "Why join us",
-    "benefits": [
-      {
-        "title": "Flexible scheduling",
-        "description": "You choose when you work. Accept cases that fit your availability — no fixed shifts."
-      },
-      {
-        "title": "Fair, direct pay",
-        "description": "Competitive per-visit rates paid on time. No middleman taking a large cut."
-      },
-      {
-        "title": "Meaningful cases",
-        "description": "Build real relationships with patients. Continuity of care — not a revolving door."
-      }
-    ],
-    "tracksHeading": "Two ways to join",
-    "tracksSubtitle": "We hire at two levels — experienced RNs for clinical visits, and fresh graduates for supervised companion and monitoring shifts.",
-    "rnTrack": {
-      "badge": "RN Track",
-      "title": "Licensed Registered Nurse",
-      "description": "Clinical home visits — wound care, IV, post-op, injections, NGT, catheter care, and long-term primary nurse roles.",
-      "requirements": [
-        "Active nursing license (Lebanon Order of Nurses)",
-        "Minimum 1 year clinical experience",
-        "Reliable transportation",
-        "Smartphone with WhatsApp",
-        "Comfortable documenting and communicating findings to families"
-      ],
-      "applyMessage": "Hi, I'd like to apply as a licensed RN."
+    "meta": {
+      "title": "For nurses — Caregivers Collective",
+      "description": "Lebanese RNs and PNs: take home-care shifts on your off-days. Independent service provider, no hospital conflict, fair rates, written reviews."
     },
-    "juniorTrack": {
-      "badge": "Junior Track",
-      "title": "Junior Caregiver — Fresh Graduate",
-      "description": "Companion shifts and pediatric monitoring. Supervised by our lead RN, scope-limited to non-clinical tasks. A great way for recent grads to build experience.",
-      "requirements": [
-        "Recent BSN or LPN graduate from an accredited Lebanese program",
-        "Comfortable taking vital signs and observing patient status",
-        "Reliable transportation",
-        "Smartphone with WhatsApp",
-        "Eager to learn — work alongside an experienced RN"
-      ],
-      "applyMessage": "Hi, I'd like to apply as a junior caregiver."
+    "hero": {
+      "badge": "For nurses · off-day shifts",
+      "headline": "Off-day shifts,",
+      "headlineEm": "on your terms.",
+      "sub": "If you're already a licensed RN or PN at AUBMC, Hôtel-Dieu, St Georges, or similar — we coordinate home-care shifts for your off-days. Independent service provider, no hospital conflict, fair rates.",
+      "primaryCta": "Apply on WhatsApp",
+      "ghostCta": "Read how it works"
     },
-    "ctaHeading": "Not sure which track fits?",
-    "ctaSubtitle": "Send us a message with your name, years of experience, and area of specialty. We'll suggest the right track and follow up within 24 hours.",
-    "ctaMessage": "Hi, I'd like to apply to your nursing network."
+    "steps": {
+      "eyebrow": "How it works for nurses",
+      "headline": "Three steps.",
+      "headlineEm": "No commitment.",
+      "lede": "Apply, get matched to cases that fit your schedule, get paid weekly. You decide which shifts to take. We never compete with your hospital schedule.",
+      "steps": [
+        {
+          "num": "01",
+          "headline": "Apply on WhatsApp.",
+          "body": "Send your license number, current hospital, and the off-days you're typically free. The coordinator runs a background check and confirms your availability.",
+          "photoUrl": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Application · WhatsApp"
+        },
+        {
+          "num": "02",
+          "headline": "Get matched to a case.",
+          "body": "When a case fits your skills and schedule, the coordinator sends you the details on WhatsApp — case shape, address, visit duration, expected supplies. You accept or decline.",
+          "photoUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Match · case offer"
+        },
+        {
+          "num": "03",
+          "headline": "Get paid weekly.",
+          "body": "Submit your visit summary in the portal at end of shift. Pay lands weekly via Whish, OMT, or direct bank. The family pays Caregivers Collective; Caregivers Collective pays you.",
+          "photoUrl": "https://images.unsplash.com/photo-1568633524775-08c4d7c63aff?w=1200&q=80&auto=format&fit=crop",
+          "photoCaption": "Payout · weekly"
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Why this works",
+      "headline": "Built for nurses",
+      "headlineEm": "who already have a job.",
+      "lede": "We respect that you have a primary hospital. Every part of this is designed to work around that — not against it.",
+      "items": [
+        {
+          "label": "Schedule",
+          "title": "Off-day only.",
+          "body": "You tell us your off-days each month. We never offer cases that conflict with your hospital schedule. The platform respects your primary employer."
+        },
+        {
+          "label": "Status",
+          "title": "Independent service provider.",
+          "body": "Not an employee. Each shift is a service contract. We handle the billing, the family relationship, the documentation — you do the clinical work."
+        },
+        {
+          "label": "Reviews",
+          "title": "Written, not anonymous.",
+          "body": "After each visit, the coordinator (not the family) writes a short review. Reviews are part of your record on the platform — visible to you, used for case matching."
+        },
+        {
+          "label": "Rates",
+          "title": "Fair, published to you.",
+          "body": "Rates are quoted to you upfront before you accept the case. RN rates differ from PN rates. Overnight and weekend cases carry a premium. No surprises."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Questions from nurses",
+      "headline": "Common questions",
+      "headlineEm": "before applying.",
+      "lede": "If yours isn't here, message the coordinator on WhatsApp.",
+      "helperHeadline": "Ready to apply?",
+      "helperBody": "Send your license number, current hospital, and off-days on WhatsApp. The coordinator replies within a day or two.",
+      "helperCta": "Apply on WhatsApp",
+      "defaultOpenIndex": 0,
+      "items": [
+        {
+          "question": "Do I need to be currently employed at a hospital?",
+          "answer": "Yes — the platform is designed for nurses with primary hospital employment. AUBMC, Hôtel-Dieu, St Georges are the most common; similar hospitals work too."
+        },
+        {
+          "question": "Will my hospital find out?",
+          "answer": "No. We coordinate around your hospital schedule, not with your hospital. Nothing about your primary employment is shared. You declare your off-days; we offer cases that fit them."
+        },
+        {
+          "question": "How am I paid?",
+          "answer": "Weekly. The family pays Caregivers Collective for the case; Caregivers Collective pays you the agreed rate via Whish, OMT, or direct bank. Rates are confirmed before you accept each case."
+        },
+        {
+          "question": "What if a case goes wrong?",
+          "answer": "Document what you saw in the portal. The coordinator handles the family conversation. We have professional liability coverage on platform-coordinated visits."
+        },
+        {
+          "question": "Can I decline cases?",
+          "answer": "Always. You see case details before you accept. No penalty for declining — your acceptance rate matters less than your reliability after accepting."
+        },
+        {
+          "question": "What's a typical shift like?",
+          "answer": "Visit shapes vary: a 90-minute injection visit, a 12-hour overnight recovery shift, a 24-hour daily-care block. The case offer tells you everything before you accept."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Ready to take shifts?",
+      "headline": "Apply in",
+      "headlineEm": "two messages.",
+      "primaryCta": "Apply on WhatsApp",
+      "callCta": "Call"
+    }
   },
   "contact": {
-    "heading": "Contact us",
-    "subtitle": "The fastest way to reach us is WhatsApp. You can also fill in the form below and we'll reply shortly.",
+    "meta": {
+      "title": "Contact — Caregivers Collective",
+      "description": "Reach the coordinator on WhatsApp, by phone, or by message. Beirut & Mount Lebanon home nursing — EN / AR / FR."
+    },
+    "hero": {
+      "badge": "Contact · WhatsApp first",
+      "headline": "Talk to the",
+      "headlineEm": "coordinator.",
+      "sub": "WhatsApp is the fastest path. Phone for emergencies. The form below is for when neither works.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "Call coordinator"
+    },
+    "whatsapp": {
+      "eyebrow": "The front door",
+      "headline": "Open the chat —",
+      "headlineEm": "we reply same-day.",
+      "lede": "WhatsApp is the easiest way to start. Tell the coordinator what's happening in your own words. Most replies land within a few hours during Beirut daytime.",
+      "cta": "WhatsApp the coordinator",
+      "callCta": "Call"
+    },
+    "facts": {
+      "hoursLabel": "Coordinator hours",
+      "hoursValue": "Same-day · Beirut time",
+      "languagesLabel": "Languages",
+      "areaLabel": "Service area"
+    },
     "form": {
+      "eyebrow": "Or send a message",
+      "headline": "If WhatsApp isn't",
+      "headlineEm": "available.",
+      "lede": "The form lands in the coordinator's inbox. Replies happen on email or WhatsApp — whichever you prefer."
+    },
+    "formFields": {
       "name": "Your name",
       "phone": "Phone number",
-      "email": "Email (optional)",
       "message": "How can we help?",
       "messagePlaceholder": "Tell us about the patient — current condition, what kind of help is needed, when.",
       "submit": "Send message",
-      "submitting": "Sending...",
       "successHeading": "Message sent",
-      "successBody": "We'll reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am.",
-      "errorHeading": "Couldn't send",
-      "errorBody": "Please try again or message us on WhatsApp.",
-      "fieldRequired": "Required",
-      "phoneInvalid": "Please enter a valid phone number"
+      "successBody": "We'll reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am."
     }
   }
 }

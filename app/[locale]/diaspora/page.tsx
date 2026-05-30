@@ -1,15 +1,14 @@
 import { notFound } from "next/navigation";
 import Hero from "@/components/home/Hero";
-import CareFitWizard from "@/components/home/CareFitWizard";
-import TrustBar from "@/components/home/TrustBar";
-import ServicesGrid from "@/components/home/ServicesGrid";
+import DiasporaSection from "@/components/home/DiasporaSection";
 import HowItWorks from "@/components/home/HowItWorks";
+import FAQ from "@/components/home/FAQ";
 import CTABanner from "@/components/home/CTABanner";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import type { Metadata } from "next";
 
 const HERO_PHOTO =
-  "https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=2200&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=2200&q=80&auto=format&fit=crop";
 
 export async function generateMetadata({
   params,
@@ -20,12 +19,12 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   return {
-    title: dict.services.meta.title,
-    description: dict.services.meta.description,
+    title: dict.diaspora.meta.title,
+    description: dict.diaspora.meta.description,
   };
 }
 
-export default async function ServicesPage({
+export default async function DiasporaPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -37,11 +36,10 @@ export default async function ServicesPage({
 
   return (
     <>
-      <Hero dict={dict.services.hero} photoUrl={HERO_PHOTO} compact />
-      <CareFitWizard dict={dict.services.wizard} />
-      <TrustBar dict={dict.home.trustBar} />
-      <ServicesGrid dict={dict.home.services} />
+      <Hero dict={dict.diaspora.hero} photoUrl={HERO_PHOTO} compact />
+      <DiasporaSection dict={dict.home.diaspora} />
       <HowItWorks dict={dict.home.howItWorks} />
+      <FAQ dict={dict.diaspora.faq} />
       <CTABanner dict={dict.home.finalCta} />
     </>
   );

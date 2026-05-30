@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Geist } from "next/font/google";
 import "../globals.css";
-import Navbar from "@/components/Navbar";
+import Topbar from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/site";
 import { dirOf, getDictionary, htmlLang, isLocale, type Locale } from "@/lib/i18n";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export function generateStaticParams() {
   return site.locales.map((locale) => ({ locale }));
@@ -98,16 +96,23 @@ export default async function LocaleLayout({
   const structuredData = buildStructuredData(locale, dict.meta.siteDescription);
 
   return (
-    <html lang={htmlLang[locale]} dir={dirOf(locale)} className={geist.variable}>
+    <html lang={htmlLang[locale]} dir={dirOf(locale)}>
+      <head>
+        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="" />
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=cabinet-grotesk@500,700,800&f[]=fragment-mono@400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className="min-h-screen flex flex-col bg-white text-slate-800 antialiased"
+        className="min-h-screen flex flex-col bg-paper text-ink antialiased"
         suppressHydrationWarning
       >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <Navbar locale={locale} dict={dict.nav} />
+        <Topbar locale={locale} dict={dict.nav} />
         <main className="flex-1">{children}</main>
         <Footer
           locale={locale}

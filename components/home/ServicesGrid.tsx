@@ -1,7 +1,7 @@
-import Step from "./Step";
+import ServiceCard from "./ServiceCard";
 
-type StepItem = {
-  num: string;
+type ServiceItem = {
+  label: string;
   headline: string;
   body: string;
   photoUrl: string;
@@ -14,17 +14,30 @@ type Props = {
     headline: string;
     headlineEm: string;
     lede: string;
-    steps: StepItem[];
+    moreLabel: string;
+    discussLabel: string;
+    catchAll: {
+      label: string;
+      headline: string;
+      body: string;
+      photoUrl: string;
+      photoCaption: string;
+    };
+    items: ServiceItem[];
   };
 };
 
-export default function HowItWorks({ dict }: Props) {
+export default function ServicesGrid({ dict }: Props) {
+  // First item is featured (spans 2 rows), remaining items normal, last position is catch-all dark
+  const [featured, ...rest] = dict.items;
+
   return (
-    <section id="how-it-works" className="bg-paper-cool" style={{ paddingBlock: "clamp(72px, 12vw, 140px)" }}>
+    <section className="bg-cream py-24" style={{ paddingBlock: "clamp(72px, 12vw, 140px)" }}>
       <div
         className="mx-auto"
         style={{ maxWidth: "var(--shell-max)", paddingInline: "var(--pad-x)" }}
       >
+        {/* Section head */}
         <div className="mb-14 grid items-end gap-[60px] md:grid-cols-2">
           <div>
             <div className="mb-4.5 font-mono text-[11px] uppercase tracking-[0.18em] text-teal-deep">
@@ -53,9 +66,14 @@ export default function HowItWorks({ dict }: Props) {
           </p>
         </div>
 
-        {dict.steps.map((step, idx) => (
-          <Step key={step.num} {...step} reverse={idx % 2 === 1} />
-        ))}
+        {/* Grid */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:[grid-template-columns:1.4fr_1fr_1fr] lg:[grid-template-rows:auto_auto]">
+          <ServiceCard {...featured} more={dict.discussLabel} variant="featured" />
+          {rest.map((item) => (
+            <ServiceCard key={item.label} {...item} more={dict.moreLabel} />
+          ))}
+          <ServiceCard {...dict.catchAll} more={dict.moreLabel} variant="dark" />
+        </div>
       </div>
     </section>
   );

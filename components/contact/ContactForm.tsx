@@ -30,20 +30,31 @@ export default function ContactForm({ dict }: { dict: FormDict }) {
 
   if (submitted) {
     return (
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-8 text-center">
-        <svg className="w-10 h-10 text-blue-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="rounded-xl border border-rule bg-paper p-8 text-center">
+        <svg
+          className="mx-auto mb-3 size-10 text-teal"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
-        <h3 className="font-semibold text-slate-800 text-base mb-1">{dict.successHeading}</h3>
-        <p className="text-slate-500 text-sm">{dict.successBody}</p>
+        <h3 className="mb-1 font-display text-base font-medium tracking-[-0.01em] text-ink">
+          {dict.successHeading}
+        </h3>
+        <p className="text-sm text-ink-soft">{dict.successBody}</p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-5">
+      {/* Name */}
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+        <label
+          htmlFor="name"
+          className="mb-1.5 block font-mono text-[10.5px] uppercase tracking-[0.15em] text-teal-deep"
+        >
           {dict.name}
         </label>
         <input
@@ -53,12 +64,16 @@ export default function ContactForm({ dict }: { dict: FormDict }) {
           required
           value={form.name}
           onChange={handleChange}
-          className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full rounded-[12px] border border-rule bg-paper p-3 font-sans text-sm text-ink placeholder-ink-soft transition focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
         />
       </div>
 
+      {/* Phone */}
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">
+        <label
+          htmlFor="phone"
+          className="mb-1.5 block font-mono text-[10.5px] uppercase tracking-[0.15em] text-teal-deep"
+        >
           {dict.phone}
         </label>
         <input
@@ -69,12 +84,16 @@ export default function ContactForm({ dict }: { dict: FormDict }) {
           value={form.phone}
           onChange={handleChange}
           placeholder="+961 XX XXX XXX"
-          className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full rounded-[12px] border border-rule bg-paper p-3 font-sans text-sm text-ink placeholder-ink-soft transition focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
         />
       </div>
 
+      {/* Message */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+        <label
+          htmlFor="message"
+          className="mb-1.5 block font-mono text-[10.5px] uppercase tracking-[0.15em] text-teal-deep"
+        >
           {dict.message}
         </label>
         <textarea
@@ -85,13 +104,14 @@ export default function ContactForm({ dict }: { dict: FormDict }) {
           value={form.message}
           onChange={handleChange}
           placeholder={dict.messagePlaceholder}
-          className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+          className="w-full resize-none rounded-[12px] border border-rule bg-paper p-3 font-sans text-sm text-ink placeholder-ink-soft transition focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-3 rounded-lg transition-colors"
+        className="w-full rounded-full bg-ink py-3.5 text-sm font-medium text-paper transition hover:opacity-90"
+        style={{ background: "var(--color-ink)", color: "var(--color-paper)" }}
       >
         {dict.submit}
       </button>
