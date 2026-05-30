@@ -52,3 +52,12 @@ next-env.d.ts
 
 # superpowers brainstorm
 /.superpowers/
+
+# playwright MCP screenshot output
+/.playwright-mcp/
+
+# local smoke-test scratch
+.cookies.tmp.json
+.cookies.err
+.cookie-set.js
+public/__cc_session.json
