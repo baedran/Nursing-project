@@ -424,9 +424,18 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      can_read_summary_events: {
+        Args: { target_summary_id: string }
+        Returns: boolean
+      }
       is_assigned_nurse: { Args: { target_visit_id: string }; Returns: boolean }
       is_coordinator: { Args: never; Returns: boolean }
       is_family_member: { Args: { target_family_id: string }; Returns: boolean }
+      is_nurse_for_case: { Args: { target_case_id: string }; Returns: boolean }
+      is_nurse_for_patient: {
+        Args: { target_patient_id: string }
+        Returns: boolean
+      }
       open_review: { Args: { target_summary_id: string }; Returns: undefined }
       publish_summary: {
         Args: { target_summary_id: string }
