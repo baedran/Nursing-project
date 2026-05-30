@@ -31,7 +31,8 @@
     "toggleMenu": "Toggle menu",
     "menuOpenLabel": "Open menu",
     "menuCloseLabel": "Close menu",
-    "whatsappLabel": "WhatsApp coordinator"
+    "whatsappLabel": "WhatsApp coordinator",
+    "whatWeSend": "What we send"
   },
   "footer": {
     "blurb": "Licensed home nursing care in {area}. Founded and clinically supervised by a Lebanese BSN.",
@@ -699,6 +700,90 @@
       "primaryCta": "Apply on WhatsApp",
       "callCta": "Call"
     }
+  },
+  "whatWeSend": {
+    "meta": {
+      "title": "What we send — Caregivers Collective",
+      "description": "What lands in the family portal after every visit — vitals, what was done, what to watch for, photos. The actual document, not a description of it."
+    },
+    "hero": {
+      "badge": "What lands in the family portal",
+      "headline": "The summary,",
+      "headlineEm": "not the promise of one.",
+      "sub": "Every visit ends with a written summary in the family portal. Here's exactly what one looks like — vitals, what was done, what to watch for, photos when relevant.",
+      "primaryCta": "Message the coordinator",
+      "ghostCta": "How a visit works"
+    },
+    "documentSection": {
+      "eyebrow": "A sample summary",
+      "headline": "From a real",
+      "headlineEm": "visit shape.",
+      "lede": "Names and identifiers are pseudonymous. The format, fields, and tone are exactly what the portal renders. Photography on real summaries lives in private buckets — only visible to authorised family accounts."
+    },
+    "sample": {
+      "patientLabel": "Mariam · 78",
+      "district": "Achrafieh",
+      "visitDateLabel": "Tuesday · 14 May · 18:30",
+      "caseRef": "Case 2026-051",
+      "liveLabel": "Closed",
+      "vitalsHeading": "Vitals",
+      "vitals": [
+        { "label": "BP", "value": "128/82" },
+        { "label": "HR", "value": "74 bpm" },
+        { "label": "SpO₂", "value": "97 %" },
+        { "label": "Temp", "value": "36.6 °C" }
+      ],
+      "vitalsFootnote": "Taken at 18:35 · seated · left arm",
+      "doneHeading": "What was done",
+      "doneBody": "IV hydration session (Normal saline, 500 mL, run over 90 minutes), vitals check, dressing change on left forearm. Patient assisted from bed to armchair before and after the session.",
+      "observationsHeading": "Observations",
+      "observationsBody": "Mariam was alert, oriented, and comfortable at rest. Mobility good — walked unassisted to the kitchen mid-visit. Slight tenderness around the drain site on the left forearm; otherwise the wound is healing as expected. Appetite was reported as low at lunch but normal at dinner.",
+      "medsHeading": "Medications administered",
+      "meds": [
+        "Vancomycin 1 g IV — 18:15, no adverse reaction",
+        "Paracetamol 1 g oral — 19:00, for low-grade discomfort"
+      ],
+      "watchHeading": "What to watch for, until next visit",
+      "watchItems": [
+        "Increased redness, warmth, or swelling around the dressing site",
+        "Fever above 38 °C (taken at home with a thermometer)",
+        "New pain at the IV site, or refusal of food more than 24 hours"
+      ],
+      "photosHeading": "Photos · wound site",
+      "photosNote": "Private to your family · signed URLs",
+      "photos": [
+        {
+          "caption": "Pre-dressing · left forearm",
+          "url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80&auto=format&fit=crop"
+        },
+        {
+          "caption": "Post-dressing · sealed",
+          "url": "https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=900&q=80&auto=format&fit=crop"
+        }
+      ],
+      "nextVisitHeading": "Next visit",
+      "nextVisitBody": "Thursday 16 May · 18:30 — same nurse, same shape. Dressing change + vitals. Family portal will update within an hour of the visit ending.",
+      "coordinatorNoteLabel": "From the coordinator",
+      "coordinatorNoteBody": "Pharmacy delivered fresh dressings this morning — supply on hand for five more changes. Daughter in Paris was notified by WhatsApp that the summary is up.",
+      "footerLine": "Written by your case team · 14 May · 19:12 Beirut time"
+    },
+    "readGuide": [
+      {
+        "label": "First",
+        "title": "Vitals at the top.",
+        "body": "Numbers anyone can scan — BP, heart rate, oxygen, temperature. The footnote tells you when and how they were taken."
+      },
+      {
+        "label": "Middle",
+        "title": "What happened, then what to watch.",
+        "body": "Plain language. Then a short list of things you'd call us about — written in the words the coordinator and the family agreed on."
+      },
+      {
+        "label": "Last",
+        "title": "Next visit + coordinator note.",
+        "body": "When the next visit is, what it covers, and any logistics from the coordinator (supplies, scheduling, who else was looped in)."
+      }
+    ]
   },
   "contact": {
     "meta": {

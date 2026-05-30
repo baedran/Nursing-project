@@ -17,6 +17,7 @@ type Props = {
     howItWorks: string;
     diaspora: string;
     faq: string;
+    whatWeSend: string;
   };
 };
 
@@ -51,6 +52,7 @@ export default function Footer({ locale, area, dict, nav }: Props) {
             {dict.familiesHeader}
           </div>
           <Link href={`/${locale}/diaspora`} className="hover:text-ink">{nav.diaspora}</Link>
+          <Link href={`/${locale}/what-we-send`} className="hover:text-ink">{nav.whatWeSend}</Link>
           <Link href={`/${locale}/faq`} className="hover:text-ink">{nav.faq}</Link>
         </div>
         {/* Contact column */}
