@@ -9,6 +9,7 @@ type Props = {
   isOpen: boolean;
   onClose: () => void;
   locale: Locale;
+  isAuthenticated?: boolean;
   dict: {
     services: string;
     howItWorks: string;
@@ -17,10 +18,12 @@ type Props = {
     faq: string;
     whatsappLabel: string;
     menuCloseLabel: string;
+    loginLabel: string;
+    portalLabel: string;
   };
 };
 
-export default function MobileNav({ isOpen, onClose, locale, dict }: Props) {
+export default function MobileNav({ isOpen, onClose, locale, dict, isAuthenticated = false }: Props) {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   // Lock body scroll when open
@@ -50,6 +53,10 @@ export default function MobileNav({ isOpen, onClose, locale, dict }: Props) {
     { href: `/${locale}/diaspora`, label: dict.diaspora },
     { href: `/${locale}/packages`, label: dict.packages },
     { href: `/${locale}/faq`, label: dict.faq },
+    {
+      href: isAuthenticated ? `/${locale}/portal` : `/${locale}/login`,
+      label: isAuthenticated ? dict.portalLabel : dict.loginLabel,
+    },
   ];
 
   return (

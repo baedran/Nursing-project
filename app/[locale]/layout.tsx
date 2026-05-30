@@ -5,6 +5,7 @@ import Topbar from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/site";
 import { dirOf, getDictionary, htmlLang, isLocale, type Locale } from "@/lib/i18n";
+import { createClient } from "@/lib/supabase/server";
 
 
 export function generateStaticParams() {
@@ -95,6 +96,12 @@ export default async function LocaleLayout({
   const dict = await getDictionary(locale);
   const structuredData = buildStructuredData(locale, dict.meta.siteDescription);
 
+  // Check auth state for the Topbar — never throws, returns null user if not logged in
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
   return (
     <html lang={htmlLang[locale]} dir={dirOf(locale)}>
       <head>
@@ -112,7 +119,7 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <Topbar locale={locale} dict={dict.nav} />
+        <Topbar locale={locale} dict={dict.nav} isAuthenticated={Boolean(user)} />
         <main className="flex-1">{children}</main>
         <Footer
           locale={locale}

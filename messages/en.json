@@ -32,7 +32,9 @@
     "menuOpenLabel": "Open menu",
     "menuCloseLabel": "Close menu",
     "whatsappLabel": "WhatsApp coordinator",
-    "whatWeSend": "What we send"
+    "whatWeSend": "What we send",
+    "loginLabel": "Log in",
+    "portalLabel": "Portal"
   },
   "footer": {
     "blurb": "Licensed home nursing care in {area}. Founded and clinically supervised by a Lebanese BSN.",
@@ -785,6 +787,29 @@
         "body": "When the next visit is, what it covers, and any logistics from the coordinator (supplies, scheduling, who else was looped in)."
       }
     ]
+  },
+  "login": {
+    "eyebrow": "Family portal",
+    "headline": "One link,",
+    "headlineEm": "no password.",
+    "lede": "Enter your email. We send a one-time sign-in link. Open the link on this device to enter the portal.",
+    "emailLabel": "Email",
+    "submitLabel": "Send link",
+    "helper": "Sign-in links expire after one hour. If you don't see the email, check your spam folder.",
+    "successLabel": "Sent",
+    "successHeadline": "Check your email.",
+    "successBody": "We just sent you a one-time link. Open it on this device to enter the portal. It expires after one hour."
+  },
+  "portal": {
+    "eyebrow": "Portal",
+    "headline": "Welcome, {name}.",
+    "patientsLabel": "Patients you have access to",
+    "emptyPatients": "Nothing here yet. If a coordinator just added a case for your family, refresh in a moment.",
+    "sampleLabel": "Sample document",
+    "sampleHeadline": "Want to see what a visit summary looks like?",
+    "sampleBody": "Every visit ends with a written summary. Here's the format your portal will render once a real visit lands.",
+    "sampleCta": "View sample summary",
+    "logoutLabel": "Sign out"
   },
   "contact": {
     "meta": {
