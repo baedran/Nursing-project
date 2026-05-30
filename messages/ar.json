@@ -725,7 +725,8 @@
       "district": "الأشرفية",
       "visitDateLabel": "الثلاثاء · 14 مايو · 18:30",
       "caseRef": "حالة 2026-051",
-      "liveLabel": "مغلقة",
+      "liveLabel": "موثّق",
+      "printLabel": "اطبع الملخص",
       "vitalsHeading": "العلامات الحيوية",
       "vitals": [
         { "label": "ضغط الدم", "value": "128/82" },

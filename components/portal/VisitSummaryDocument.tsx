@@ -14,7 +14,8 @@ export type VisitSummaryData = {
   district: string;            // e.g. "Achrafieh"
   visitDateLabel: string;      // e.g. "Tuesday · 14 May · 18:30"
   caseRef: string;             // e.g. "Case 2026-051"
-  liveLabel: string;           // e.g. "Closed"
+  liveLabel: string;           // e.g. "Documented"
+  printLabel: string;          // e.g. "Print summary"
   // Vitals
   vitalsHeading: string;
   vitals: Vital[];
@@ -45,6 +46,8 @@ export type VisitSummaryData = {
   footerLine: string;            // e.g. "Written by your case team · {date} Beirut time"
 };
 
+import PrintButton from "./PrintButton";
+
 type Props = {
   data: VisitSummaryData;
 };
@@ -72,14 +75,17 @@ export default function VisitSummaryDocument({ data }: Props) {
               </span>
             </h2>
           </div>
-          <div className="text-right">
-            <div className="mb-1 font-mono text-[10.5px] uppercase tracking-[0.16em] text-muted">
-              {data.visitDateLabel}
+          <div className="flex flex-wrap items-center justify-end gap-3 text-right">
+            <div>
+              <div className="mb-1 font-mono text-[10.5px] uppercase tracking-[0.16em] text-muted">
+                {data.visitDateLabel}
+              </div>
+              <span className="inline-flex items-center gap-2 rounded-full bg-paper px-3 py-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-teal-deep">
+                <span aria-hidden="true" className="size-1.5 rounded-full bg-teal" />
+                {data.liveLabel}
+              </span>
             </div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-paper px-3 py-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-teal-deep">
-              <span aria-hidden="true" className="size-1.5 rounded-full bg-teal" />
-              {data.liveLabel}
-            </span>
+            <PrintButton label={data.printLabel} />
           </div>
         </div>
       </header>
@@ -173,16 +179,32 @@ export default function VisitSummaryDocument({ data }: Props) {
           <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
             {data.photos.map((p) => (
               <figure key={p.caption} className="overflow-hidden rounded-lg border border-rule">
-                <div
-                  aria-label={p.caption}
-                  role="img"
-                  className="aspect-[4/3]"
-                  style={{
-                    backgroundImage: `url(${p.url})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                />
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  {/* Designed placeholder — real wound photos live in private buckets and only render for authorised family accounts */}
+                  <div
+                    aria-label={`${p.caption} — private content placeholder`}
+                    role="img"
+                    className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-paper-cool to-cream"
+                  >
+                    {/* Lock icon */}
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path
+                        d="M6 10V8a6 6 0 0 1 12 0v2M5 10h14v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V10Z"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-teal-deep"
+                      />
+                    </svg>
+                    <div className="font-mono text-[9.5px] uppercase tracking-[0.14em] text-teal-deep">
+                      Private content
+                    </div>
+                    <div className="px-3 text-center font-mono text-[9px] uppercase tracking-[0.12em] text-muted">
+                      Visible only to authorised family accounts
+                    </div>
+                  </div>
+                </div>
                 <figcaption className="border-t border-rule bg-paper-cool px-3 py-2 font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
                   {p.caption}
                 </figcaption>

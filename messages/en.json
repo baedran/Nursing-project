@@ -725,7 +725,8 @@
       "district": "Achrafieh",
       "visitDateLabel": "Tuesday · 14 May · 18:30",
       "caseRef": "Case 2026-051",
-      "liveLabel": "Closed",
+      "liveLabel": "Documented",
+      "printLabel": "Print summary",
       "vitalsHeading": "Vitals",
       "vitals": [
         { "label": "BP", "value": "128/82" },

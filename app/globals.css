@@ -83,3 +83,20 @@ a { color: inherit; text-decoration: none; }
     transition: none !important;
   }
 }
+
+@media print {
+  /* Hide the topbar, footer, hero, and any other marketing elements */
+  nav.topbar, nav[aria-label="Main navigation"], footer, header.hero, section.bg-night, .print-hidden {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  /* Make sure the document expands to fill the page */
+  article {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+}
