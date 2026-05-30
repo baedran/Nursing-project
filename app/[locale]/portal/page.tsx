@@ -125,7 +125,8 @@ export default async function PortalHome({
             </p>
             <Link
               href={`/${locale}/what-we-send`}
-              className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-[13px] font-medium text-paper transition hover:bg-ink-soft"
+              className="mt-4 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-medium transition hover:opacity-90"
+              style={{ background: "var(--color-ink)", color: "var(--color-paper)" }}
             >
               {dict.portal.sampleCta} →
             </Link>
