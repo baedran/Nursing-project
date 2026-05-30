@@ -12,8 +12,12 @@ export default defineConfig({
     exclude: ["node_modules", ".next", "supabase/**", ".superpowers/**"],
   },
   resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./", import.meta.url)),
-    },
+    alias: [
+      // Match only "@/..." so the scoped package "@supabase/..." is left alone.
+      {
+        find: /^@\//,
+        replacement: fileURLToPath(new URL("./", import.meta.url)),
+      },
+    ],
   },
 });
