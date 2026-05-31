@@ -891,6 +891,15 @@
       "scheduleAnother": "Schedule another",
       "errorGeneric": "Could not schedule the visit. Check the details and try again."
     },
+    "patient": {
+      "eyebrow": "Patient",
+      "back": "Back to your family",
+      "visitsLabel": "Visit summaries",
+      "latest": "Latest",
+      "empty": "No visit summaries yet — you'll see one here within an hour of each visit.",
+      "readSummary": "Read summary",
+      "backToPatient": "Back to visits"
+    },
     "nurseDash": {
       "eyebrow": "Nurse",
       "headline": "Welcome back, {name}.",

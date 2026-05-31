@@ -39,19 +39,26 @@ export default function FamilyHome({
         {patients.length > 0 ? (
           <ul className="flex flex-col gap-3">
             {patients.map((p) => (
-              <li
-                key={p.id}
-                className="rounded-xl border border-rule bg-white px-5 py-4"
-              >
-                <div
-                  className="font-display font-medium"
-                  style={{ fontSize: "19px", letterSpacing: "-0.015em" }}
+              <li key={p.id}>
+                <Link
+                  href={`/${locale}/portal/patients/${p.id}`}
+                  className="flex items-center justify-between gap-4 rounded-xl border border-rule bg-white px-5 py-4 transition hover:border-teal"
                 >
-                  {p.display_label}
-                </div>
-                <div className="mt-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted">
-                  {p.district}
-                </div>
+                  <div>
+                    <div
+                      className="font-display font-medium"
+                      style={{ fontSize: "19px", letterSpacing: "-0.015em" }}
+                    >
+                      {p.display_label}
+                    </div>
+                    <div className="mt-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-muted">
+                      {p.district}
+                    </div>
+                  </div>
+                  <span aria-hidden="true" className="text-teal" style={{ fontSize: "18px" }}>
+                    →
+                  </span>
+                </Link>
               </li>
             ))}
           </ul>
