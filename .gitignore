@@ -61,3 +61,7 @@ next-env.d.ts
 .cookies.err
 .cookie-set.js
 public/__cc_session.json
+# stray browser-smoke screenshots saved to repo root
+/loop-*.png
+/smoke-*.png
+/polish-*.png
