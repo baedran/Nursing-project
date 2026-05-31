@@ -31,12 +31,12 @@ export default async function PatientPage({
 
   // Published summaries for this patient, newest first.
   //
-  // We resolve this in two steps on purpose: first the patient's case ids, then
-  // summaries filtered by their visit's case_id. A single query with a
-  // two-level embedded filter (visits.cases.patient_id) silently returns no
-  // rows in PostgREST even when the data is readable — one-level embedded
-  // filters like visits.case_id are reliable. Family RLS still limits
-  // visit_summaries to own-family + published, so this only scopes to patient.
+  // Resolved in two steps — first the patient's case ids, then summaries
+  // filtered by their visit's case_id. A single-query two-level embedded filter
+  // (visits.cases.patient_id) also works, but a one-level embedded filter
+  // (visits.case_id) is simpler to reason about and avoids depending on deep
+  // embedded-filter behaviour. Family RLS still limits visit_summaries to
+  // own-family + published, so this only narrows the result to this patient.
   const { data: caseRows } = await supabase
     .from("cases")
     .select("id")

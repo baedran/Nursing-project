@@ -83,13 +83,19 @@ const { data: patient } = await admin.from("patients")
 const { data: nurse } = await admin.from("nurses")
   .insert({ user_id: nu.user.id, display_name: "Smoke RN", hospital: "AUBMC", active: true })
   .select("id").single();
-const { data: theCase } = await admin.from("cases")
-  .insert({ patient_id: patient.id, case_ref: "Case 2026-051", mode: "shift", status: "active" })
+// case_ref is UNIQUE across the whole table, so a smoke fixture must not reuse
+// a real case ref (e.g. "Case 2026-051" belongs to the live Khoury family).
+// Use a timestamped, clearly-fake ref so reseeding never collides.
+const caseRef = `SMOKE-${Date.now()}`;
+const { data: theCase, error: caseErr } = await admin.from("cases")
+  .insert({ patient_id: patient.id, case_ref: caseRef, mode: "shift", status: "active" })
   .select("id").single();
+if (caseErr || !theCase) throw new Error(`case insert failed: ${caseErr?.message}`);
 const dayAgo = new Date(Date.now() - 86400000).toISOString();
-const { data: visit } = await admin.from("visits")
+const { data: visit, error: visitErr } = await admin.from("visits")
   .insert({ case_id: theCase.id, scheduled_at: dayAgo, assigned_nurse_id: nurse.id, status: "completed" })
   .select("id").single();
+if (visitErr || !visit) throw new Error(`visit insert failed: ${visitErr?.message}`);
 const { data: summary } = await admin.from("visit_summaries").insert({
   visit_id: visit.id,
   vitals: { bp: "128/82", hr: "74", spo2: "97", temp: "36.6" },
