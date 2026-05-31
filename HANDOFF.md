@@ -1,122 +1,66 @@
-# Caregivers Collective — Project Handoff
+> **Update 2026-05-31 — Phase 2 COMPLETE. The whole product is shipped & live.**
+>
+> The portal now works end-to-end for all three roles, verified in the browser
+> by clicking through the real flow:
+>
+> 1. **Coordinator** (you, `theomarbadran@gmail.com`): invite a nurse → they get
+>    a one-time sign-in link to send on WhatsApp · schedule & assign a visit ·
+>    review each submitted summary · **publish** or **send back**.
+> 2. **Nurse:** action-first dashboard · single-form writer (vitals, what-was-done,
+>    observations, meds, watch-for, next visit) · **wound-photo upload** · Preview ·
+>    Save draft · Submit.
+> 3. **Family** (the daughter in Paris — the whole point): logs in → clicks their
+>    patient → sees a card list of **published** visit summaries (newest flagged
+>    "Latest") → opens the full read-only summary with wound photos via secure
+>    signed links.
+>
+> **Summary lifecycle:** draft → submitted → in_review → (changes_requested ⟲) →
+> published. Published is permanently **locked** (no silent edits to a record a
+> family has read). Every transition is written to an **append-only audit log**.
+> Enforced by SECURITY DEFINER RPCs: `submit_summary`, `open_review`,
+> `publish_summary`, `send_back_summary`.
+>
+> **Routes** (all under `app/[locale]/portal/`, gated by the auth layout):
+> `page.tsx` (role router → FamilyHome / NurseDashboard / CoordinatorHome),
+> `nurses/`, `schedule/`, `review/[summaryId]/`, `visits/[visitId]/summary/`,
+> `patients/[patientId]/` (family visit list), `patients/[patientId]/visits/[summaryId]/`
+> (family read-only summary). Shared render: `lib/portal/summary.ts`
+> `loadSummaryData()` + `components/portal/VisitSummaryDocument.tsx`.
+>
+> **WhatsApp number is live:** `+961 76 721 503` (`lib/site.ts`). **Domain** is
+> still the Vercel default (`nursing-project-olive.vercel.app`) — swap `site.url`
+> in `lib/site.ts` when a real domain is chosen.
+>
+> **Testing (the first test framework in the repo):**
+> `npm test` → 14 Vitest + React Testing Library unit tests.
+> `npm run test:rls` → **52 integration tests** against the **real** Supabase
+> project, proving every Row-Level-Security rule: family isolation, nurse
+> isolation, published-only family read, append-only audit, wound-photo
+> isolation, nurse patient/case read. No Docker — runs against the cloud DB
+> using keys from `.env.local`.
+>
+> **DB / migrations:** `supabase/migrations/` applied to the cloud project via
+> `node scripts/db-query.mjs` (Supabase Management API; personal access token in
+> gitignored `.supabase-token`). Migrations added this phase: `*_nurse_write.sql`
+> (lifecycle + audit + RLS), `*_fix_audit_read_policy.sql`,
+> `*_nurse_read_patient_case.sql`.
+>
+> **Specs/plans:** `docs/superpowers/specs/2026-05-30-nurse-write-portal-design.md`,
+> `2026-05-31-family-read-view-design.md`, and the matching plans in
+> `docs/superpowers/plans/`.
+>
+> **Known limitations / next steps (small):**
+> - Nurse-invite emails are **manual** — the coordinator sends the generated
+>   magic link (e.g. on WhatsApp). Automatic email-on-invite needs a verified
+>   sending domain (tied to the domain decision).
+> - No notifications / email-on-publish, no PDF beyond the in-document print
+>   button, no family commenting — all intentionally deferred (YAGNI).
+> - Dev seed helpers for manual smoke testing live in `scripts/seed-smoke.mjs`
+>   and `scripts/seed-family-smoke.mjs`; `scripts/mint-session-cookies.mjs` mints
+>   a local session for browser testing. All clean up after themselves.
+>
+> ---
 
-**Date:** 2026-05-19
-**For:** A collaborator joining the project to look at it, edit it, or both.
-
----
-
-## 1. What this project is
-
-**Caregivers Collective** is a home-nursing coordination platform for Beirut & Mount Lebanon. The site coordinates licensed Lebanese RNs and PNs (working their hospital off-days) for home visits, with a written summary in a family portal after each visit. Booking happens on WhatsApp; pricing is quote-only.
-
-**Primary audience:** the Lebanese diaspora — adult children abroad (Paris first, then Dubai, Detroit, London) with aging parents in Beirut. The marketing site speaks to that person first.
-
-**Positioning:** high-ticket service. No discount language. Restraint reads as premium.
-
----
-
-## 2. What's been built
-
-### Phase 1: Marketing-site homepage (this session, 2026-05-19)
-
-A full visual redesign of the homepage was completed today. **21 commits** on the branch `feat/marketing-homepage`. The homepage is live at `http://localhost:3000/en` when the dev server is running.
-
-**Tech stack:**
-- Next.js 16.2.4 (App Router) + React 19
-- Tailwind CSS v4 (CSS-first config via `@theme` block in `app/globals.css`)
-- TypeScript
-- Three Fontshare-hosted fonts: Cabinet Grotesk (display), Switzer (body), Fragment Mono (small labels)
-- Internationalisation: EN + AR (with AR copy as placeholders; Arabic editor engagement planned for Phase 2)
-- No test framework yet — manual visual QA + `npm run build` is the gate; heavier testing comes in Phase 2
-
-**Homepage sections (in order):**
-1. **Topbar** — sticky, frosted-glass, brand mark + nav + WhatsApp pill (mobile menu deferred)
-2. **Hero** — full-bleed photo with text overlay, slow Ken Burns zoom, entrance stagger animations
-3. **Trust bar** — hospital names (AUBMC · Hôtel-Dieu · St Georges) + license + summary signals
-4. **For families abroad** *(diaspora section — moved high up as emotional anchor)* — dark navy, live timezone tiles (Beirut · Paris · Dubai · Detroit), payment rails (Whish Money / OMT International / Western Union / USD wire)
-5. **Services** — asymmetric grid: 1 featured card + 4 regular cards + 1 dark "Outside this list?" catch-all
-6. **How a visit works** — three numbered steps with alternating image/text layout (01 message us, 02 nurse arrives, 03 written summary)
-7. **Service area** — 17 districts in Beirut + Mt. Lebanon, hover-teal cells, off-map callout
-8. **FAQ** — native `<details>` accordion with 8 diaspora-first Q&A items (payment from abroad, Arabic summaries, 3am timezones, etc.)
-9. **Final CTA + footer** — dark night background with radial glows, "The first message is always free."
-
-### What sat behind the design
-
-A full design spec was written and approved before any code was touched: `docs/superpowers/specs/2026-05-19-marketing-site-design.md` (locks palette, typography, motion vocabulary, section-by-section structure). The implementation plan with all 21 build tasks lives at `docs/superpowers/plans/2026-05-19-marketing-site-homepage-build.md`.
-
----
-
-## 3. The 21-commit build trail
-
-```
-ca944a4  chore(brand): rename HomeCare Lebanon -> Caregivers Collective, add diaspora data
-1a91014  feat(theme): port OKLCH palette + motion helpers to Tailwind v4 @theme
-c101ad8  fix(theme): move layout vars to :root, drop redundant reset, rename pulse->dot-pulse
-e441e6c  feat(fonts): swap Geist for Cabinet Grotesk + Switzer + Fragment Mono via Fontshare
-e41d75c  feat(components): add RevealOnScroll IntersectionObserver helper
-1ac09a2  feat(components): add KenBurnsPhoto CSS-animated photo helper
-6c4d8be  feat(components): add WhatsAppButton shared CTA with variants
-15c4672  feat(topbar): replace Navbar with Topbar matching design spec
-26a8a16  fix(topbar): add aria-label, localize WhatsApp label, document mobile-menu deferral
-12a6690  feat(footer): rebuild Footer with 4-column layout per spec
-f3b2a0f  feat(hero): build text-on-photo Hero matching spec section 5.2
-d19bfa8  fix(hero): use --night scrim color and add entrance stagger animations per spec
-9e43c4d  feat(trust-bar): add TrustBar with hospital names + license + summary signals
-2e337f6  feat(diaspora): add DiasporaSection with live timezone tiles + payment rails
-5787574  feat(services): rebuild ServicesGrid with featured + dark catch-all card
-873aa5a  feat(how-it-works): rebuild with alternating image+text Step components
-038a369  feat(service-area): rebuild DistrictGrid with 17 districts + off-map callout
-f9c93b0  feat(faq): add native-details FAQ accordion with 8 diaspora-first Q&A
-9ef5faa  feat(final-cta): rebuild FinalCTA with dark glow + WhatsApp + call buttons
-21aa763  feat(homepage): wire all 9 sections into [locale]/page.tsx
-fd3b32b  chore: remove unused homepage components + rename HeroNew→Hero
-099398e  fix(hero+whatsapp): text-on-photo visible with reduced-motion + ensure WhatsApp button contrast
-```
-
----
-
-## 4. File map
-
-```
-New proj/
-├── app/
-│   ├── [locale]/
-│   │   ├── layout.tsx          # Fontshare links, Topbar + Footer wrapper
-│   │   ├── page.tsx            # Homepage — wires the 9 sections in order
-│   │   ├── services/page.tsx   # placeholder pages (will be polished in follow-up)
-│   │   ├── packages/page.tsx
-│   │   ├── how-we-work/page.tsx
-│   │   ├── faq/page.tsx
-│   │   ├── for-nurses/page.tsx
-│   │   └── contact/page.tsx
-│   ├── globals.css             # Tailwind v4 @theme + palette + animations
-│   ├── opengraph-image.tsx
-│   ├── sitemap.ts
-│   └── robots.ts
-├── components/
-│   ├── Topbar.tsx              # sticky nav (replaced old Navbar)
-│   ├── Footer.tsx              # 4-column footer
-│   ├── WhatsAppButton.tsx      # shared CTA pill, 3 variants
-│   ├── KenBurnsPhoto.tsx       # slow-zoom photo helper for hero
-│   ├── RevealOnScroll.tsx      # IntersectionObserver fade-up helper
-│   └── home/
-│       ├── Hero.tsx
-│       ├── TrustBar.tsx
-│       ├── DiasporaSection.tsx
-│       ├── TimezoneTile.tsx    # live clock (client component)
-│       ├── ServicesGrid.tsx
-│       ├── ServiceCard.tsx
-│       ├── HowItWorks.tsx
-│       ├── Step.tsx
-│       ├── ServiceArea.tsx     # district grid
-│       ├── FAQ.tsx             # native <details> accordion
-│       ├── CTABanner.tsx       # final CTA (named for legacy import)
-│       └── contact/ContactForm.tsx
-├── lib/
-│   ├── site.ts                 # SINGLE SOURCE OF TRUTH for brand, districts, diaspora, payment rails, WhatsApp number
-│   └── i18n.ts                 # locale + dictionary helpers
-├── messages/
-│   ├── en.json                 # English copy
 │   └── ar.json                 # Arabic copy (placeholders)
 ├── docs/
 │   ├── HANDOFF.md              # this document
