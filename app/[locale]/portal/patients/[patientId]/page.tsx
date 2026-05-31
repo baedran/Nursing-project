@@ -29,23 +29,35 @@ export default async function PatientPage({
     .single();
   if (!patient) notFound();
 
-  // Published summaries for this patient, newest first. Family RLS already
-  // limits visit_summaries to own-family + published; the !inner + patient
-  // filter scopes to this patient and is defence-in-depth.
-  const { data: rows } = await supabase
-    .from("visit_summaries")
-    .select(
-      "id, published_at, visits!inner(scheduled_at, cases!inner(case_ref, patient_id))",
-    )
-    .eq("status", "published")
-    .eq("visits.cases.patient_id", patientId)
-    .order("published_at", { ascending: false });
+  // Published summaries for this patient, newest first.
+  //
+  // We resolve this in two steps on purpose: first the patient's case ids, then
+  // summaries filtered by their visit's case_id. A single query with a
+  // two-level embedded filter (visits.cases.patient_id) silently returns no
+  // rows in PostgREST even when the data is readable — one-level embedded
+  // filters like visits.case_id are reliable. Family RLS still limits
+  // visit_summaries to own-family + published, so this only scopes to patient.
+  const { data: caseRows } = await supabase
+    .from("cases")
+    .select("id")
+    .eq("patient_id", patientId);
+  const caseIds = (caseRows ?? []).map((c: any) => c.id as string);
 
-  const visits = (rows ?? []).map((r: any) => ({
-    summaryId: r.id as string,
-    whenLabel: formatBeirut(r.visits?.scheduled_at ?? r.published_at),
-    caseRef: r.visits?.cases?.case_ref ?? "—",
-  }));
+  let visits: { summaryId: string; whenLabel: string; caseRef: string }[] = [];
+  if (caseIds.length > 0) {
+    const { data: rows } = await supabase
+      .from("visit_summaries")
+      .select("id, published_at, visits!inner(scheduled_at, case_id, cases(case_ref))")
+      .eq("status", "published")
+      .in("visits.case_id", caseIds)
+      .order("published_at", { ascending: false });
+
+    visits = (rows ?? []).map((r: any) => ({
+      summaryId: r.id as string,
+      whenLabel: formatBeirut(r.visits?.scheduled_at ?? r.published_at),
+      caseRef: r.visits?.cases?.case_ref ?? "—",
+    }));
+  }
 
   const p = patient as { display_label: string; district: string | null };
 

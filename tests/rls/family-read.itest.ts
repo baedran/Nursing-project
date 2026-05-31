@@ -133,3 +133,25 @@ describe("cross-family isolation", () => {
     expect(await count(fam2, "patients", (q) => q.eq("id", PAT1))).toBe(0);
   });
 });
+
+// Regression: the patient page lists summaries via a TWO-STEP query (case ids,
+// then summaries filtered by visits.case_id). A single two-level embedded
+// filter (visits.cases.patient_id) silently returned zero rows even though the
+// data was readable, so the page showed "No visit summaries yet". This asserts
+// the actual page query shape returns the published summary for the family.
+describe("patient page query (two-step) returns the published summary", () => {
+  test("fam1's patient page query yields exactly the published summary", async () => {
+    const fam1 = await signedInClient(`fam1@${DOMAIN}`, PW);
+    const { data: caseRows } = await fam1.from("cases").select("id").eq("patient_id", PAT1);
+    const caseIds = (caseRows ?? []).map((c: any) => c.id as string);
+    expect(caseIds.length).toBeGreaterThan(0);
+    const { data: rows, error } = await fam1
+      .from("visit_summaries")
+      .select("id, published_at, visits!inner(scheduled_at, case_id, cases(case_ref))")
+      .eq("status", "published")
+      .in("visits.case_id", caseIds)
+      .order("published_at", { ascending: false });
+    expect(error).toBeNull();
+    expect((rows ?? []).map((r: any) => r.id)).toEqual([SPUB]);
+  });
+});
