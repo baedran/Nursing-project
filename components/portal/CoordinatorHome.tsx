@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
+import SignOutButton from "@/components/portal/SignOutButton";
 
 type QueueItem = {
   id: string;
@@ -129,6 +130,9 @@ export default function CoordinatorHome({
           </Link>
         </div>
       </div>
+
+      {/* Sign out */}
+      <SignOutButton locale={locale} dict={dict} />
     </>
   );
 }

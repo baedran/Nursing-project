@@ -158,18 +158,18 @@ export default function SummaryForm({
   }
 
   return (
-    <div className="flex flex-col gap-6 pb-32">
+    <div className="flex flex-col gap-6 pb-44 sm:pb-32">
       {/* Eyebrow + back link */}
       <div>
         <div className="mb-1 font-mono text-[10.5px] uppercase tracking-[0.16em] text-teal-deep">
           {t.eyebrow}
         </div>
-        <div className="font-mono text-[12px] text-muted">{patientLabel} - {caseRef}</div>
+        <div className="font-mono text-[12px] text-muted">{patientLabel} · {caseRef}</div>
         <Link
           href={`/${locale}/portal`}
           className="mt-2 inline-block font-mono text-[10px] uppercase tracking-[0.14em] text-muted transition hover:opacity-70"
         >
-          back: {t.back}
+          ← {t.back}
         </Link>
       </div>
 
@@ -373,14 +373,17 @@ export default function SummaryForm({
 
       {/* Sticky action bar */}
       <div
-        className="fixed bottom-0 left-0 right-0 border-t border-rule bg-paper px-4 py-4"
+        className="fixed bottom-0 left-0 right-0 border-t border-rule bg-paper px-4 py-3"
         style={{ zIndex: 40 }}
       >
-        <div className="mx-auto flex flex-wrap items-center gap-3" style={{ maxWidth: "760px" }}>
+        <div
+          className="mx-auto flex flex-wrap items-center gap-2 sm:gap-3"
+          style={{ maxWidth: "760px" }}
+        >
           <button
             type="button"
             onClick={() => setShowPreview((v) => !v)}
-            className="inline-flex items-center gap-2 rounded-full border border-rule px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft transition hover:border-teal hover:text-teal-deep"
+            className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-rule px-5 py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft transition hover:border-teal hover:text-teal-deep sm:flex-none"
           >
             {showPreview ? t.hidePreview : t.preview}
           </button>
@@ -389,7 +392,7 @@ export default function SummaryForm({
             type="button"
             onClick={handleSave}
             disabled={isPending}
-            className="inline-flex items-center gap-2 rounded-full border border-rule px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft transition hover:border-teal hover:text-teal-deep disabled:opacity-60"
+            className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-rule px-5 py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft transition hover:border-teal hover:text-teal-deep disabled:opacity-60 sm:flex-none"
           >
             {isPending ? "..." : saveMsg ?? t.saveDraft}
           </button>
@@ -398,19 +401,19 @@ export default function SummaryForm({
             type="button"
             onClick={handleSubmit}
             disabled={isPending}
-            className="inline-flex items-center gap-2 rounded-full px-7 py-3 text-[13px] font-medium transition hover:-translate-y-0.5 disabled:opacity-60"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full px-7 py-3 text-[13px] font-medium transition hover:-translate-y-0.5 disabled:opacity-60 sm:ml-auto sm:w-auto"
             style={{ background: "var(--color-ink)", color: "var(--color-paper)" }}
           >
             {isPending ? "..." : t.submit}
           </button>
 
           {saveError && !isPending && (
-            <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-peach">
+            <span className="w-full font-mono text-[10px] uppercase tracking-[0.14em] text-peach sm:w-auto">
               {t.errorSave}
             </span>
           )}
           {submitError && !isPending && (
-            <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-peach">
+            <span className="w-full font-mono text-[10px] uppercase tracking-[0.14em] text-peach sm:w-auto">
               {t.errorSubmit}
             </span>
           )}

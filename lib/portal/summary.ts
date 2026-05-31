@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { VisitSummaryData } from "@/components/portal/VisitSummaryDocument";
+import { formatBeirut as fmt } from "@/lib/portal/datetime";
 
 // Raw shape the pure mapper consumes (already-joined + flattened).
 export type SummaryRow = {
@@ -36,13 +37,6 @@ const STATUS_LABEL: Record<string, string> = {
   changes_requested: "Changes requested",
   published: "Published",
 };
-
-function fmt(ts: string | null): string {
-  if (!ts) return "—";
-  const d = new Date(ts);
-  return Number.isNaN(d.getTime()) ? "—" : d.toLocaleString();
-}
-
 /** Pure, synchronous, network-free mapping. Unit-tested. */
 export function toSummaryData(row: SummaryRow, photos: SummaryPhoto[]): VisitSummaryData {
   const vitals = VITAL_FIELDS

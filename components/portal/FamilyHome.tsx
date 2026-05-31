@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
+import SignOutButton from "@/components/portal/SignOutButton";
 
 type Patient = { id: string; display_label: string; district: string | null };
 
@@ -88,15 +89,8 @@ export default function FamilyHome({
         </Link>
       </div>
 
-      {/* Logout */}
-      <form action={`/${locale}/logout`} method="post" className="mt-12">
-        <button
-          type="submit"
-          className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-soft transition hover:text-ink"
-        >
-          ← {dict.portal.logoutLabel}
-        </button>
-      </form>
+      {/* Sign out */}
+      <SignOutButton locale={locale} dict={dict} />
     </>
   );
 }

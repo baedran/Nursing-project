@@ -92,15 +92,15 @@ export default async function SummaryWriterPage({
                 {patientLabel} · {caseRef}
               </div>
               <p className="text-[15px] text-ink-soft">
-                This summary has been submitted and is currently{" "}
-                <span className="font-medium text-ink">{s.status.replace("_", " ")}</span>.
-                You cannot edit it while it is with the coordinator.
+                {s.status === "published"
+                  ? dict.portal.writer.readOnlyPublishedBody
+                  : dict.portal.writer.readOnlySubmittedBody}
               </p>
               <Link
                 href={`/${locale}/portal`}
                 className="mt-6 inline-block font-mono text-[10.5px] uppercase tracking-[0.16em] text-teal-deep transition hover:opacity-70"
               >
-                {dict.portal.writer.back}
+                ← {dict.portal.writer.back}
               </Link>
             </div>
           </div>

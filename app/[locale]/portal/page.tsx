@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { resolveRole } from "@/lib/portal/roles";
+import { formatBeirut } from "@/lib/portal/datetime";
 import FamilyHome from "@/components/portal/FamilyHome";
 import CoordinatorHome from "@/components/portal/CoordinatorHome";
 import NurseDashboard from "@/components/portal/NurseDashboard";
@@ -44,9 +45,7 @@ export default async function PortalHome({
       patientLabel: r.visits?.cases?.patients?.display_label ?? "—",
       caseRef: r.visits?.cases?.case_ref ?? "—",
       nurseName: r.visits?.nurses?.display_name ?? null,
-      visitWhen: r.visits?.scheduled_at
-        ? new Date(r.visits.scheduled_at).toLocaleString()
-        : "—",
+      visitWhen: formatBeirut(r.visits?.scheduled_at),
     }));
 
     return (
@@ -79,7 +78,7 @@ export default async function PortalHome({
         summaryId: summary?.id ?? null,
         patientLabel: v.cases?.patients?.display_label ?? "—",
         caseRef: v.cases?.case_ref ?? "—",
-        scheduledLabel: v.scheduled_at ? new Date(v.scheduled_at).toLocaleString() : "—",
+        scheduledLabel: formatBeirut(v.scheduled_at),
         status: summary?.status ?? null,
         sentBackReason: summary?.sent_back_reason ?? null,
       };

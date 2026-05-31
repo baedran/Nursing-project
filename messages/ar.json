@@ -936,7 +936,10 @@
       "submitted": "Submitted for review",
       "submittedBody": "The coordinator has it now. You'll see it back here if changes are needed.",
       "errorSave": "Could not save. Try again.",
-      "errorSubmit": "Could not submit. Make sure you've saved, then try again."
+      "errorSubmit": "Could not submit. Make sure you've saved, then try again.",
+      "readOnlyTitle": "Already submitted",
+      "readOnlySubmittedBody": "You've submitted this summary — it's with the coordinator now. You'll see it back here if any changes are needed.",
+      "readOnlyPublishedBody": "This summary has been published. The family can now see it, and it's locked so the record stays accurate."
     },
     "review": {
       "eyebrow": "Review",

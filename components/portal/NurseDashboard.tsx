@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
+import SignOutButton from "@/components/portal/SignOutButton";
 
 type Item = {
   visitId: string;
@@ -175,6 +176,9 @@ export default function NurseDashboard({
           </ul>
         </div>
       )}
+
+      {/* Sign out */}
+      <SignOutButton locale={locale} dict={dict} />
     </>
   );
 }
