@@ -49,7 +49,23 @@
 > `2026-05-31-family-read-view-design.md`, and the matching plans in
 > `docs/superpowers/plans/`.
 >
+> **Auth model (invite-only):** One passwordless login (email magic link) for
+> all roles. Role (`family`/`nurse`/`coordinator`) is stored on the account and
+> read at `/portal`, which renders the matching home; coordinator pages redirect
+> non-coordinators and RLS blocks the data regardless. Signup is **off** at both
+> layers: `app/[locale]/login/actions.ts` uses `shouldCreateUser:false`, and the
+> Supabase project has `disable_signup:true`. A non-invited email gets the same
+> neutral "check your email" message but no link/account (anti-enumeration).
+> Accounts are created only by the coordinator invite flow.
+>
 > **Known limitations / next steps (small):**
+> - **Email delivery is restricted** until a domain is verified in Resend: the
+>   sender is the shared `onboarding@resend.dev` test sender, which only delivers
+>   to the project owner's own verified address (`theomarbadran@gmail.com`).
+>   Other people will NOT receive a login email yet — this is why an outside
+>   tester saw an error. Fix = verify a sending domain (tied to the domain
+>   decision). Until then, add the person as a real user and hand them a
+>   coordinator-generated one-time link (e.g. on WhatsApp).
 > - Nurse-invite emails are **manual** — the coordinator sends the generated
 >   magic link (e.g. on WhatsApp). Automatic email-on-invite needs a verified
 >   sending domain (tied to the domain decision).
