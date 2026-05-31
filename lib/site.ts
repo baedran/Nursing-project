@@ -64,8 +64,8 @@ export const site = {
 
   // WhatsApp — primary contact channel
   whatsapp: {
-    number: "96100000000",
-    display: "+961 XX XXX XXX",
+    number: "96176721503",
+    display: "+961 76 721 503",
   },
 
   get whatsappUrl() {
