@@ -22,12 +22,25 @@ export async function sendMagicLink(formData: FormData) {
   const { error } = await supabase.auth.signInWithOtp({
     email,
     options: {
+      // Invite-only: never create a new account from the login form. Accounts
+      // exist only when the coordinator has invited that email. A non-invited
+      // address therefore receives no link.
+      shouldCreateUser: false,
       emailRedirectTo: `${origin}/${locale}/auth/confirm`,
     },
   });
 
+  // When the email isn't an invited account, Supabase returns an
+  // "otp_disabled" / "Signups not allowed" error. We show the SAME confirmation
+  // as success on purpose, so the form never reveals who is on the invite list
+  // (prevents email-enumeration). Only genuine, unexpected failures surface.
   if (error) {
-    redirect(`/${locale}/login?error=${encodeURIComponent(error.message)}`);
+    const benign =
+      error.code === "otp_disabled" ||
+      /signups? not allowed|not allowed for otp/i.test(error.message);
+    if (!benign) {
+      redirect(`/${locale}/login?error=${encodeURIComponent(error.message)}`);
+    }
   }
 
   redirect(`/${locale}/login?sent=1`);
