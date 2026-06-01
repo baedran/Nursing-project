@@ -224,6 +224,41 @@ export type Database = {
         }
         Relationships: []
       }
+      summary_share_links: {
+        Row: {
+          created_at: string
+          created_by: string | null
+          expires_at: string
+          id: string
+          token: string
+          visit_summary_id: string
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string | null
+          expires_at: string
+          id?: string
+          token: string
+          visit_summary_id: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string | null
+          expires_at?: string
+          id?: string
+          token?: string
+          visit_summary_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "summary_share_links_visit_summary_id_fkey"
+            columns: ["visit_summary_id"]
+            isOneToOne: false
+            referencedRelation: "visit_summaries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       visit_summaries: {
         Row: {
           coordinator_note: string | null
