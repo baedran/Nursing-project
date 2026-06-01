@@ -1027,5 +1027,24 @@
       "successHeading": "Message sent",
       "successBody": "We'll reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am."
     }
+  },
+  "install": {
+    "title": "Install the Caregivers app",
+    "intro": "Add this to your phone's home screen so it opens like an app — no app store needed.",
+    "iphoneHeading": "On iPhone (Safari)",
+    "iphoneSteps": [
+      "Tap the Share button (the square with an arrow pointing up) at the bottom of the screen.",
+      "Scroll down and tap \"Add to Home Screen\".",
+      "Tap \"Add\" in the top corner — the Caregivers icon now sits on your home screen."
+    ],
+    "androidHeading": "On Android (Chrome)",
+    "androidSteps": [
+      "Tap the three-dot menu in the top right corner.",
+      "Tap \"Install app\" (it may say \"Add to Home screen\").",
+      "Tap \"Install\" — the Caregivers icon now sits on your home screen."
+    ],
+    "iphoneTab": "iPhone",
+    "androidTab": "Android",
+    "openInBrowserNote": "Already added it? Just tap the Caregivers icon to open the app."
   }
 }
