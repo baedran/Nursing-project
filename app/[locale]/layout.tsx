@@ -1,11 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Topbar from "@/components/Topbar";
 import Footer from "@/components/Footer";
+import { RegisterServiceWorker } from "@/components/pwa/RegisterServiceWorker";
 import { site } from "@/lib/site";
 import { dirOf, getDictionary, htmlLang, isLocale, type Locale } from "@/lib/i18n";
 import { createClient } from "@/lib/supabase/server";
+
+// Brand color for the phone status bar / browser toolbar when the app is open.
+export const viewport: Viewport = {
+  themeColor: "#1a504f",
+};
 
 
 export function generateStaticParams() {
@@ -52,6 +58,12 @@ export async function generateMetadata({
       description: dict.meta.siteDescription,
     },
     robots: { index: true, follow: true },
+    manifest: "/manifest.webmanifest",
+    appleWebApp: {
+      capable: true,
+      title: "Caregivers",
+      statusBarStyle: "default",
+    },
   };
 }
 
@@ -119,6 +131,7 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <RegisterServiceWorker />
         <Topbar locale={locale} dict={dict.nav} isAuthenticated={Boolean(user)} />
         <main className="flex-1">{children}</main>
         <Footer
