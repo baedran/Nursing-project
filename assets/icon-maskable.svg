@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#1a504f"/>
+  <!-- content kept inside the central ~62% safe zone for Android's circle crop -->
+  <g transform="translate(256,256) scale(0.62) translate(-256,-256)">
+    <path d="M352 150a150 150 0 1 0 0 212" fill="none" stroke="#f7f7f3"
+          stroke-width="44" stroke-linecap="round"/>
+    <circle cx="300" cy="256" r="40" fill="#4ec19a"/>
+  </g>
+</svg>
