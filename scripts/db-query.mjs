@@ -51,7 +51,11 @@ const res = await fetch(
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,
-      "Content-Type": "application/json",
+      // Explicit charset: without it the Management API has mis-decoded
+      // multibyte UTF-8 (em-dash, °, ·) into mojibake. Keep this for any
+      // SQL that contains non-ASCII text. (Better still: seed text rows via
+      // the supabase-js client, which round-trips UTF-8 cleanly.)
+      "Content-Type": "application/json; charset=utf-8",
     },
     body: JSON.stringify({ query }),
   },
