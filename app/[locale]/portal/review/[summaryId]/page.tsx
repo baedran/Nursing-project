@@ -5,6 +5,7 @@ import { getDictionary, isLocale } from "@/lib/i18n";
 import { loadSummaryData } from "@/lib/portal/summary";
 import VisitSummaryDocument from "@/components/portal/VisitSummaryDocument";
 import ReviewControls from "@/components/portal/ReviewControls";
+import ShareLinkPanel from "@/components/portal/ShareLinkPanel";
 
 export default async function ReviewPage({
   params,
@@ -81,24 +82,35 @@ export default async function ReviewPage({
           {/* Review controls or published badge */}
           <div className="mt-8">
             {status === "published" ? (
-              <div className="flex flex-col gap-4 rounded-xl border border-teal/40 bg-teal-soft p-5">
-                <div className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-teal-deep">
-                  {r.published}
+              <>
+                <div className="flex flex-col gap-4 rounded-xl border border-teal/40 bg-teal-soft p-5">
+                  <div className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-teal-deep">
+                    {r.published}
+                  </div>
+                  <p className="text-[15px] text-ink">{r.publishedBody}</p>
+                  <Link
+                    href={`/${locale}/portal`}
+                    className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-teal-deep transition hover:opacity-70"
+                  >
+                    ← {r.back}
+                  </Link>
                 </div>
-                <p className="text-[15px] text-ink">{r.publishedBody}</p>
-                <Link
-                  href={`/${locale}/portal`}
-                  className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-teal-deep transition hover:opacity-70"
-                >
-                  ← {r.back}
-                </Link>
-              </div>
+                <div className="mt-4">
+                  <ShareLinkPanel
+                    locale={locale}
+                    dict={dict}
+                    summaryId={summaryId}
+                    patientLabel={doc.data.patientLabel}
+                  />
+                </div>
+              </>
             ) : (
               <ReviewControls
                 locale={locale}
                 dict={dict}
                 summaryId={summaryId}
                 initialNote={coordinatorNote}
+                patientLabel={doc.data.patientLabel}
               />
             )}
           </div>

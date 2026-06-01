@@ -4,15 +4,17 @@ import { useState, useTransition } from "react";
 import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import { saveCoordinatorNote, publish, sendBack } from "@/app/[locale]/portal/review/[summaryId]/actions";
+import ShareLinkPanel from "@/components/portal/ShareLinkPanel";
 
 type Props = {
   locale: string;
   dict: Dictionary;
   summaryId: string;
   initialNote: string;
+  patientLabel: string;
 };
 
-export default function ReviewControls({ locale, dict, summaryId, initialNote }: Props) {
+export default function ReviewControls({ locale, dict, summaryId, initialNote, patientLabel }: Props) {
   const r = dict.portal.review;
 
   // --- Coordinator note state ---
@@ -88,6 +90,14 @@ export default function ReviewControls({ locale, dict, summaryId, initialNote }:
         >
           ← {r.back}
         </Link>
+        <div className="mt-2">
+          <ShareLinkPanel
+            locale={locale}
+            dict={dict}
+            summaryId={summaryId}
+            patientLabel={patientLabel}
+          />
+        </div>
       </div>
     );
   }
