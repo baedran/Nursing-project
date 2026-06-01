@@ -965,7 +965,25 @@
       "sentBack": "Sent back",
       "sentBackBody": "The nurse will see your note and can resubmit.",
       "errorGeneric": "Something went wrong. Try again."
+    },
+    "share": {
+      "label": "Share with the family",
+      "help": "Send this private link. It works for 30 days — no login needed.",
+      "copy": "Copy link",
+      "copied": "Copied!",
+      "whatsapp": "Send on WhatsApp",
+      "whatsappText": "{patient}'s visit summary is ready 👉 {url}",
+      "validUntil": "Link works until {date}",
+      "generating": "Preparing link…",
+      "error": "Could not create the link. Try again."
     }
+  },
+  "sharePage": {
+    "caption": "Shared visit summary",
+    "validUntil": "Link valid until {date}",
+    "download": "Download / Print",
+    "expiredTitle": "Link unavailable",
+    "expiredBody": "This link has expired or is no longer available. Please ask your coordinator for a new one."
   },
   "contact": {
     "meta": {
