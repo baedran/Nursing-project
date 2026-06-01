@@ -125,3 +125,70 @@ export async function loadSummaryData(
 
   return { data: toSummaryData(row, photos), visitId: v.visit_id };
 }
+
+/**
+ * Load a summary for the PUBLIC no-login share page, by share token.
+ *
+ * Pass the SERVER-ONLY admin client (there is no logged-in user to satisfy
+ * RLS). This is safe because access is fully gated here: returns null unless
+ * the token exists, is not expired, and its summary is published. It can only
+ * ever return that one token's summary — never a list or anything else.
+ */
+export async function loadSummaryByToken(
+  admin: SupabaseClient,
+  token: string,
+): Promise<{ data: VisitSummaryData } | null> {
+  const { data: link } = await admin
+    .from("summary_share_links")
+    .select("visit_summary_id, expires_at")
+    .eq("token", token)
+    .single();
+  if (!link) return null;
+  if (new Date((link as any).expires_at).getTime() <= Date.now()) return null;
+
+  const summaryId = (link as any).visit_summary_id as string;
+  const { data: s } = await admin
+    .from("visit_summaries")
+    .select(
+      "id, status, vitals, done_body, observations_body, meds_administered, watch_items, next_visit_body, coordinator_note, written_at, published_at, visits(scheduled_at, cases(case_ref, patients(display_label, district)))",
+    )
+    .eq("id", summaryId)
+    .single();
+  if (!s) return null;
+  const v: any = s;
+  if (v.status !== "published") return null;
+
+  const row: SummaryRow = {
+    status: v.status,
+    vitals: v.vitals ?? {},
+    done_body: v.done_body,
+    observations_body: v.observations_body,
+    meds_administered: v.meds_administered,
+    watch_items: v.watch_items,
+    next_visit_body: v.next_visit_body,
+    coordinator_note: v.coordinator_note,
+    written_at: v.written_at,
+    published_at: v.published_at,
+    patientLabel: v.visits?.cases?.patients?.display_label ?? "—",
+    district: v.visits?.cases?.patients?.district ?? null,
+    caseRef: v.visits?.cases?.case_ref ?? "—",
+    visitScheduledAt: v.visits?.scheduled_at ?? null,
+  };
+
+  const { data: photoRows } = await admin
+    .from("wound_photos")
+    .select("storage_path, caption")
+    .eq("visit_summary_id", summaryId);
+
+  const photos: SummaryPhoto[] = [];
+  for (const p of photoRows ?? []) {
+    const { data: signed } = await admin.storage
+      .from("wound-photos")
+      .createSignedUrl((p as any).storage_path, 3600);
+    if (signed?.signedUrl) {
+      photos.push({ caption: (p as any).caption ?? "", url: signed.signedUrl });
+    }
+  }
+
+  return { data: toSummaryData(row, photos) };
+}
