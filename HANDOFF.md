@@ -1,3 +1,59 @@
+> **Update 2026-06-01 (later) — Nurse mobile app shipped as an installable PWA.**
+>
+> Nurses can now install the portal on their phone as a home-screen app. We did
+> NOT build a native app — we turned the **existing** mobile-responsive portal
+> into a **PWA** (Progressive Web App): same screens, same login, same data, same
+> security; it just gains a home-screen icon and opens full-screen. Chosen over
+> native because the founder is solo + non-coder (a native app = a second/third
+> codebase forever), connectivity is fine during visits (so no offline-sync
+> needed — the one real native advantage), the camera already works via the file
+> input, updates are instant (deploy → everyone has it), and it costs $0.
+>
+> **Five pieces added:**
+> 1. **Manifest** — `app/manifest.ts` (served at `/manifest.webmanifest`): name
+>    "Caregivers Collective", `display: standalone`, `start_url: /en/portal`,
+>    brand colors (`theme_color #1a504f`, `background_color #f7f7f3`).
+> 2. **Designed brand icon** — no logo image existed (brand is a wordmark), so the
+>    icon is a designed mark: a teal "C" cradling a dot (the cared-for person).
+>    Source SVGs in `assets/`; regenerate the PNGs with
+>    `node scripts/generate-icons.mjs` (uses `sharp`, a **dev-only** dependency).
+>    Outputs: `public/icons/icon-{192,512}.png`, `icon-maskable-512.png` (Android
+>    adaptive), `app/icon.png` (favicon), `app/apple-icon.png` (iPhone).
+> 3. **Minimal service worker** — `public/sw.js` (~30 lines, hand-written, no PWA
+>    library on purpose so it stays auditable). **PHI rule: it caches ONLY static
+>    assets** (`/_next/static/*`, `/icons/*`, `/offline.html`). Navigations and all
+>    data/photos are **network-only** — portal HTML, summaries, wound photos, and
+>    Supabase responses are **never** cached. Registered prod-only via
+>    `components/pwa/RegisterServiceWorker.tsx` (a SW fights hot-reload in dev).
+>    `public/offline.html` is a PHI-free "no connection" fallback.
+> 4. **iPhone + theme wiring** — in `app/[locale]/layout.tsx`: manifest link,
+>    `appleWebApp` (title "Caregivers"), `themeColor`, and a legacy
+>    `apple-mobile-web-app-capable` meta in `<head>` for iPhones on iOS < 15.4
+>    (Next only emits the modern `mobile-web-app-capable`).
+> 5. **Install help page** — `app/[locale]/install/page.tsx` +
+>    `components/pwa/InstallGuide.tsx`. Open it **on the nurse's phone** during
+>    training; it auto-detects iPhone vs Android and shows the right 3 steps (with
+>    a manual tab toggle). Strings in `messages/{en,ar}.json` under `install.*`
+>    (Arabic translated, not placeholder). No nagging install banner anywhere else.
+>
+> **How a nurse installs it:** open `nursing-project-olive.vercel.app/en/install`
+> → **iPhone:** Share → "Add to Home Screen" · **Android:** ⋮ menu → "Install app".
+>
+> **Verified in a real browser (production build):** SW registers and activates;
+> manifest valid + installable; after browsing, the cache held ONLY
+> `/_next/static/*` + `/icons/*` + `/offline.html` — **zero patient data, no page
+> HTML** (the PHI guarantee, proven not just claimed).
+>
+> **By design (deferred, not forgotten):** no offline editing, no push
+> notifications, no App Store / Play Store, no PHI in cache, no portal redesign.
+>
+> **Test counts now: 22 unit (`npm test`) + 57 integration (`npm run test:rls`).**
+> The 4 new unit tests cover the manifest and the install guide. New unit tests
+> live under `tests/pwa/`. Spec + plan:
+> `docs/superpowers/{specs,plans}/2026-06-01-nurse-mobile-pwa*.md`.
+>
+> ---
+>
 > **Update 2026-06-01 — Shareable summary link (Option C) shipped + invite-only auth + encoding fix.**
 >
 > Since the 2026-05-31 update below, three things shipped (all live, pushed to
