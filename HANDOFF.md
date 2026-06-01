@@ -1,3 +1,41 @@
+> **Update 2026-06-01 — Shareable summary link (Option C) shipped + invite-only auth + encoding fix.**
+>
+> Since the 2026-05-31 update below, three things shipped (all live, pushed to
+> `master`, HEAD `311f010`):
+>
+> 1. **No-login share link (Option C).** A coordinator publishes a summary →
+>    the review screen shows a **Copy link** + **Send on WhatsApp** button (and
+>    on any already-published summary, so re-sending is free). The link
+>    `/<locale>/s/<token>` opens the full read-only summary with **no account /
+>    no login**, expires in **30 days**, uses an unguessable ~32-char token, and
+>    reveals exactly one *published* summary (garbage/expired/draft tokens show a
+>    friendly "unavailable" page and leak nothing — proven by tests). Includes
+>    **Download / Print → Save as PDF**. PHI never enters WhatsApp — only the
+>    opaque link does. $0 recurring (no WhatsApp Business API). Files: migration
+>    `*_summary_share_links.sql`; `lib/portal/share.ts` (`generateToken`,
+>    `shareExpiry`, `SHARE_TTL_DAYS=30`); `loadSummaryByToken` in
+>    `lib/portal/summary.ts`; `createShareLink` action; `ShareLinkPanel.tsx`;
+>    public page `app/[locale]/s/[token]/page.tsx`; `tests/rls/share-link.itest.ts`.
+>    Spec + plan: `docs/superpowers/{specs,plans}/2026-06-01-shareable-summary-link-*.md`.
+> 2. **Invite-only auth.** Login no longer creates accounts
+>    (`shouldCreateUser:false` + Supabase `disable_signup:true`); a non-invited
+>    email gets the same neutral "check your email" message but no link/account.
+> 3. **Encoding fix.** The old sample summary showed mojibake (`â€"`, `Â°C`).
+>    Cause: the SQL-seed path (`scripts/db-query.mjs`) sent text without a UTF-8
+>    charset header. The live app write path was never affected. Fixed the
+>    sample + added `charset=utf-8` to the helper. **Seed text via supabase-js,
+>    not raw SQL.**
+>
+> **Test counts now: 18 unit (`npm test`) + 57 integration (`npm run test:rls`).**
+> Run `test:rls` SEQUENTIALLY and never at the same time as DB-cleanup scripts.
+>
+> **NEXT SESSION: nurse mobile app** (see the resume prompt the founder pastes).
+> Recommended first step: brainstorm PWA vs native — a PWA makes the *existing*
+> mobile-responsive portal installable as a home-screen app icon (free, reuses
+> everything, simplest to teach), vs a costly from-scratch native app.
+>
+> ---
+>
 > **Update 2026-05-31 — Phase 2 COMPLETE. The whole product is shipped & live.**
 >
 > The portal now works end-to-end for all three roles, verified in the browser
