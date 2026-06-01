@@ -117,6 +117,9 @@ export default async function LocaleLayout({
   return (
     <html lang={htmlLang[locale]} dir={dirOf(locale)}>
       <head>
+        {/* Next emits the modern `mobile-web-app-capable`; older iPhones (iOS < 15.4)
+            still need this legacy meta to launch full-screen from the home screen. */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="" />
         <link
           href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=cabinet-grotesk@500,700,800&f[]=fragment-mono@400&display=swap"
