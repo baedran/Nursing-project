@@ -3,10 +3,8 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import Topbar from "@/components/Topbar";
 import Footer from "@/components/Footer";
-import { RegisterServiceWorker } from "@/components/pwa/RegisterServiceWorker";
 import { site } from "@/lib/site";
 import { dirOf, getDictionary, htmlLang, isLocale, type Locale } from "@/lib/i18n";
-import { createClient } from "@/lib/supabase/server";
 
 // Brand color for the phone status bar / browser toolbar when the app is open.
 export const viewport: Viewport = {
@@ -58,12 +56,6 @@ export async function generateMetadata({
       description: dict.meta.siteDescription,
     },
     robots: { index: true, follow: true },
-    manifest: "/manifest.webmanifest",
-    appleWebApp: {
-      capable: true,
-      title: "Caregivers",
-      statusBarStyle: "default",
-    },
   };
 }
 
@@ -108,18 +100,9 @@ export default async function LocaleLayout({
   const dict = await getDictionary(locale);
   const structuredData = buildStructuredData(locale, dict.meta.siteDescription);
 
-  // Check auth state for the Topbar — never throws, returns null user if not logged in
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
   return (
     <html lang={htmlLang[locale]} dir={dirOf(locale)}>
       <head>
-        {/* Next emits the modern `mobile-web-app-capable`; older iPhones (iOS < 15.4)
-            still need this legacy meta to launch full-screen from the home screen. */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="" />
         <link
           href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&f[]=cabinet-grotesk@500,700,800&f[]=fragment-mono@400&display=swap"
@@ -134,8 +117,7 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <RegisterServiceWorker />
-        <Topbar locale={locale} dict={dict.nav} isAuthenticated={Boolean(user)} />
+        <Topbar locale={locale} dict={dict.nav} />
         <main className="flex-1">{children}</main>
         <Footer
           locale={locale}

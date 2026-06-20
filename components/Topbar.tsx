@@ -9,7 +9,6 @@ import type { Locale } from "@/lib/i18n";
 
 type Props = {
   locale: Locale;
-  isAuthenticated?: boolean;
   dict: {
     services: string;
     howItWorks: string;
@@ -19,12 +18,10 @@ type Props = {
     whatsappLabel: string;
     menuOpenLabel: string;
     menuCloseLabel: string;
-    loginLabel: string;
-    portalLabel: string;
   };
 };
 
-export default function Topbar({ locale, dict, isAuthenticated = false }: Props) {
+export default function Topbar({ locale, dict }: Props) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
@@ -60,12 +57,6 @@ export default function Topbar({ locale, dict, isAuthenticated = false }: Props)
             <Link href={`/${locale}/diaspora`} className="hover:text-ink">{dict.diaspora}</Link>
             <Link href={`/${locale}/packages`} className="hover:text-ink">{dict.packages}</Link>
             <Link href={`/${locale}/faq`} className="hover:text-ink">{dict.faq}</Link>
-            <Link
-              href={isAuthenticated ? `/${locale}/portal` : `/${locale}/login`}
-              className="hover:text-ink"
-            >
-              {isAuthenticated ? dict.portalLabel : dict.loginLabel}
-            </Link>
           </div>
 
           {/* Right side: hamburger (mobile) + WhatsApp CTA */}
@@ -97,7 +88,6 @@ export default function Topbar({ locale, dict, isAuthenticated = false }: Props)
         isOpen={mobileNavOpen}
         onClose={() => setMobileNavOpen(false)}
         locale={locale}
-        isAuthenticated={isAuthenticated}
         dict={{
           services: dict.services,
           howItWorks: dict.howItWorks,
@@ -106,8 +96,6 @@ export default function Topbar({ locale, dict, isAuthenticated = false }: Props)
           faq: dict.faq,
           whatsappLabel: dict.whatsappLabel,
           menuCloseLabel: dict.menuCloseLabel,
-          loginLabel: dict.loginLabel,
-          portalLabel: dict.portalLabel,
         }}
       />
     </>
