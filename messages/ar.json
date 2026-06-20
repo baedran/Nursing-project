@@ -31,10 +31,7 @@
     "toggleMenu": "فتح/إغلاق القائمة",
     "menuOpenLabel": "افتح القائمة",
     "menuCloseLabel": "أغلق القائمة",
-    "whatsappLabel": "تواصل عبر واتساب",
-    "whatWeSend": "ما نرسله",
-    "loginLabel": "تسجيل الدخول",
-    "portalLabel": "البوابة"
+    "whatsappLabel": "تواصل عبر واتساب"
   },
   "footer": {
     "blurb": "رعاية تمريضية منزلية مرخّصة في {area}. تأسست تحت إشراف سريري من ممرضة لبنانية حاصلة على بكالوريوس التمريض.",
@@ -282,14 +279,28 @@
       "primaryCta": "أرسل عبر واتساب",
       "restartLabel": "ابدأ من جديد",
       "skipLabel": "أو راسل المنسّق مباشرةً دون المعالج",
-
       "q1Label": "ما هو الوضع؟",
       "q1Options": [
-        { "key": "recovery", "label": "تمّ خروجه للتو من المستشفى" },
-        { "key": "daily", "label": "رعاية يومية لأحد الوالدين المسنّين" },
-        { "key": "procedure", "label": "إجراء محدد (وريد، حقنة، عناية بجرح)" },
-        { "key": "bloodwork", "label": "تحاليل دم في المنزل" },
-        { "key": "companion", "label": "نوبات ليلية أو مرافقة" }
+        {
+          "key": "recovery",
+          "label": "تمّ خروجه للتو من المستشفى"
+        },
+        {
+          "key": "daily",
+          "label": "رعاية يومية لأحد الوالدين المسنّين"
+        },
+        {
+          "key": "procedure",
+          "label": "إجراء محدد (وريد، حقنة، عناية بجرح)"
+        },
+        {
+          "key": "bloodwork",
+          "label": "تحاليل دم في المنزل"
+        },
+        {
+          "key": "companion",
+          "label": "نوبات ليلية أو مرافقة"
+        }
       ],
       "q1Sentence": {
         "recovery": "رعاية التعافي بعد الخروج من المستشفى",
@@ -298,13 +309,24 @@
         "bloodwork": "تحاليل دم في المنزل",
         "companion": "نوبات ليلية أو مرافقة"
       },
-
       "q2Label": "لمن هذه الرعاية؟",
       "q2Options": [
-        { "key": "parent", "label": "أحد الوالدين" },
-        { "key": "spouse", "label": "الزوج أو الزوجة" },
-        { "key": "self", "label": "لنفسي" },
-        { "key": "other", "label": "فرد آخر من العائلة" }
+        {
+          "key": "parent",
+          "label": "أحد الوالدين"
+        },
+        {
+          "key": "spouse",
+          "label": "الزوج أو الزوجة"
+        },
+        {
+          "key": "self",
+          "label": "لنفسي"
+        },
+        {
+          "key": "other",
+          "label": "فرد آخر من العائلة"
+        }
       ],
       "q2Sentence": {
         "parent": "أحد والديّ",
@@ -312,13 +334,24 @@
         "self": "نفسي",
         "other": "فرد آخر من العائلة"
       },
-
       "q3Label": "متى تريد البدء؟",
       "q3Options": [
-        { "key": "urgent", "label": "اليوم أو غداً" },
-        { "key": "thisWeek", "label": "هذا الأسبوع" },
-        { "key": "withinMonth", "label": "خلال الشهر" },
-        { "key": "planning", "label": "تخطيط مسبق" }
+        {
+          "key": "urgent",
+          "label": "اليوم أو غداً"
+        },
+        {
+          "key": "thisWeek",
+          "label": "هذا الأسبوع"
+        },
+        {
+          "key": "withinMonth",
+          "label": "خلال الشهر"
+        },
+        {
+          "key": "planning",
+          "label": "تخطيط مسبق"
+        }
       ],
       "q3Sentence": {
         "urgent": "اليوم أو غداً",
@@ -703,288 +736,6 @@
       "callCta": "اتصل"
     }
   },
-  "whatWeSend": {
-    "meta": {
-      "title": "ما نرسله — Caregivers Collective",
-      "description": "ما يصل إلى بوابة العائلة بعد كل زيارة — العلامات الحيوية، ما تم القيام به، ما يجب مراقبته، الصور. الوثيقة الفعلية، لا وصفاً لها."
-    },
-    "hero": {
-      "badge": "ما يصل إلى بوابة العائلة",
-      "headline": "الملخّص،",
-      "headlineEm": "لا الوعد بواحد.",
-      "sub": "كل زيارة تنتهي بملخّص مكتوب في بوابة العائلة. إليك بالضبط كيف يبدو أحدها — العلامات الحيوية، ما تم القيام به، ما يجب مراقبته، الصور عند الاقتضاء.",
-      "primaryCta": "تواصل مع المنسّق",
-      "ghostCta": "كيف تتمّ الزيارة"
-    },
-    "documentSection": {
-      "eyebrow": "ملخّص نموذجي",
-      "headline": "من شكل زيارة",
-      "headlineEm": "حقيقية.",
-      "lede": "الأسماء والمعرّفات مستعارة. التنسيق والحقول والأسلوب هو بالضبط ما تعرضه البوابة. تصوير الملخّصات الحقيقية في حاويات خاصّة — لا تظهر إلا لحسابات العائلة المخوّلة."
-    },
-    "sample": {
-      "patientLabel": "مريم · 78",
-      "district": "الأشرفية",
-      "visitDateLabel": "الثلاثاء · 14 مايو · 18:30",
-      "caseRef": "حالة 2026-051",
-      "liveLabel": "موثّق",
-      "printLabel": "اطبع الملخص",
-      "vitalsHeading": "العلامات الحيوية",
-      "vitals": [
-        { "label": "ضغط الدم", "value": "128/82" },
-        { "label": "نبض", "value": "74 ن/د" },
-        { "label": "تشبّع O₂", "value": "97 %" },
-        { "label": "حرارة", "value": "36.6 °م" }
-      ],
-      "vitalsFootnote": "قيست الساعة 18:35 · جالسة · الذراع الأيسر",
-      "doneHeading": "ما تمّ القيام به",
-      "doneBody": "جلسة ترطيب وريدي (محلول ملحي طبيعي، 500 مل، على مدى 90 دقيقة)، قياس العلامات الحيوية، تغيير الضمادة على الساعد الأيسر. مساعدة المريضة من السرير إلى الكرسي المريح قبل الجلسة وبعدها.",
-      "observationsHeading": "الملاحظات",
-      "observationsBody": "كانت مريم واعية ومتيقّظة ومرتاحة في وضع الراحة. الحركة جيدة — مشت بشكل مستقل إلى المطبخ في منتصف الزيارة. ألم طفيف حول موقع الصرّافة في الساعد الأيسر؛ والجرح يلتئم بشكل متوقّع. الشهية كانت منخفضة عند الغداء لكنها طبيعية عند العشاء.",
-      "medsHeading": "الأدوية المُعطاة",
-      "meds": [
-        "فانكومايسين 1 غ وريدياً — 18:15، لا تفاعل عكسي",
-        "باراسيتامول 1 غ فموياً — 19:00، لتخفيف الانزعاج الخفيف"
-      ],
-      "watchHeading": "ما يجب مراقبته حتى الزيارة القادمة",
-      "watchItems": [
-        "احمرار أو دفء أو تورّم متزايد حول موقع الضمادة",
-        "حرارة تتجاوز 38 °م (تُقاس في المنزل بميزان حرارة)",
-        "ألم جديد في موقع الوريد، أو رفض الطعام لأكثر من 24 ساعة"
-      ],
-      "photosHeading": "صور · موقع الجرح",
-      "photosNote": "خاصّة بعائلتك · روابط موقّعة",
-      "photos": [
-        {
-          "caption": "قبل الضمادة · الساعد الأيسر",
-          "url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80&auto=format&fit=crop"
-        },
-        {
-          "caption": "بعد الضمادة · مختومة",
-          "url": "https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=900&q=80&auto=format&fit=crop"
-        }
-      ],
-      "nextVisitHeading": "الزيارة القادمة",
-      "nextVisitBody": "الخميس 16 مايو · 18:30 — نفس الممرضة، نفس الشكل. تغيير الضمادة + العلامات الحيوية. ستتحدّث بوابة العائلة في غضون ساعة من انتهاء الزيارة.",
-      "coordinatorNoteLabel": "من المنسّق",
-      "coordinatorNoteBody": "الصيدلية سلّمت ضمادات جديدة هذا الصباح — المخزون كافٍ لخمسة تغييرات إضافية. تمّ إشعار الابنة في باريس عبر واتساب بأن الملخّص متاح.",
-      "footerLine": "كتبه فريق الحالة · 14 مايو · 19:12 بتوقيت بيروت"
-    },
-    "readGuide": [
-      {
-        "label": "أوّلاً",
-        "title": "العلامات الحيوية في الأعلى.",
-        "body": "أرقام يستطيع أي شخص مسحها — ضغط الدم، معدّل ضربات القلب، الأكسجين، الحرارة. الحاشية تخبرك متى وكيف قيست."
-      },
-      {
-        "label": "في المنتصف",
-        "title": "ما حدث، ثم ما يجب مراقبته.",
-        "body": "لغة بسيطة. ثم قائمة قصيرة بالأشياء التي ستتصل بنا بشأنها — مكتوبة بالكلمات التي اتّفق عليها المنسّق والعائلة."
-      },
-      {
-        "label": "أخيراً",
-        "title": "الزيارة القادمة + ملاحظة المنسّق.",
-        "body": "موعد الزيارة القادمة وما تغطيه، وأي لوجستيات من المنسّق (مستلزمات، جدولة، من تمّ إشعاره)."
-      }
-    ]
-  },
-  "login": {
-    "eyebrow": "بوابة العائلة",
-    "headline": "رابط واحد،",
-    "headlineEm": "بلا كلمة مرور.",
-    "lede": "أدخل بريدك الإلكتروني. نرسل لك رابط دخول لمرة واحدة. افتح الرابط على هذا الجهاز للدخول إلى البوابة.",
-    "emailLabel": "البريد الإلكتروني",
-    "submitLabel": "إرسال الرابط",
-    "helper": "روابط الدخول تنتهي صلاحيتها بعد ساعة واحدة. إذا لم تجد البريد، تحقّق من مجلد البريد المزعج.",
-    "successLabel": "تمّ الإرسال",
-    "successHeadline": "تحقّق من بريدك الإلكتروني.",
-    "successBody": "أرسلنا لك للتوّ رابط دخول لمرة واحدة. افتحه على هذا الجهاز للدخول إلى البوابة. تنتهي صلاحيته بعد ساعة واحدة."
-  },
-  "portal": {
-    "eyebrow": "البوابة",
-    "headline": "مرحباً، {name}.",
-    "patientsLabel": "المرضى الذين يمكنك الوصول إليهم",
-    "emptyPatients": "لا يوجد شيء هنا بعد. إذا أضاف المنسّق حالة لعائلتك للتوّ، أعد التحميل بعد لحظة.",
-    "sampleLabel": "مستند نموذجي",
-    "sampleHeadline": "هل تريد أن ترى كيف يبدو ملخّص الزيارة؟",
-    "sampleBody": "كل زيارة تنتهي بملخّص مكتوب. هذا هو التنسيق الذي ستعرضه بوابتك عند وصول زيارة حقيقية.",
-    "sampleCta": "عرض ملخّص نموذجي",
-    "logoutLabel": "تسجيل الخروج",
-    "coordinator": {
-      "eyebrow": "Coordinator",
-      "headline": "Coordinator desk",
-      "queueLabel": "Summaries waiting for review",
-      "queueEmpty": "Nothing waiting. When a nurse submits a visit summary, it lands here for you to review and publish.",
-      "reviewCta": "Review",
-      "manageNursesLabel": "Manage nurses",
-      "manageNursesBody": "Add a nurse to the roster and get a sign-in link to send them.",
-      "scheduleLabel": "Schedule a visit",
-      "scheduleBody": "Assign a patient visit to a nurse. It appears on their dashboard to write up.",
-      "openLabel": "Open"
-    },
-    "nurseHome": {
-      "eyebrow": "Nurse",
-      "headline": "Welcome back, {name}.",
-      "body": "Your assigned visits and write-ups will appear here.",
-      "noVisits": "No visits assigned yet. When the coordinator schedules one for you, it shows up here."
-    },
-    "nurseDash": {
-      "eyebrow": "Nurse",
-      "headline": "Welcome back, {name}.",
-      "needsLabel": "Needs your write-up",
-      "sentBackLabel": "Sent back to fix",
-      "historyLabel": "Submitted & published",
-      "writeCta": "Write summary",
-      "editCta": "Edit",
-      "viewCta": "View",
-      "empty": "No visits assigned yet. When the coordinator schedules one for you, it shows up here.",
-      "visitedPrefix": "Visit",
-      "statusWith": "With coordinator",
-      "statusPublished": "Published",
-      "statusInReview": "In review",
-      "statusSubmitted": "Submitted"
-    },
-    "nurses": {
-      "eyebrow": "Roster",
-      "headline": "Nurses",
-      "lede": "The nurses who can log in and write visit summaries. Add one, then send them their sign-in link.",
-      "backToPortal": "Back to coordinator desk",
-      "rosterLabel": "Current roster",
-      "empty": "No nurses yet. Add the first one below.",
-      "colName": "Name",
-      "colHospital": "Hospital",
-      "colLicense": "License",
-      "colStatus": "Status",
-      "active": "Active",
-      "inactive": "Inactive",
-      "addLabel": "Add a nurse",
-      "nameField": "Full name",
-      "namePlaceholder": "Rita K.",
-      "emailField": "Email",
-      "emailPlaceholder": "rita@example.com",
-      "hospitalField": "Hospital",
-      "hospitalPlaceholder": "AUBMC",
-      "licenseField": "License number (optional)",
-      "licensePlaceholder": "RN-12345",
-      "submitLabel": "Add nurse & create sign-in link",
-      "successLabel": "Nurse added",
-      "successBody": "{name} is on the roster. Send them this one-time sign-in link (it works for an hour):",
-      "successHint": "Tip: send it on WhatsApp. They can also sign in any time from the login page with their email.",
-      "copyLabel": "Copy link",
-      "addAnother": "Add another nurse",
-      "errorExists": "An account with that email already exists.",
-      "errorGeneric": "Could not add the nurse. Check the details and try again."
-    },
-    "schedule": {
-      "eyebrow": "Schedule",
-      "headline": "Schedule a visit",
-      "lede": "Pick a patient, a date, and the nurse. The visit appears on the nurse's dashboard to write up after.",
-      "backToPortal": "Back to coordinator desk",
-      "patientField": "Patient & case",
-      "nurseField": "Assign to nurse",
-      "dateField": "Date & time",
-      "submitLabel": "Schedule & assign",
-      "noNurses": "Add a nurse first — there's no one to assign a visit to yet.",
-      "noCases": "No patients with an active case yet.",
-      "successLabel": "Visit scheduled",
-      "successBody": "Scheduled for {patient} with {nurse} on {when}. It's now on the nurse's dashboard.",
-      "scheduleAnother": "Schedule another",
-      "errorGeneric": "Could not schedule the visit. Check the details and try again."
-    },
-    "patient": {
-      "eyebrow": "Patient",
-      "back": "Back to your family",
-      "visitsLabel": "Visit summaries",
-      "latest": "Latest",
-      "empty": "No visit summaries yet — you'll see one here within an hour of each visit.",
-      "readSummary": "Read summary",
-      "backToPatient": "Back to visits"
-    },
-    "nurseDash": {
-      "eyebrow": "Nurse",
-      "headline": "Welcome back, {name}.",
-      "needsLabel": "Needs your write-up",
-      "sentBackLabel": "Sent back to fix",
-      "historyLabel": "Submitted & published",
-      "writeCta": "Write summary",
-      "editCta": "Edit",
-      "viewCta": "View",
-      "empty": "No visits assigned yet. When the coordinator schedules one for you, it shows up here.",
-      "visitedPrefix": "Visit",
-      "statusWith": "With coordinator",
-      "statusPublished": "Published",
-      "statusInReview": "In review",
-      "statusSubmitted": "Submitted"
-    },
-    "writer": {
-      "eyebrow": "Write visit summary",
-      "back": "Back to your visits",
-      "sentBackTitle": "Sent back for changes",
-      "vitals": "Vitals",
-      "bp": "Blood pressure",
-      "hr": "Heart rate (bpm)",
-      "spo2": "SpO₂ (%)",
-      "temp": "Temp (°C)",
-      "done": "What was done",
-      "observations": "Observations",
-      "meds": "Medications given",
-      "addMed": "+ add medication",
-      "watch": "What to watch for",
-      "addWatch": "+ add item",
-      "nextVisit": "Next visit",
-      "photos": "Wound photos",
-      "addPhoto": "Add photo",
-      "photoCaption": "Caption (optional)",
-      "uploading": "Uploading…",
-      "remove": "Remove",
-      "preview": "Preview",
-      "hidePreview": "Hide preview",
-      "saveDraft": "Save draft",
-      "saved": "Draft saved",
-      "submit": "Submit for review",
-      "submitted": "Submitted for review",
-      "submittedBody": "The coordinator has it now. You'll see it back here if changes are needed.",
-      "errorSave": "Could not save. Try again.",
-      "errorSubmit": "Could not submit. Make sure you've saved, then try again.",
-      "readOnlyTitle": "Already submitted",
-      "readOnlySubmittedBody": "You've submitted this summary — it's with the coordinator now. You'll see it back here if any changes are needed.",
-      "readOnlyPublishedBody": "This summary has been published. The family can now see it, and it's locked so the record stays accurate."
-    },
-    "review": {
-      "eyebrow": "Review",
-      "back": "Back to coordinator desk",
-      "coordNote": "Coordinator note (added to the summary)",
-      "saveNote": "Save note",
-      "noteSaved": "Note saved",
-      "publish": "Publish to family",
-      "published": "Published",
-      "publishedBody": "The family can now see this summary.",
-      "sendBack": "Send back to nurse",
-      "sendBackReason": "What needs fixing?",
-      "sendBackConfirm": "Send back",
-      "sentBack": "Sent back",
-      "sentBackBody": "The nurse will see your note and can resubmit.",
-      "errorGeneric": "Something went wrong. Try again."
-    },
-    "share": {
-      "label": "Share with the family",
-      "help": "Send this private link. It works for 30 days — no login needed.",
-      "copy": "Copy link",
-      "copied": "Copied!",
-      "whatsapp": "Send on WhatsApp",
-      "whatsappText": "{patient}'s visit summary is ready 👉 {url}",
-      "validUntil": "Link works until {date}",
-      "generating": "Preparing link…",
-      "error": "Could not create the link. Try again."
-    }
-  },
-  "sharePage": {
-    "caption": "Shared visit summary",
-    "validUntil": "Link valid until {date}",
-    "download": "Download / Print",
-    "expiredTitle": "Link unavailable",
-    "expiredBody": "This link has expired or is no longer available. Please ask your coordinator for a new one."
-  },
   "contact": {
     "meta": {
       "title": "تواصل معنا — كيرغيفرز كوليكتيف",
@@ -1027,24 +778,5 @@
       "successHeading": "تمّ إرسال الرسالة",
       "successBody": "سنردّ خلال 30 دقيقة بين 7 صباحاً و11 مساءً. الرسائل الليلية يتمّ الردّ عليها بحلول 7 صباحاً."
     }
-  },
-  "install": {
-    "title": "ثبّت تطبيق Caregivers على هاتفك",
-    "intro": "أضِف هذا إلى الشاشة الرئيسية لهاتفك ليفتح كالتطبيق — دون الحاجة إلى متجر التطبيقات.",
-    "iphoneHeading": "على آيفون (Safari)",
-    "iphoneSteps": [
-      "اضغط زر المشاركة (المربع مع سهم متجه للأعلى) أسفل الشاشة.",
-      "مرّر للأسفل واضغط \"Add to Home Screen\" (إضافة إلى الشاشة الرئيسية).",
-      "اضغط \"Add\" في الزاوية العلوية — تظهر أيقونة Caregivers على شاشتك الرئيسية."
-    ],
-    "androidHeading": "على أندرويد (Chrome)",
-    "androidSteps": [
-      "اضغط قائمة النقاط الثلاث في الزاوية العلوية اليمنى.",
-      "اضغط \"Install app\" (قد تظهر كـ \"Add to Home screen\").",
-      "اضغط \"Install\" — تظهر أيقونة Caregivers على شاشتك الرئيسية."
-    ],
-    "iphoneTab": "آيفون",
-    "androidTab": "أندرويد",
-    "openInBrowserNote": "أضفتها مسبقاً؟ فقط اضغط أيقونة Caregivers لفتح التطبيق."
   }
 }

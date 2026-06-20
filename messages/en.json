@@ -31,10 +31,7 @@
     "toggleMenu": "Toggle menu",
     "menuOpenLabel": "Open menu",
     "menuCloseLabel": "Close menu",
-    "whatsappLabel": "WhatsApp coordinator",
-    "whatWeSend": "What we send",
-    "loginLabel": "Log in",
-    "portalLabel": "Portal"
+    "whatsappLabel": "WhatsApp coordinator"
   },
   "footer": {
     "blurb": "Licensed home nursing care in {area}. Founded and clinically supervised by a Lebanese BSN.",
@@ -51,7 +48,7 @@
       "badge": "Live · Beirut & Mt. Lebanon",
       "headline": "Hospital-trained nurses, sent",
       "headlineEm": "to the house.",
-      "sub": "Lebanese RNs and PNs working their hospital off-days. Coordinated by WhatsApp. A written summary in the family portal after every visit.",
+      "sub": "Lebanese RNs and PNs working their hospital off-days. Coordinated entirely on WhatsApp. Quote after a short conversation — no obligation.",
       "primaryCta": "Message the coordinator",
       "ghostCta": "How a visit works"
     },
@@ -77,7 +74,7 @@
           "Medication administration",
           "Vital signs & glucose checks",
           "Hygiene & mobility support",
-          "Family progress updates"
+          "Companionship & supervision"
         ]
       },
       "ivWound": {
@@ -105,7 +102,7 @@
       "eyebrow": "How a visit works",
       "headline": "Three moments.",
       "headlineEm": "Same hand.",
-      "lede": "A coordinator replies on WhatsApp, a nurse visits, a written summary lands in the family portal the same day. No phone tag.",
+      "lede": "Message the coordinator on WhatsApp, a licensed nurse visits, the case is handled. No phone tag, no runaround.",
       "steps": [
         {
           "num": "01",
@@ -123,10 +120,10 @@
         },
         {
           "num": "03",
-          "headline": "A written summary, the same day.",
-          "body": "Vitals, what was done, what to watch for, next visit. In the family portal — visible to whoever you share it with.",
+          "headline": "One coordinator, start to finish.",
+          "body": "The same coordinator stays with your case on WhatsApp — scheduling the next visit, answering questions, keeping continuity.",
           "photoUrl": "https://images.unsplash.com/photo-1568633524775-08c4d7c63aff?w=1200&q=80&auto=format&fit=crop",
-          "photoCaption": "Visit notes · kitchen table"
+          "photoCaption": "Coordinator · same hand"
         }
       ]
     },
@@ -157,13 +154,13 @@
       "serviceArea": "Beirut & Mount Lebanon",
       "hospitalsLabel": "Hospital-trained",
       "licenseLabel": "Lebanese Order of Nurses",
-      "summaryLabel": "Written summary every visit"
+      "summaryLabel": "Same-day on WhatsApp"
     },
     "diaspora": {
       "eyebrow": "For families abroad",
       "headline": "Your parents are in Beirut.",
       "headlineEm": "You're not.",
-      "lede": "Pay from Paris. Read the visit summary in Dubai. Approve the next visit from London. The portal works in three timezones at once.",
+      "lede": "Pay from Paris. Coordinate from Dubai. Arrange the next visit from London. We care for your parent in Beirut while you're somewhere else.",
       "railsLabel": "Payment from abroad"
     },
     "services": {
@@ -230,12 +227,12 @@
           "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
         },
         {
-          "question": "Can I read the visit summary in Arabic?",
-          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+          "question": "Which languages do you work in?",
+          "answer": "EN, AR, and FR. The coordinator works with you in whichever language you prefer."
         },
         {
           "question": "What if it's 3am where I am?",
-          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+          "answer": "The coordinator replies during your daytime. Emergencies still get same-day response in Beirut time."
         },
         {
           "question": "How are the nurses vetted?",
@@ -246,8 +243,8 @@
           "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
         },
         {
-          "question": "What ends up in the family portal?",
-          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+          "question": "Are supplies included in the quote?",
+          "answer": "Standard supplies for the visit are included in most quotes. Specialty drugs or large dressings are quoted separately — the coordinator will be explicit."
         },
         {
           "question": "What's not offered yet?",
@@ -282,14 +279,28 @@
       "primaryCta": "Send on WhatsApp",
       "restartLabel": "Start over",
       "skipLabel": "Or message coordinator without the wizard",
-
       "q1Label": "What's the situation?",
       "q1Options": [
-        { "key": "recovery", "label": "Just discharged from hospital" },
-        { "key": "daily", "label": "Daily care for an elder parent" },
-        { "key": "procedure", "label": "A specific procedure (IV, injection, wound care)" },
-        { "key": "bloodwork", "label": "Bloodwork at home" },
-        { "key": "companion", "label": "Overnight or companion shifts" }
+        {
+          "key": "recovery",
+          "label": "Just discharged from hospital"
+        },
+        {
+          "key": "daily",
+          "label": "Daily care for an elder parent"
+        },
+        {
+          "key": "procedure",
+          "label": "A specific procedure (IV, injection, wound care)"
+        },
+        {
+          "key": "bloodwork",
+          "label": "Bloodwork at home"
+        },
+        {
+          "key": "companion",
+          "label": "Overnight or companion shifts"
+        }
       ],
       "q1Sentence": {
         "recovery": "post-discharge recovery care",
@@ -298,13 +309,24 @@
         "bloodwork": "bloodwork at home",
         "companion": "overnight or companion shifts"
       },
-
       "q2Label": "Who is the care for?",
       "q2Options": [
-        { "key": "parent", "label": "A parent" },
-        { "key": "spouse", "label": "Spouse or partner" },
-        { "key": "self", "label": "Myself" },
-        { "key": "other", "label": "Another family member" }
+        {
+          "key": "parent",
+          "label": "A parent"
+        },
+        {
+          "key": "spouse",
+          "label": "Spouse or partner"
+        },
+        {
+          "key": "self",
+          "label": "Myself"
+        },
+        {
+          "key": "other",
+          "label": "Another family member"
+        }
       ],
       "q2Sentence": {
         "parent": "my parent",
@@ -312,13 +334,24 @@
         "self": "myself",
         "other": "another family member"
       },
-
       "q3Label": "When do you want to start?",
       "q3Options": [
-        { "key": "urgent", "label": "Today or tomorrow" },
-        { "key": "thisWeek", "label": "This week" },
-        { "key": "withinMonth", "label": "Within the month" },
-        { "key": "planning", "label": "Planning ahead" }
+        {
+          "key": "urgent",
+          "label": "Today or tomorrow"
+        },
+        {
+          "key": "thisWeek",
+          "label": "This week"
+        },
+        {
+          "key": "withinMonth",
+          "label": "Within the month"
+        },
+        {
+          "key": "planning",
+          "label": "Planning ahead"
+        }
       ],
       "q3Sentence": {
         "urgent": "today or tomorrow",
@@ -331,13 +364,13 @@
   "diaspora": {
     "meta": {
       "title": "For families abroad — Caregivers Collective",
-      "description": "Care for your parents in Beirut, coordinated from anywhere. Payment from abroad, written visit summaries in three timezones, bilingual coordinator."
+      "description": "Care for your parents in Beirut, coordinated from anywhere. Payment from abroad, a bilingual coordinator on WhatsApp, care across three timezones."
     },
     "hero": {
       "badge": "For families abroad",
       "headline": "Your parents are in Beirut.",
       "headlineEm": "You're not.",
-      "sub": "Pay from Paris. Read the visit summary in Dubai. Approve the next visit from London. We built this for the family that lives somewhere else.",
+      "sub": "Pay from Paris. Coordinate from Dubai. Arrange the next visit from London. We built this for the family that lives somewhere else.",
       "primaryCta": "Message the coordinator",
       "ghostCta": "How a visit works"
     },
@@ -356,20 +389,20 @@
           "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
         },
         {
-          "question": "Can I read the visit summary in Arabic?",
-          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+          "question": "Which languages do you work in?",
+          "answer": "EN, AR, and FR. The coordinator works with you in whichever language you prefer."
         },
         {
           "question": "What if it's 3am where I am?",
-          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+          "answer": "The coordinator replies during your daytime. Emergencies still get same-day response in Beirut time."
         },
         {
-          "question": "Can my sibling abroad also access the portal?",
-          "answer": "Yes. You can share the portal link with anyone in the family — same login, same summary visibility. No additional fee."
+          "question": "Can more than one of us coordinate?",
+          "answer": "Yes. Any family member can message the coordinator — just tell us who's authorised to make care decisions. No additional fee."
         },
         {
-          "question": "What ends up in the family portal?",
-          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+          "question": "Are supplies included in the quote?",
+          "answer": "Standard supplies for the visit are included in most quotes. Specialty drugs or large dressings are quoted separately — the coordinator will be explicit."
         }
       ]
     }
@@ -397,10 +430,10 @@
           "number": "Mode 01",
           "label": "The visit",
           "headline": "Per-visit, one thing at a time.",
-          "body": "Best when the case is procedural and bounded — a single injection, a wound dressing change, an IV start. We come, do the work, send the summary.",
+          "body": "Best when the case is procedural and bounded — a single injection, a wound dressing change, an IV start. We come, do the work, done.",
           "bullets": [
             "IM/SubQ injection, IV insertion, Foley, complex dressings",
-            "Single nurse, one written summary per visit",
+            "Single nurse, one bounded procedure",
             "Quote based on procedure, time, and supplies"
           ],
           "ctaLabel": "Discuss the visit shape",
@@ -415,7 +448,7 @@
             "8 / 12 / 24-hour shift blocks",
             "Same-nurse continuity by default",
             "RN or PN — matched to the clinical need",
-            "Written summary at end of each shift"
+            "Direct line to the coordinator throughout"
           ],
           "ctaLabel": "Discuss the shift shape",
           "ctaMessage": "Hi — I'd like to discuss shift-based care for a family member."
@@ -424,10 +457,10 @@
           "number": "Mode 03",
           "label": "The wellness rhythm",
           "headline": "Monthly check-ins for an elder parent.",
-          "body": "A subscription cadence — four check-in visits per month, family portal access, escalation path when something changes. For families abroad who want a steady presence in the home.",
+          "body": "A subscription cadence — four check-in visits per month, a dedicated coordinator, escalation path when something changes. For families abroad who want a steady presence in the home.",
           "bullets": [
             "Four visits per month, same coordinator",
-            "Family portal with monthly summary",
+            "A named coordinator who knows the case",
             "Priority WhatsApp response from the coordinator",
             "Designed for diaspora-managed long-term care"
           ],
@@ -472,13 +505,13 @@
   "howWeWork": {
     "meta": {
       "title": "How a visit works — Caregivers Collective",
-      "description": "From WhatsApp message to written summary in the family portal — the three moments of a home nursing visit in Beirut & Mt. Lebanon."
+      "description": "From a WhatsApp message to a licensed nurse at the door — the three moments of a home nursing visit in Beirut & Mt. Lebanon."
     },
     "hero": {
       "badge": "How a visit works",
       "headline": "Three moments.",
       "headlineEm": "Same hand.",
-      "sub": "A coordinator replies on WhatsApp, a nurse visits, a written summary lands in the family portal the same day. No phone tag, no guessing what happened.",
+      "sub": "A coordinator replies on WhatsApp, a licensed nurse visits, the case is handled the same day. No phone tag, no runaround.",
       "primaryCta": "Message the coordinator",
       "ghostCta": "Discuss your case"
     },
@@ -501,8 +534,8 @@
           "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
         },
         {
-          "question": "What ends up in the family portal?",
-          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+          "question": "Are supplies included in the quote?",
+          "answer": "Standard supplies for the visit are included in most quotes. Specialty drugs or large dressings are quoted separately — the coordinator will be explicit."
         },
         {
           "question": "How fast does the coordinator reply?",
@@ -518,7 +551,7 @@
   "faq": {
     "meta": {
       "title": "Common questions — Caregivers Collective",
-      "description": "Answers to the most common questions about home nursing care in Beirut & Mt. Lebanon — pricing, payment from abroad, nurse vetting, family portal, and more."
+      "description": "Answers to the most common questions about home nursing care in Beirut & Mt. Lebanon — pricing, payment from abroad, nurse vetting, service area, and more."
     },
     "hero": {
       "badge": "Common questions",
@@ -547,12 +580,12 @@
           "answer": "Western Union, OMT International, Whish Money, or direct USD wire. The coordinator sends you a summary of what's billed and how to pay in your timezone."
         },
         {
-          "question": "Can I read the visit summary in Arabic?",
-          "answer": "Yes. The portal has EN, AR, FR. The summary is written in the language the coordinator and you agreed on."
+          "question": "Which languages do you work in?",
+          "answer": "EN, AR, and FR. The coordinator works with you in whichever language you prefer."
         },
         {
           "question": "What if it's 3am where I am?",
-          "answer": "The coordinator replies in your daytime. The portal is always available. Emergencies still get same-day response in Beirut time."
+          "answer": "The coordinator replies during your daytime. Emergencies still get same-day response in Beirut time."
         },
         {
           "question": "How are the nurses vetted?",
@@ -563,12 +596,12 @@
           "answer": "Yes, when the case is ongoing. Same-nurse continuity is the default for daily care and recovery cases."
         },
         {
-          "question": "What ends up in the family portal?",
-          "answer": "Vitals, what was done that visit, what to watch for, next visit date. Wound photos in a private bucket if applicable."
+          "question": "Are supplies included in the quote?",
+          "answer": "Standard supplies for the visit are included in most quotes. Specialty drugs or large dressings are quoted separately — the coordinator will be explicit."
         },
         {
-          "question": "Can my sibling abroad also access the portal?",
-          "answer": "Yes. You can share the portal link with anyone in the family — same login, same summary visibility. No additional fee."
+          "question": "Can more than one of us coordinate?",
+          "answer": "Yes. Any family member can message the coordinator — just tell us who's authorised to make care decisions. No additional fee."
         },
         {
           "question": "What if my district isn't in your list?",
@@ -584,7 +617,7 @@
         },
         {
           "question": "Can the coordinator speak with my parent's doctor?",
-          "answer": "Yes, when authorised. With consent, the coordinator can hand off vitals or visit summaries to the treating physician's office."
+          "answer": "Yes, when authorised. With consent, the coordinator can hand off the clinical details to the treating physician's office."
         }
       ]
     }
@@ -625,7 +658,7 @@
         {
           "num": "03",
           "headline": "Get paid weekly.",
-          "body": "Submit your visit summary in the portal at end of shift. Pay lands weekly via Whish, OMT, or direct bank. The family pays Caregivers Collective; Caregivers Collective pays you.",
+          "body": "Report the visit to the coordinator at end of shift. Pay lands weekly via Whish, OMT, or direct bank. The family pays Caregivers Collective; Caregivers Collective pays you.",
           "photoUrl": "https://images.unsplash.com/photo-1568633524775-08c4d7c63aff?w=1200&q=80&auto=format&fit=crop",
           "photoCaption": "Payout · weekly"
         }
@@ -683,7 +716,7 @@
         },
         {
           "question": "What if a case goes wrong?",
-          "answer": "Document what you saw in the portal. The coordinator handles the family conversation. We have professional liability coverage on platform-coordinated visits."
+          "answer": "Tell the coordinator what you saw. The coordinator handles the family conversation. We have professional liability coverage on platform-coordinated visits."
         },
         {
           "question": "Can I decline cases?",
@@ -702,288 +735,6 @@
       "primaryCta": "Apply on WhatsApp",
       "callCta": "Call"
     }
-  },
-  "whatWeSend": {
-    "meta": {
-      "title": "What we send — Caregivers Collective",
-      "description": "What lands in the family portal after every visit — vitals, what was done, what to watch for, photos. The actual document, not a description of it."
-    },
-    "hero": {
-      "badge": "What lands in the family portal",
-      "headline": "The summary,",
-      "headlineEm": "not the promise of one.",
-      "sub": "Every visit ends with a written summary in the family portal. Here's exactly what one looks like — vitals, what was done, what to watch for, photos when relevant.",
-      "primaryCta": "Message the coordinator",
-      "ghostCta": "How a visit works"
-    },
-    "documentSection": {
-      "eyebrow": "A sample summary",
-      "headline": "From a real",
-      "headlineEm": "visit shape.",
-      "lede": "Names and identifiers are pseudonymous. The format, fields, and tone are exactly what the portal renders. Photography on real summaries lives in private buckets — only visible to authorised family accounts."
-    },
-    "sample": {
-      "patientLabel": "Mariam · 78",
-      "district": "Achrafieh",
-      "visitDateLabel": "Tuesday · 14 May · 18:30",
-      "caseRef": "Case 2026-051",
-      "liveLabel": "Documented",
-      "printLabel": "Print summary",
-      "vitalsHeading": "Vitals",
-      "vitals": [
-        { "label": "BP", "value": "128/82" },
-        { "label": "HR", "value": "74 bpm" },
-        { "label": "SpO₂", "value": "97 %" },
-        { "label": "Temp", "value": "36.6 °C" }
-      ],
-      "vitalsFootnote": "Taken at 18:35 · seated · left arm",
-      "doneHeading": "What was done",
-      "doneBody": "IV hydration session (Normal saline, 500 mL, run over 90 minutes), vitals check, dressing change on left forearm. Patient assisted from bed to armchair before and after the session.",
-      "observationsHeading": "Observations",
-      "observationsBody": "Mariam was alert, oriented, and comfortable at rest. Mobility good — walked unassisted to the kitchen mid-visit. Slight tenderness around the drain site on the left forearm; otherwise the wound is healing as expected. Appetite was reported as low at lunch but normal at dinner.",
-      "medsHeading": "Medications administered",
-      "meds": [
-        "Vancomycin 1 g IV — 18:15, no adverse reaction",
-        "Paracetamol 1 g oral — 19:00, for low-grade discomfort"
-      ],
-      "watchHeading": "What to watch for, until next visit",
-      "watchItems": [
-        "Increased redness, warmth, or swelling around the dressing site",
-        "Fever above 38 °C (taken at home with a thermometer)",
-        "New pain at the IV site, or refusal of food more than 24 hours"
-      ],
-      "photosHeading": "Photos · wound site",
-      "photosNote": "Private to your family · signed URLs",
-      "photos": [
-        {
-          "caption": "Pre-dressing · left forearm",
-          "url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80&auto=format&fit=crop"
-        },
-        {
-          "caption": "Post-dressing · sealed",
-          "url": "https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=900&q=80&auto=format&fit=crop"
-        }
-      ],
-      "nextVisitHeading": "Next visit",
-      "nextVisitBody": "Thursday 16 May · 18:30 — same nurse, same shape. Dressing change + vitals. Family portal will update within an hour of the visit ending.",
-      "coordinatorNoteLabel": "From the coordinator",
-      "coordinatorNoteBody": "Pharmacy delivered fresh dressings this morning — supply on hand for five more changes. Daughter in Paris was notified by WhatsApp that the summary is up.",
-      "footerLine": "Written by your case team · 14 May · 19:12 Beirut time"
-    },
-    "readGuide": [
-      {
-        "label": "First",
-        "title": "Vitals at the top.",
-        "body": "Numbers anyone can scan — BP, heart rate, oxygen, temperature. The footnote tells you when and how they were taken."
-      },
-      {
-        "label": "Middle",
-        "title": "What happened, then what to watch.",
-        "body": "Plain language. Then a short list of things you'd call us about — written in the words the coordinator and the family agreed on."
-      },
-      {
-        "label": "Last",
-        "title": "Next visit + coordinator note.",
-        "body": "When the next visit is, what it covers, and any logistics from the coordinator (supplies, scheduling, who else was looped in)."
-      }
-    ]
-  },
-  "login": {
-    "eyebrow": "Family portal",
-    "headline": "One link,",
-    "headlineEm": "no password.",
-    "lede": "Enter your email. We send a one-time sign-in link. Open the link on this device to enter the portal.",
-    "emailLabel": "Email",
-    "submitLabel": "Send link",
-    "helper": "Sign-in links expire after one hour. If you don't see the email, check your spam folder.",
-    "successLabel": "Sent",
-    "successHeadline": "Check your email.",
-    "successBody": "We just sent you a one-time link. Open it on this device to enter the portal. It expires after one hour."
-  },
-  "portal": {
-    "eyebrow": "Portal",
-    "headline": "Welcome, {name}.",
-    "patientsLabel": "Patients you have access to",
-    "emptyPatients": "Nothing here yet. If a coordinator just added a case for your family, refresh in a moment.",
-    "sampleLabel": "Sample document",
-    "sampleHeadline": "Want to see what a visit summary looks like?",
-    "sampleBody": "Every visit ends with a written summary. Here's the format your portal will render once a real visit lands.",
-    "sampleCta": "View sample summary",
-    "logoutLabel": "Sign out",
-    "coordinator": {
-      "eyebrow": "Coordinator",
-      "headline": "Coordinator desk",
-      "queueLabel": "Summaries waiting for review",
-      "queueEmpty": "Nothing waiting. When a nurse submits a visit summary, it lands here for you to review and publish.",
-      "reviewCta": "Review",
-      "manageNursesLabel": "Manage nurses",
-      "manageNursesBody": "Add a nurse to the roster and get a sign-in link to send them.",
-      "scheduleLabel": "Schedule a visit",
-      "scheduleBody": "Assign a patient visit to a nurse. It appears on their dashboard to write up.",
-      "openLabel": "Open"
-    },
-    "nurseHome": {
-      "eyebrow": "Nurse",
-      "headline": "Welcome back, {name}.",
-      "body": "Your assigned visits and write-ups will appear here.",
-      "noVisits": "No visits assigned yet. When the coordinator schedules one for you, it shows up here."
-    },
-    "nurseDash": {
-      "eyebrow": "Nurse",
-      "headline": "Welcome back, {name}.",
-      "needsLabel": "Needs your write-up",
-      "sentBackLabel": "Sent back to fix",
-      "historyLabel": "Submitted & published",
-      "writeCta": "Write summary",
-      "editCta": "Edit",
-      "viewCta": "View",
-      "empty": "No visits assigned yet. When the coordinator schedules one for you, it shows up here.",
-      "visitedPrefix": "Visit",
-      "statusWith": "With coordinator",
-      "statusPublished": "Published",
-      "statusInReview": "In review",
-      "statusSubmitted": "Submitted"
-    },
-    "nurses": {
-      "eyebrow": "Roster",
-      "headline": "Nurses",
-      "lede": "The nurses who can log in and write visit summaries. Add one, then send them their sign-in link.",
-      "backToPortal": "Back to coordinator desk",
-      "rosterLabel": "Current roster",
-      "empty": "No nurses yet. Add the first one below.",
-      "colName": "Name",
-      "colHospital": "Hospital",
-      "colLicense": "License",
-      "colStatus": "Status",
-      "active": "Active",
-      "inactive": "Inactive",
-      "addLabel": "Add a nurse",
-      "nameField": "Full name",
-      "namePlaceholder": "Rita K.",
-      "emailField": "Email",
-      "emailPlaceholder": "rita@example.com",
-      "hospitalField": "Hospital",
-      "hospitalPlaceholder": "AUBMC",
-      "licenseField": "License number (optional)",
-      "licensePlaceholder": "RN-12345",
-      "submitLabel": "Add nurse & create sign-in link",
-      "successLabel": "Nurse added",
-      "successBody": "{name} is on the roster. Send them this one-time sign-in link (it works for an hour):",
-      "successHint": "Tip: send it on WhatsApp. They can also sign in any time from the login page with their email.",
-      "copyLabel": "Copy link",
-      "addAnother": "Add another nurse",
-      "errorExists": "An account with that email already exists.",
-      "errorGeneric": "Could not add the nurse. Check the details and try again."
-    },
-    "schedule": {
-      "eyebrow": "Schedule",
-      "headline": "Schedule a visit",
-      "lede": "Pick a patient, a date, and the nurse. The visit appears on the nurse's dashboard to write up after.",
-      "backToPortal": "Back to coordinator desk",
-      "patientField": "Patient & case",
-      "nurseField": "Assign to nurse",
-      "dateField": "Date & time",
-      "submitLabel": "Schedule & assign",
-      "noNurses": "Add a nurse first — there's no one to assign a visit to yet.",
-      "noCases": "No patients with an active case yet.",
-      "successLabel": "Visit scheduled",
-      "successBody": "Scheduled for {patient} with {nurse} on {when}. It's now on the nurse's dashboard.",
-      "scheduleAnother": "Schedule another",
-      "errorGeneric": "Could not schedule the visit. Check the details and try again."
-    },
-    "patient": {
-      "eyebrow": "Patient",
-      "back": "Back to your family",
-      "visitsLabel": "Visit summaries",
-      "latest": "Latest",
-      "empty": "No visit summaries yet — you'll see one here within an hour of each visit.",
-      "readSummary": "Read summary",
-      "backToPatient": "Back to visits"
-    },
-    "nurseDash": {
-      "eyebrow": "Nurse",
-      "headline": "Welcome back, {name}.",
-      "needsLabel": "Needs your write-up",
-      "sentBackLabel": "Sent back to fix",
-      "historyLabel": "Submitted & published",
-      "writeCta": "Write summary",
-      "editCta": "Edit",
-      "viewCta": "View",
-      "empty": "No visits assigned yet. When the coordinator schedules one for you, it shows up here.",
-      "visitedPrefix": "Visit",
-      "statusWith": "With coordinator",
-      "statusPublished": "Published",
-      "statusInReview": "In review",
-      "statusSubmitted": "Submitted"
-    },
-    "writer": {
-      "eyebrow": "Write visit summary",
-      "back": "Back to your visits",
-      "sentBackTitle": "Sent back for changes",
-      "vitals": "Vitals",
-      "bp": "Blood pressure",
-      "hr": "Heart rate (bpm)",
-      "spo2": "SpO₂ (%)",
-      "temp": "Temp (°C)",
-      "done": "What was done",
-      "observations": "Observations",
-      "meds": "Medications given",
-      "addMed": "+ add medication",
-      "watch": "What to watch for",
-      "addWatch": "+ add item",
-      "nextVisit": "Next visit",
-      "photos": "Wound photos",
-      "addPhoto": "Add photo",
-      "photoCaption": "Caption (optional)",
-      "uploading": "Uploading…",
-      "remove": "Remove",
-      "preview": "Preview",
-      "hidePreview": "Hide preview",
-      "saveDraft": "Save draft",
-      "saved": "Draft saved",
-      "submit": "Submit for review",
-      "submitted": "Submitted for review",
-      "submittedBody": "The coordinator has it now. You'll see it back here if changes are needed.",
-      "errorSave": "Could not save. Try again.",
-      "errorSubmit": "Could not submit. Make sure you've saved, then try again.",
-      "readOnlyTitle": "Already submitted",
-      "readOnlySubmittedBody": "You've submitted this summary — it's with the coordinator now. You'll see it back here if any changes are needed.",
-      "readOnlyPublishedBody": "This summary has been published. The family can now see it, and it's locked so the record stays accurate."
-    },
-    "review": {
-      "eyebrow": "Review",
-      "back": "Back to coordinator desk",
-      "coordNote": "Coordinator note (added to the summary)",
-      "saveNote": "Save note",
-      "noteSaved": "Note saved",
-      "publish": "Publish to family",
-      "published": "Published",
-      "publishedBody": "The family can now see this summary.",
-      "sendBack": "Send back to nurse",
-      "sendBackReason": "What needs fixing?",
-      "sendBackConfirm": "Send back",
-      "sentBack": "Sent back",
-      "sentBackBody": "The nurse will see your note and can resubmit.",
-      "errorGeneric": "Something went wrong. Try again."
-    },
-    "share": {
-      "label": "Share with the family",
-      "help": "Send this private link. It works for 30 days — no login needed.",
-      "copy": "Copy link",
-      "copied": "Copied!",
-      "whatsapp": "Send on WhatsApp",
-      "whatsappText": "{patient}'s visit summary is ready 👉 {url}",
-      "validUntil": "Link works until {date}",
-      "generating": "Preparing link…",
-      "error": "Could not create the link. Try again."
-    }
-  },
-  "sharePage": {
-    "caption": "Shared visit summary",
-    "validUntil": "Link valid until {date}",
-    "download": "Download / Print",
-    "expiredTitle": "Link unavailable",
-    "expiredBody": "This link has expired or is no longer available. Please ask your coordinator for a new one."
   },
   "contact": {
     "meta": {
@@ -1027,24 +778,5 @@
       "successHeading": "Message sent",
       "successBody": "We'll reply within 30 minutes between 7am and 11pm. Overnight messages get a reply by 7am."
     }
-  },
-  "install": {
-    "title": "Install the Caregivers app",
-    "intro": "Add this to your phone's home screen so it opens like an app — no app store needed.",
-    "iphoneHeading": "On iPhone (Safari)",
-    "iphoneSteps": [
-      "Tap the Share button (the square with an arrow pointing up) at the bottom of the screen.",
-      "Scroll down and tap \"Add to Home Screen\".",
-      "Tap \"Add\" in the top corner — the Caregivers icon now sits on your home screen."
-    ],
-    "androidHeading": "On Android (Chrome)",
-    "androidSteps": [
-      "Tap the three-dot menu in the top right corner.",
-      "Tap \"Install app\" (it may say \"Add to Home screen\").",
-      "Tap \"Install\" — the Caregivers icon now sits on your home screen."
-    ],
-    "iphoneTab": "iPhone",
-    "androidTab": "Android",
-    "openInBrowserNote": "Already added it? Just tap the Caregivers icon to open the app."
   }
 }

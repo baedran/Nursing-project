@@ -6,7 +6,7 @@ export const site = {
   shortName: "Caregivers Collective",
   tagline: "Hospital-trained home nursing for Beirut & Mount Lebanon",
   description:
-    "Lebanese RNs and PNs from AUBMC, Hôtel-Dieu, and St Georges working their off-days. Coordinated by WhatsApp. A written summary in the family portal after every visit.",
+    "Lebanese RNs and PNs from AUBMC, Hôtel-Dieu, and St Georges working their off-days. Home nursing in Beirut & Mount Lebanon, coordinated entirely on WhatsApp.",
   serviceArea: "Beirut & Mount Lebanon",
   established: "2026",
 
