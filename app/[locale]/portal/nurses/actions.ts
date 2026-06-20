@@ -82,7 +82,17 @@ export async function inviteNurse(formData: FormData): Promise<InviteResult> {
     email,
     options: { redirectTo: `${origin}/${locale}/auth/confirm` },
   });
-  magicLink = linkData?.properties?.action_link ?? null;
+  // Hand the coordinator a link that points at OUR /auth/confirm route with the
+  // token as a normal query param (?token_hash=…). The raw `action_link` Supabase
+  // returns is its hosted /auth/v1/verify URL, which sends the session back in the
+  // URL #hash fragment (implicit flow). A server route handler can't read a #hash
+  // (browsers never send it to the server), so that link always failed with
+  // "Invalid or expired link" even though the token was valid. The hashed_token
+  // form is exactly what @supabase/ssr's server confirm route is built to verify.
+  const hashedToken = linkData?.properties?.hashed_token;
+  magicLink = hashedToken
+    ? `${origin}/${locale}/auth/confirm?token_hash=${hashedToken}&type=magiclink`
+    : null;
 
   revalidatePath(`/${locale}/portal/nurses`);
   return { ok: true, nurseName: name, magicLink };
