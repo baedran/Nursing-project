@@ -1,3 +1,10 @@
+> ⚠️ **OUTDATED — historical only.** This document describes the old patient
+> portal/backend/PWA, which has been **removed** from the site (it lives on the
+> `mothball/portal` branch). For the current marketing-only site, read
+> **`DESIGNER-HANDOFF.md`** instead.
+>
+> ---
+>
 > **Update 2026-06-01 (later) — Nurse mobile app shipped as an installable PWA.**
 >
 > Nurses can now install the portal on their phone as a home-screen app. We did
